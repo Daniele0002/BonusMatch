@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bonus Match - Trova i tuoi Bonus</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Special+Gothic+Expanded+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="/assets/logo.png" type="image/png" />
+
+    <!-- SEO Meta Tags -->
+    <meta
+      name="description"
+      content="Bonus Match: Trova e confronta i migliori bonus scommesse e casinò in Italia. Offerte esclusive, guide dettagliate e recensioni imparziali."
+    />
+    <meta
+      name="keywords"
+      content="bonus scommesse, bonus benvenuto, casino online, bonus match, scommesse sportive, migliori bonus italia"
+    />
+    <meta name="author" content="Bonus Match" />
+    <link rel="canonical" href="https://bonusmatch.it/" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://bonusmatch.it/" />
+    <meta property="og:title" content="Bonus Match - Trova i tuoi Bonus" />
+    <meta
+      property="og:description"
+      content="Trova e confronta i migliori bonus scommesse e casinò in Italia. Offerte esclusive per te su Bonus Match."
+    />
+    <meta
+      property="og:image"
+      content="https://bonusmatch.it/assets/Risorsa%207@4x@3x.png"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://bonusmatch.it/" />
+    <meta property="twitter:title" content="Bonus Match - Trova i tuoi Bonus" />
+    <meta
+      property="twitter:description"
+      content="Trova e confronta i migliori bonus scommesse e casinò in Italia. Offerte esclusive per te su Bonus Match."
+    />
+    <meta
+      property="twitter:image"
+      content="https://bonusmatch.it/assets/Risorsa%207@4x@3x.png"
+    />
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Bonus Match",
+        "url": "https://bonusmatch.it/",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://bonusmatch.it/search?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Bonus Match",
+        "url": "https://bonusmatch.it/",
+        "logo": "https://bonusmatch.it/assets/Risorsa%207@4x@3x.png",
+        "sameAs": []
+      }
+    </script>
+
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: #f8fafc;
+        transition: background-color 0.3s ease;
+      }
+      .dark body {
+        background-color: #020617;
+      }
+      /* Custom scrollbar for dark mode */
+      .dark ::-webkit-scrollbar {
+        width: 8px;
+      }
+      .dark ::-webkit-scrollbar-track {
+        background: #0f172a;
+      }
+      .dark ::-webkit-scrollbar-thumb {
+        background: #1e293b;
+        border-radius: 4px;
+      }
+      .dark ::-webkit-scrollbar-thumb:hover {
+        background: #334155;
+      }
+    </style>
+    <script type="importmap">
+      {
+        "imports": {
+          "@google/genai": "https://esm.sh/@google/genai@^1.35.0",
+          "react/": "https://esm.sh/react@^19.2.3/",
+          "react": "https://esm.sh/react@^19.2.3",
+          "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
