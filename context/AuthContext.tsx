@@ -259,11 +259,22 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({
 
   // --- 3. AZIONI AUTH ---
   const login = async (email: string, password: string) => {
-    const { error } = await supabase.auth.signInWithPassword({
+    const { data, error } = await supabase.auth.signInWithPassword({
       email: email.trim(),
       password: password.trim(),
     });
     if (error) return { success: false, error: error.message };
+    
+    // Imposta l'utente immediatamente dopo il login riuscito
+    if (data.user) {
+      const fullUser = await fetchUserProfile(data.user.id, data.user.email!);
+      setUser(fullUser);
+      // Salva in cache
+      localStorage.setItem('cached_user_id', data.user.id);
+      localStorage.setItem(`user_profile_${data.user.id}`, JSON.stringify(fullUser));
+      fetchSavedBonuses(data.user.id);
+    }
+    
     return { success: true };
   };
 
