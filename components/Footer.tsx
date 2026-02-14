@@ -7,12 +7,12 @@ interface FooterProps {
 const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
   return (
     <footer className="bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 py-10 mt-12">
-      <div className="container mx-auto px-4 max-w-screen-2xl">
+      <div className="container mx-auto px-20  max-w-screen-2xl">
         <div className="flex flex-col md:flex-row justify-between items-start gap-8 mb-10">
           <div>
             <div className="flex items-center gap-1.5 mb-4">
               <div className="h-6 w-6 rounded-lg flex items-center justify-center">
-                <img src="assets/logo.png" alt="BonusMatch Logo" />
+                <img src="assets/logo sfondo.png" alt="BonusMatch Logo" />
               </div>
               <span className="text-base text-slate-900 dark:text-white uppercase" style={{ fontFamily: '"Special Gothic Expanded One", sans-serif' }}>
                 Bonus Match
@@ -44,7 +44,7 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                  
                   className="text-slate-500 hover:text-blue-600 dark:hover:text-blue-400 text-sm font-medium transition-colors"
                 >
-                  support@bonusmatch.it
+                  bonusmatch@libero.it
                 </a>
               </li>
             </ul>
