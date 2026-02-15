@@ -108,6 +108,7 @@ export type AppView =
   | { type: "calendar"; profile: UserProfile }
   | { type: "documents"; profile: UserProfile }
   | { type: "saved"; profile: UserProfile; results: MatchResult[] }
+  | { type: "family"; profile: UserProfile; results: MatchResult[] }
   | {
       type: "detail";
       bonusId: string;

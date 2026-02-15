@@ -129,7 +129,7 @@ const PremiumGate: React.FC<PremiumGateProps> = ({
           Passa a Premium
         </button>
         <span className="text-sm text-slate-400 font-bold">
-          Solo 9.99€/mese
+          Solo 24,99€/anno
         </span>
       </div>
 

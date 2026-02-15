@@ -23,16 +23,23 @@ export const redirectToCheckout = async (email?: string) => {
     body: JSON.stringify({ email }), 
   });
 
-  if (!response.ok) {
-    const error = await response.json();
-    throw new Error(error.message || 'Errore creazione sessione');
+  // Parse JSON safely
+  let data;
+  try {
+    const text = await response.text();
+    data = text ? JSON.parse(text) : {};
+  } catch (parseError) {
+    console.error('JSON parse error:', parseError);
+    throw new Error('Errore di comunicazione con il server. Riprova più tardi.');
   }
 
-  const { url } = await response.json();
+  if (!response.ok) {
+    throw new Error(data.message || data.error || 'Errore creazione sessione');
+  }
 
   // 2. Redirect to Stripe Hosted Page
-  if (url) {
-    window.location.href = url;
+  if (data.url) {
+    window.location.href = data.url;
   } else {
     throw new Error("URL di checkout non ricevuto");
   }

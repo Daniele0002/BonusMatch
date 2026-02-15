@@ -145,17 +145,22 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({
     let isMounted = true;
 
     const initializeAuth = async () => {
-      // Controlla se torniamo da un pagamento Stripe - in quel caso forza refresh
+      // Controlla se torniamo da un pagamento Stripe
       const urlParams = new URLSearchParams(window.location.search);
-      const fromStripeSuccess = urlParams.get('success') === 'true' || urlParams.get('session_id');
+      const fromStripeSuccess = urlParams.get('payment') === 'success' || urlParams.get('session_id');
       
-      // STEP 1: Cerca prima nella cache locale (istantaneo) - ma non se torniamo da Stripe
+      // STEP 1: Cerca prima nella cache locale (istantaneo)
       const cachedUserId = localStorage.getItem('cached_user_id');
-      if (cachedUserId && !fromStripeSuccess) {
+      if (cachedUserId) {
         const cachedProfile = localStorage.getItem(`user_profile_${cachedUserId}`);
         if (cachedProfile) {
           try {
             const cached = JSON.parse(cachedProfile);
+            // Se torniamo da Stripe, forza isPremium = true nella cache
+            if (fromStripeSuccess) {
+              cached.isPremium = true;
+              localStorage.setItem(`user_profile_${cachedUserId}`, JSON.stringify(cached));
+            }
             if (isMounted) {
               setUser(cached);
               setIsLoading(false);
@@ -174,6 +179,10 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({
                 // Sessione valida, aggiorna profilo in background
                 fetchUserProfile(session.user.id, session.user.email!).then((fullUser) => {
                   if (isMounted && fullUser) {
+                    // Se torniamo da Stripe, mantieni isPremium = true
+                    if (fromStripeSuccess) {
+                      fullUser.isPremium = true;
+                    }
                     setUser(fullUser);
                     localStorage.setItem(`user_profile_${session.user.id}`, JSON.stringify(fullUser));
                   }
@@ -204,6 +213,10 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({
 
         if (session?.user && isMounted) {
           const fullUser = await fetchUserProfile(session.user.id, session.user.email!);
+          // Se torniamo da Stripe, forza isPremium = true
+          if (fromStripeSuccess) {
+            fullUser.isPremium = true;
+          }
           if (isMounted) {
             setUser(fullUser);
             // Salva in cache per caricamenti futuri istantanei

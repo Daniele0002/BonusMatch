@@ -9,8 +9,8 @@ import AccountSettingsModal from "./AccountSettingsModal";
 interface HeaderProps {
   theme: "light" | "dark";
   onToggleTheme: () => void;
-  activeTab?: "dashboard" | "search" | "settings" | "calendar" | "documents";
-  onTabChange: (tab: "dashboard" | "search" | "settings" | "calendar" | "documents") => void;
+  activeTab?: "dashboard" | "search" | "settings" | "calendar" | "documents" | "family";
+  onTabChange: (tab: "dashboard" | "search" | "settings" | "calendar" | "documents" | "family") => void;
   onLogoClick: () => void;
   onLogin: () => void;
   onLogout: () => void;
@@ -28,6 +28,7 @@ const Icons = {
   logout: <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />,
   close: <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />,
   star: <path fillRule="evenodd" d="M10 2l2.5 7h7.5l-6 4.5 2.5 7-6-4.5-6 4.5 2.5-7-6-4.5h7.5z" clipRule="evenodd" />,
+  family: <><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></>,
   moon: <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />,
   sun: <path d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />,
 } as const;
@@ -39,11 +40,12 @@ const Icon: React.FC<{ path: React.ReactNode; className?: string; fill?: boolean
 
 /** Configurazione tabs navigazione */
 const TABS = [
-  { id: "dashboard", label: "Dashboard", icon: Icons.home },
-  { id: "search", label: "Cerca", icon: Icons.search },
-  { id: "calendar", label: "Calendario", icon: Icons.calendar },
-  { id: "documents", label: "Documenti", icon: Icons.document },
-  { id: "settings", label: "Profilo", icon: Icons.user },
+  { id: "dashboard", label: "Dashboard", icon: Icons.home, premium: false },
+  { id: "search", label: "Cerca", icon: Icons.search, premium: false },
+  { id: "family", label: "Famiglia", icon: Icons.family, premium: true },
+  { id: "calendar", label: "Calendario", icon: Icons.calendar, premium: true },
+  { id: "documents", label: "Documenti", icon: Icons.document, premium: true },
+  { id: "settings", label: "Profilo", icon: Icons.user, premium: false },
 ] as const;
 
 // ═══════════════════════════════════════════════════════════════════════════════
@@ -84,9 +86,12 @@ const Header: React.FC<HeaderProps> = ({ theme, onToggleTheme, activeTab, onTabC
                 <button
                   key={tab.id}
                   onClick={() => onTabChange(tab.id)}
-                  className={`px-4 py-2.5 rounded-xl text-[10px] font-black uppercase tracking-widest transition-all ${activeTab === tab.id ? "bg-white dark:bg-slate-700 text-[#FF8235] dark:text-white shadow-sm ring-1 ring-slate-200 dark:ring-slate-600" : "text-slate-500 dark:text-slate-400 hover:text-[#FF8235] dark:hover:text-white"}`}
+                  className={`px-4 py-2.5 rounded-xl text-[10px] font-black uppercase tracking-widest transition-all flex items-center gap-1.5 ${activeTab === tab.id ? "bg-white dark:bg-slate-700 text-[#FF8235] dark:text-white shadow-sm ring-1 ring-slate-200 dark:ring-slate-600" : "text-slate-500 dark:text-slate-400 hover:text-[#FF8235] dark:hover:text-white"}`}
                 >
                   {tab.label}
+                  {tab.premium && !user?.isPremium && (
+                    <span className="px-1.5 py-0.5 bg-gradient-to-r from-yellow-400 to-orange-400 text-[7px] font-black text-yellow-900 rounded-full">PRO</span>
+                  )}
                 </button>
               ))}
             </nav>
@@ -168,9 +173,12 @@ const Header: React.FC<HeaderProps> = ({ theme, onToggleTheme, activeTab, onTabC
         {activeTab && (
           <div className="lg:hidden border-t border-slate-100 dark:border-slate-800 flex justify-around p-2 bg-white dark:bg-slate-900">
             {TABS.map((tab) => (
-              <button key={tab.id} onClick={() => onTabChange(tab.id)} className={`flex flex-col items-center flex-1 py-2 rounded-xl transition-all ${activeTab === tab.id ? "text-[#FF8235]" : "text-slate-400 dark:text-slate-500"}`}>
+              <button key={tab.id} onClick={() => onTabChange(tab.id)} className={`flex flex-col items-center flex-1 py-2 rounded-xl transition-all relative ${activeTab === tab.id ? "text-[#FF8235]" : "text-slate-400 dark:text-slate-500"}`}>
                 <div className={`p-1 rounded-lg ${activeTab === tab.id ? "bg-orange-50 dark:bg-orange-900/20" : ""}`}>
                   <Icon path={tab.icon} />
+                  {tab.premium && !user?.isPremium && (
+                    <span className="absolute -top-0.5 -right-0.5 px-1 py-0.5 bg-gradient-to-r from-yellow-400 to-orange-400 text-[6px] font-black text-yellow-900 rounded-full leading-none">PRO</span>
+                  )}
                 </div>
                 <span className="text-[9px] font-black uppercase tracking-tighter mt-1">{tab.label}</span>
               </button>

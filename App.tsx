@@ -20,6 +20,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import PageTransition from "./components/PageTransition";
 import AIChatWidget from "./components/Chat/AIChatWidget";
 import SavedBonusesView from "./components/SavedBonusesView";
+import FamilyModeView from "./components/FamilyModeView";
 
 // ═══════════════════════════════════════════════════════════════════════════════
 // COSTANTI - Chiavi per localStorage e configurazioni globali
@@ -124,6 +125,10 @@ const App: React.FC = () => {
   const [showPaymentSuccessModal, setShowPaymentSuccessModal] = useState(false);
   const [theme, setTheme] = useState<"light" | "dark">(getStoredTheme);
   const [pendingPremiumUpgrade, setPendingPremiumUpgrade] = useState(() => storage.get(PENDING_PREMIUM_KEY) === "true");
+  const [isProcessingPayment, setIsProcessingPayment] = useState(() => {
+    const params = new URLSearchParams(window.location.search);
+    return params.get('payment') === 'success' || !!params.get('session_id');
+  });
 
   const { user, updateUser, isLoading, logout } = useAuth();
   const initialLoadDone = useRef(false);
@@ -148,25 +153,79 @@ const App: React.FC = () => {
     const handlePaymentSuccess = async () => {
       const params = new URLSearchParams(window.location.search);
       const paymentStatus = params.get("payment");
+      const sessionId = params.get("session_id");
       const isPending = paymentStatus === "success" || pendingPremiumUpgrade;
       
       // Gestione pagamento annullato
       if (paymentStatus === "cancel") {
         window.history.replaceState({}, "", window.location.pathname);
+        setIsProcessingPayment(false);
         return;
       }
       
-      if (!isPending) return;
+      if (!isPending) {
+        setIsProcessingPayment(false);
+        return;
+      }
       
-      // Salva flag e pulisci URL se nuovo pagamento
-      if (paymentStatus === "success") {
+      // Aspetta che l'utente sia caricato
+      if (isLoading) return;
+      
+      // Se abbiamo una session_id E un utente, verifica lato server
+      if (sessionId && user) {
+        try {
+          const response = await fetch('/.netlify/functions/verify-payment', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ sessionId }),
+          });
+          
+          const result = await response.json();
+          console.log('Verify payment result:', result);
+          
+          if (result.success) {
+            // Pulisci URL
+            window.history.replaceState({}, "", window.location.pathname);
+            // Aggiorna cache locale con isPremium = true
+            const updatedUser = { ...user, isPremium: true };
+            localStorage.setItem(`user_profile_${user.id}`, JSON.stringify(updatedUser));
+            updateUser?.(updatedUser);
+            
+            // Naviga alla dashboard con i dati utente
+            if (updatedUser.profile) {
+              const results = calculateDeterministicMatches(updatedUser.profile, MOCK_BONUSES);
+              setHistory([{ type: "dashboard", profile: updatedUser.profile, results }]);
+              setHistoryIndex(0);
+              initialLoadDone.current = true;
+            } else {
+              setHistory([{ type: "dashboard", profile: undefined as any, results: [] }]);
+              setHistoryIndex(0);
+            }
+            
+            // Mostra modal successo
+            setShowPaymentSuccessModal(true);
+            storage.remove(PENDING_PREMIUM_KEY);
+            setPendingPremiumUpgrade(false);
+            setIsProcessingPayment(false);
+            return;
+          }
+        } catch (err) {
+          console.error("Errore verifica pagamento:", err);
+        }
+      }
+      
+      // Salva flag e pulisci URL se nuovo pagamento (fallback senza sessionId)
+      if (paymentStatus === "success" && !sessionId) {
         storage.set(PENDING_PREMIUM_KEY, "true");
         window.history.replaceState({}, "", window.location.pathname);
       }
       
-      if (isLoading || !user?.id) return;
+      if (!user?.id) {
+        // Utente non ancora caricato, aspetta
+        return;
+      }
       
-      // Aggiorna database Supabase con stato premium
+      // Fallback: Aggiorna database Supabase con stato premium dal client
       try {
         let result = await supabase.from("profiles").update({ tipo_utente: "premium", is_premium: true }).eq("id", user.id).select();
         // Fallback: prova con email se id non trova righe
@@ -176,7 +235,16 @@ const App: React.FC = () => {
         if (!result.error && result.data?.length) {
           storage.remove(PENDING_PREMIUM_KEY);
           setPendingPremiumUpgrade(false);
-          updateUser?.({ ...user, isPremium: true });
+          const updatedUser = { ...user, isPremium: true };
+          localStorage.setItem(`user_profile_${user.id}`, JSON.stringify(updatedUser));
+          updateUser?.(updatedUser);
+          // Naviga alla dashboard
+          if (updatedUser.profile) {
+            const results = calculateDeterministicMatches(updatedUser.profile, MOCK_BONUSES);
+            setHistory([{ type: "dashboard", profile: updatedUser.profile, results }]);
+            setHistoryIndex(0);
+            initialLoadDone.current = true;
+          }
         }
       } catch (err) {
         console.error("Errore aggiornamento premium:", err);
@@ -186,10 +254,11 @@ const App: React.FC = () => {
       setShowPaymentSuccessModal(true);
       storage.remove(PENDING_PREMIUM_KEY);
       setPendingPremiumUpgrade(false);
+      setIsProcessingPayment(false);
     };
     
     handlePaymentSuccess();
-  }, [user?.id, updateUser, isLoading, pendingPremiumUpgrade]);
+  }, [user, updateUser, isLoading, pendingPremiumUpgrade]);
 
   const toggleTheme = useCallback(() => setTheme((prev) => (prev === "light" ? "dark" : "light")), []);
 
@@ -303,9 +372,9 @@ const App: React.FC = () => {
   }, [user, updateUser, navigateTo]);
 
   /** Cambia tab con controllo accesso premium */
-  const handleTabChange = useCallback((tab: "dashboard" | "search" | "settings" | "calendar" | "documents") => {
-    // Gate per funzionalità premium
-    if ((tab === "calendar" || tab === "documents") && !user?.isPremium) {
+  const handleTabChange = useCallback((tab: "dashboard" | "search" | "settings" | "calendar" | "documents" | "family") => {
+    // Gate per funzionalità premium (family, calendar, documents)
+    if ((tab === "calendar" || tab === "documents" || tab === "family") && !user?.isPremium) {
       handleShowPremium();
       return;
     }
@@ -360,8 +429,8 @@ const App: React.FC = () => {
   /** Calcola tab attiva per l'header basandosi sulla vista corrente */
   const activeTabForHeader = useMemo(() => {
     const { type } = currentView;
-    const validTabs = ["dashboard", "search", "settings", "calendar", "documents"];
-    if (validTabs.includes(type)) return type as "dashboard" | "search" | "settings" | "calendar" | "documents";
+    const validTabs = ["dashboard", "search", "settings", "calendar", "documents", "family"];
+    if (validTabs.includes(type)) return type as "dashboard" | "search" | "settings" | "calendar" | "documents" | "family";
     if (type === "detail" && "prevView" in currentView) return currentView.prevView === "search" ? "search" : "dashboard";
     return undefined;
   }, [currentView]);
@@ -374,7 +443,7 @@ const App: React.FC = () => {
   return (
     <div className="min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 flex flex-col transition-colors duration-300">
       {/* Modals */}
-      <PaymentModal isOpen={showPaymentModal} onClose={() => setShowPaymentModal(false)} price="9.99€" />
+      <PaymentModal isOpen={showPaymentModal} onClose={() => setShowPaymentModal(false)} price="24,99€" />
       <PaymentSuccessModal isOpen={showPaymentSuccessModal} onClose={() => setShowPaymentSuccessModal(false)} />
 
       {/* Banner Premium - Visibile solo per utenti non premium */}
@@ -410,14 +479,16 @@ const App: React.FC = () => {
           </motion.div>
         )}
 
-        {/* Stato di caricamento durante analisi AI */}
-        {isAnalyzing ? (
+        {/* Stato di caricamento durante analisi AI o elaborazione pagamento */}
+        {isAnalyzing || isProcessingPayment ? (
           <div className="flex flex-col items-center justify-center py-24">
             <div className="relative mb-12">
               <div className="animate-ping absolute inset-0 rounded-full bg-blue-500 opacity-20" />
               <div className="animate-spin rounded-full h-28 w-28 border-t-4 border-blue-600 border-r-transparent border-l-transparent border-b-4 relative" />
             </div>
-            <h3 className="text-4xl font-black text-slate-800 dark:text-white tracking-tighter mb-4 text-center">Analisi in corso...</h3>
+            <h3 className="text-4xl font-black text-slate-800 dark:text-white tracking-tighter mb-4 text-center">
+              {isProcessingPayment ? "Elaborazione pagamento..." : "Analisi in corso..."}
+            </h3>
           </div>
         ) : (
           <AnimatePresence mode="wait">
@@ -458,6 +529,13 @@ const App: React.FC = () => {
             {currentView.type === "saved" && viewData && (
               <PageTransition key="saved">
                 <SavedBonusesView bonuses={MOCK_BONUSES} results={viewData.results} onSelectBonus={handleSelectBonus} onUpgrade={handleShowPremium} />
+              </PageTransition>
+            )}
+
+            {/* Vista Family Mode - Bonus per nucleo familiare */}
+            {currentView.type === "family" && viewData && (
+              <PageTransition key="family">
+                <FamilyModeView profile={viewData.profile} bonuses={MOCK_BONUSES} results={viewData.results} isPremium={user?.isPremium} onUpgrade={handleShowPremium} onSelectBonus={handleSelectBonus} />
               </PageTransition>
             )}
 

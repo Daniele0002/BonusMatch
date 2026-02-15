@@ -20,6 +20,8 @@
         "npm:@tailwindcss/postcss@^4.1.18",
         "npm:@tailwindcss/vite@^4.1.18",
         "npm:@types/node@^22.14.0",
+        "npm:@types/react-dom@^19.2.3",
+        "npm:@types/react@^19.2.13",
         "npm:@vitejs/plugin-react@5",
         "npm:autoprefixer@^10.4.23",
         "npm:framer-motion@^12.26.2",
