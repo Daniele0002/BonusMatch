@@ -19,6 +19,24 @@ const staggerContainer: Variants = {
   visible: { opacity: 1, transition: { staggerChildren: 0.1 } }
 };
 
+/** Animazione lettera per lettera del titolo */
+const AnimatedText: React.FC<{ text: string; className?: string; keyPrefix: string }> = ({ text, className = "", keyPrefix }) => (
+  <>
+    {text.split("").map((char, i) => (
+      <motion.span
+        key={`${keyPrefix}-${i}`}
+        className={className}
+        variants={{
+          hidden: { opacity: 0, y: 20 },
+          visible: { opacity: 1, y: 0, transition: { type: "spring", damping: 12, stiffness: 200 } },
+        }}
+      >
+        {char}
+      </motion.span>
+    ))}
+  </>
+);
+
 // Icone SVG
 const Icons = {
   search: <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />,
@@ -74,9 +92,14 @@ const FAQ = [
 
 const LandingPage: React.FC<LandingPageProps> = ({ onSubmit, onShowPremium }) => {
   const formRef = useRef<HTMLDivElement>(null);
+  const premiumRef = useRef<HTMLDivElement>(null);
 
   const scrollToForm = () => {
     formRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const scrollToPremium = () => {
+    premiumRef.current?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -103,11 +126,16 @@ const LandingPage: React.FC<LandingPageProps> = ({ onSubmit, onShowPremium }) =>
               Oltre 100 bonus analizzati
             </span>
 
-            <h1 className="text-5xl md:text-7xl font-black text-slate-900 dark:text-white tracking-tighter leading-none mb-6">
-              I tuoi <span className="text-blue-600">Bonus</span>.
+            <motion.h1
+              initial="hidden"
+              animate="visible"
+              variants={{ hidden: { opacity: 1 }, visible: { opacity: 1, transition: { delay: 0.2, staggerChildren: 0.05 } } }}
+              className="text-5xl md:text-7xl font-black text-slate-900 dark:text-white tracking-tighter leading-none mb-6"
+            >
+              <AnimatedText text="I tuoi Bonus." keyPrefix="part1" />
               <br />
-              Semplificati.
-            </h1>
+              <AnimatedText text="Semplificati." keyPrefix="part2" className="text-blue-600 inline-block" />
+            </motion.h1>
 
             <p className="text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed">
               Scopri in pochi secondi tutti i bonus statali e regionali a cui hai diritto. 
@@ -122,7 +150,7 @@ const LandingPage: React.FC<LandingPageProps> = ({ onSubmit, onShowPremium }) =>
                 Scopri i tuoi Bonus
               </button>
               <button
-                onClick={onShowPremium}
+                onClick={scrollToPremium}
                 className="px-8 py-4 bg-gradient-to-r from-yellow-400 to-orange-500 text-yellow-950 font-bold rounded-2xl text-lg shadow-xl hover:shadow-2xl transition-all hover:scale-105"
               >
                 Prova Premium
@@ -261,7 +289,7 @@ const LandingPage: React.FC<LandingPageProps> = ({ onSubmit, onShowPremium }) =>
       </section>
 
       {/* PREMIUM SECTION */}
-      <section className="py-20 bg-gradient-to-br from-slate-900 to-slate-800 text-white">
+      <section ref={premiumRef} className="py-20 bg-gradient-to-br from-slate-900 to-slate-800 text-white">
         <div className="max-w-6xl mx-auto px-4">
           <motion.div
             initial="hidden"

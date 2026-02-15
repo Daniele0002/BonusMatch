@@ -72,7 +72,7 @@ const Header: React.FC<HeaderProps> = ({ theme, onToggleTheme, activeTab, onTabC
           {/* Logo & Brand */}
           <button onClick={onLogoClick} className="flex items-center gap-3 group transition-all active:scale-95 outline-none" aria-label="Torna alla Home">
             <div className="flex flex-col text-left">
-              <h1 className="text-xl md:text-2xl text-slate-800 dark:text-white uppercase leading-none group-hover:text-[#FF8235] transition-colors" style={{ fontFamily: '"Special Gothic Expanded One", sans-serif' }}>
+              <h1 className="text-xl md:text-xl text-slate-800 dark:text-white uppercase leading-none group-hover:text-[#FF8235] transition-colors" style={{ fontFamily: '"Special Gothic Expanded One", sans-serif' }}>
                 Bonus Match
               </h1>
               <span className="text-[9px] font-black text-[#263D4D] dark:text-slate-400 uppercase tracking-[0.2em] leading-none mt-1 hidden xs:block">Smart Finder</span>
