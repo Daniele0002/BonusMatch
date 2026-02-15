@@ -21,6 +21,7 @@ import PageTransition from "./components/PageTransition";
 import AIChatWidget from "./components/Chat/AIChatWidget";
 import SavedBonusesView from "./components/SavedBonusesView";
 import FamilyModeView from "./components/FamilyModeView";
+import LandingPage from "./components/LandingPage";
 
 // ═══════════════════════════════════════════════════════════════════════════════
 // COSTANTI - Chiavi per localStorage e configurazioni globali
@@ -492,22 +493,10 @@ const App: React.FC = () => {
           </div>
         ) : (
           <AnimatePresence mode="wait">
-            {/* Vista Form - Compilazione profilo iniziale */}
+            {/* Vista Landing - Form + sezioni informative */}
             {currentView.type === "form" && (
-              <PageTransition key="form" className="max-w-3xl mx-auto">
-                <div className="text-center mb-12">
-                  <motion.h2
-                    initial="hidden"
-                    animate="visible"
-                    variants={{ hidden: { opacity: 1 }, visible: { opacity: 1, transition: { delay: 0.2, staggerChildren: 0.05 } } }}
-                    className="text-5xl md:text-6xl font-black text-slate-800 dark:text-white mb-8 tracking-tighter leading-none"
-                  >
-                    <AnimatedText text="I tuoi Bonus." keyPrefix="part1" />
-                    <br />
-                    <AnimatedText text="Semplificati." keyPrefix="part2" className="text-blue-600 inline-block" />
-                  </motion.h2>
-                </div>
-                <ProfileForm onSubmit={handleProfileSubmit} />
+              <PageTransition key="form">
+                <LandingPage onSubmit={handleProfileSubmit} onShowPremium={handleShowPremium} />
               </PageTransition>
             )}
 

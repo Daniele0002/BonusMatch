@@ -12,7 +12,7 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
           <div>
             <div className="flex items-center gap-1.5 mb-4">
               <div className="h-6 w-6 rounded-lg flex items-center justify-center">
-                <img src="assets/logo sfondo.png" alt="BonusMatch Logo" />
+                <img src="/logo sfondo.png" alt="BonusMatch Logo" />
               </div>
               <span className="text-base text-slate-900 dark:text-white uppercase" style={{ fontFamily: '"Special Gothic Expanded One", sans-serif' }}>
                 Bonus Match
