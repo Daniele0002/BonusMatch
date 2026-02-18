@@ -320,14 +320,21 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({
   };
 
   const logout = async () => {
-    // Pulisce la cache locale prima del logout
-    if (user?.id) {
-      localStorage.removeItem(`user_profile_${user.id}`);
-      localStorage.removeItem('cached_user_id');
-    }
-    await supabase.auth.signOut();
+    // PRIMA: Resetta lo stato immediatamente (UI istantanea)
+    const userId = user?.id;
     setUser(null);
     setSavedBonusIds([]);
+    
+    // POI: Pulisce cache e fa signOut in background (non blocca l'UI)
+    if (userId) {
+      localStorage.removeItem(`user_profile_${userId}`);
+      localStorage.removeItem('cached_user_id');
+    }
+    
+    // SignOut asincrono in background
+    supabase.auth.signOut().catch(() => {
+      // Ignora errori di signOut, l'utente è già disconnesso localmente
+    });
   };
 
   const toggleSaveBonus = async (bonusId: string) => {

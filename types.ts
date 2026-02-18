@@ -119,4 +119,5 @@ export type AppView =
   | { type: "login" }
   | { type: "register" }
   | { type: "post-register" }
-  | { type: "forgot-password" };
+  | { type: "forgot-password" }
+  | { type: "notFound" };

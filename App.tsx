@@ -22,6 +22,7 @@ import AIChatWidget from "./components/Chat/AIChatWidget";
 import SavedBonusesView from "./components/SavedBonusesView";
 import FamilyModeView from "./components/FamilyModeView";
 import LandingPage from "./components/LandingPage";
+import NotFound from "./components/NotFound";
 
 // ═══════════════════════════════════════════════════════════════════════════════
 // COSTANTI - Chiavi per localStorage e configurazioni globali
@@ -602,6 +603,13 @@ const App: React.FC = () => {
             {currentView.type === "post-register" && (
               <PageTransition key="post-register">
                 <PostRegistrationForm onComplete={handleProfileSubmit} />
+              </PageTransition>
+            )}
+
+            {/* Vista 404 - Pagina non trovata */}
+            {currentView.type === "notFound" && (
+              <PageTransition key="notFound">
+                <NotFound onGoHome={() => { setHistoryIndex(0); setHistory([{ type: "form" }]); }} />
               </PageTransition>
             )}
           </AnimatePresence>

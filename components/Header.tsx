@@ -52,7 +52,7 @@ const TABS = [
 // COMPONENTE HEADER
 // ═══════════════════════════════════════════════════════════════════════════════
 const Header: React.FC<HeaderProps> = ({ theme, onToggleTheme, activeTab, onTabChange, onLogoClick, onLogin, onLogout, onShowPremium }) => {
-  const { user, logout, isAuthenticated } = useAuth();
+  const { user, isAuthenticated } = useAuth();
   const [showUserMenu, setShowUserMenu] = useState(false);
   const [showAccountModal, setShowAccountModal] = useState(false);
 
@@ -140,7 +140,7 @@ const Header: React.FC<HeaderProps> = ({ theme, onToggleTheme, activeTab, onTabC
                         {item.label}
                       </button>
                     ))}
-                    <button onClick={handleMenuAction(() => { logout(); onLogout(); })} className="w-full text-left px-4 py-2 text-xs font-bold text-red-500 hover:bg-red-50 dark:hover:bg-red-900/20 transition-colors flex items-center gap-2">
+                    <button onClick={handleMenuAction(() => { onLogout(); })} className="w-full text-left px-4 py-2 text-xs font-bold text-red-500 hover:bg-red-50 dark:hover:bg-red-900/20 transition-colors flex items-center gap-2">
                       <Icon path={Icons.logout} className="h-4 w-4" />
                       Disconnetti
                     </button>
