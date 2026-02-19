@@ -1,0 +1,29 @@
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+/* UI Compatta - Riduzione zoom generale */
+html {
+  font-size: 14px; /* Base ridotta da 16px a 14px */
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1024px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+/* Override per elementi troppo grandi */
+.compact-ui {
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.25rem;
+  --radius-2xl: 1.5rem;
+  --radius-3xl: 2rem;
+}

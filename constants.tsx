@@ -99,7 +99,7 @@ export const MOCK_BONUSES: Bonus[] = [
       "Bonifici parlanti",
       "Eventuali autorizzazioni edilizie",
     ],
-    linkPortale: null,
+    linkPortale: "https://www.agenziaentrate.gov.it/portale/aree-tematiche/casa/agevolazioni/agevolazioni-per-le-ristrutturazioni-edilizie",
     tempistica:
       "Detrazione in 10 anni",
     procedura: [
@@ -126,7 +126,7 @@ export const MOCK_BONUSES: Bonus[] = [
       "Eventuale documentazione tecnica/asseverazioni",
       "Documentazione immobile",
     ],
-    linkPortale: null,
+    linkPortale: "https://bonusfiscali.enea.it/",
     tempistica:
       "Detrazione in 10 anni",
     procedura: [
@@ -152,7 +152,7 @@ export const MOCK_BONUSES: Bonus[] = [
       "Progetti e certificazioni tecniche",
       "Documentazione immobile",
     ],
-    linkPortale: null,
+    linkPortale: "https://www.agenziaentrate.gov.it/portale/aree-tematiche/casa/agevolazioni/sisma-bonus",
     tempistica:
       "Detrazione in 10 anni",
     procedura: [
@@ -203,8 +203,7 @@ export const MOCK_BONUSES: Bonus[] = [
       "Interventi su balconi, terrazzi o giardini condominiali/privati",
     ],
     documenti: ["Bonifici ordinari", "Fatture dei lavori effettuati"],
-    linkPortale:
-      "https://www.agenziaentrate.gov.it/portale/web/guest/schede/agevolazioni/bonus-verde/infogen-bonus-verde-cittadini",
+    linkPortale:"https://www.agenziaentrate.gov.it/portale/aree-tematiche/casa/agevolazioni/agevolazioni-risparmio-energetico",
     tempistica: "Detrazione in 10 anni",
     procedura: [
       "Affida i lavori di sistemazione a ditte specializzate.",
@@ -226,7 +225,7 @@ export const MOCK_BONUSES: Bonus[] = [
     requisiti: ["Persone fisiche o esercenti attività"],
     documenti: ["Fattura", "Comunicazione all'Enea (se richiesto)", "Bonifico"],
     linkPortale:
-      "https://www.agenziaentrate.gov.it/portale/web/guest/bonus-acqua-potabile-comunicazione-delle-spese",
+      "https://www.agenziaentrate.gov.it/portale/bonus-acqua-potabile/infogen-bonus-acqua-potabile",
     tempistica: "Credito d'imposta",
     procedura: [
       "Acquista e installa il sistema di filtraggio.",
@@ -251,7 +250,7 @@ export const MOCK_BONUSES: Bonus[] = [
       "Residenza diversa dai genitori",
     ],
     documenti: ["Contratto di affitto registrato", "Certificato di residenza"],
-    linkPortale: "https://www.agenziaentrate.gov.it/",
+    linkPortale: "https://www.agenziaentrate.gov.it/portale/aree-tematiche/casa/agevolazioni/agevolazioni-per-acquisto-della-prima-casa",
     tempistica: "In sede di dichiarazione redditi (730)",
     procedura: [
       "Registra regolarmente il contratto di locazione.",
@@ -272,7 +271,7 @@ export const MOCK_BONUSES: Bonus[] = [
     difficolta: "media",
     requisiti: ["Acquisto di impianti ad alta efficienza energetica"],
     documenti: ["Fattura", "Bonifico parlante", "Dati tecnici dell'impianto"],
-    linkPortale: "https://www.agenziaentrate.gov.it/",
+    linkPortale: "https://www.agenziaentrate.gov.it/portale/aree-tematiche/casa/agevolazioni/agevolazioni-risparmio-energetico",
     tempistica: "Detrazione 50-65% in 10 anni",
     procedura: [
       "Scegli un condizionatore certificato ad alta efficienza energetica.",
@@ -297,7 +296,7 @@ export const MOCK_BONUSES: Bonus[] = [
       "ISEE inferiore a 8.230,81 euro",
     ],
     documenti: ["Documento di identità", "Codice fiscale", "Attestazione ISEE"],
-    linkPortale: null,
+    linkPortale: "https://www.inps.it/it/it/dettaglio-approfondimento.schede-informative.la-carta-acquisti.html",
     tempistica: "Contributo periodico caricato sulla carta",
     procedura: [
       "Compila i moduli disponibili presso gli Uffici postali o sui siti indicati.",
@@ -318,7 +317,7 @@ export const MOCK_BONUSES: Bonus[] = [
       "Nuclei selezionati da INPS e Comuni secondo criteri stabiliti",
     ],
     documenti: ["Documento di identità", "Codice fiscale"],
-    linkPortale: null,
+    linkPortale: "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2025.09.carta-dedicata-a-te-2025-istruzioni.html",
     tempistica: "Contributo da 500 euro per nucleo familiare",
     procedura: [
       "Attendi la comunicazione di assegnazione da INPS/Comune.",
@@ -346,7 +345,7 @@ export const MOCK_BONUSES: Bonus[] = [
       "Codice fiscale dei figli",
       "Eventuale documentazione lavorativa richiesta",
     ],
-    linkPortale: null,
+    linkPortale: "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.nuovo-bonus-mamme.html",
     tempistica: "Fino a 720 euro annui",
     procedura: [
       "Richiedi il beneficio tramite il datore di lavoro.",
@@ -372,8 +371,7 @@ export const MOCK_BONUSES: Bonus[] = [
       "Certificazione medica",
       "Documentazione lavorativa",
     ],
-    linkPortale:
-      "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.58989.bonus-ai-lavoratori-fragili---indennit-una-tantum.html",
+    linkPortale: "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.58989.bonus-ai-lavoratori-fragili---indennit-una-tantum.html",
     tempistica: "Una tantum, erogata dopo l’istruttoria INPS",
     procedura: [
       "Accedi all’area riservata del portale INPS con SPID, CIE o CNS.",
@@ -389,7 +387,7 @@ export const MOCK_BONUSES: Bonus[] = [
     descrizione:
       "Rimborso dell'80% delle spese sostenute per conseguire la patente e l'abilitazione professionale CQC.",
     valoreEsimato: 2500,
-    status: "attivo",
+    status: "scaduto",
     scadenza: "2026-12-31",
     difficolta: "media",
     requisiti: ["Età tra 18 e 35 anni", "Settore dell'autotrasporto"],
@@ -397,7 +395,7 @@ export const MOCK_BONUSES: Bonus[] = [
       "Fatture delle autoscuole",
       "Contratto di lavoro (per rimborso finale)",
     ],
-    linkPortale: "https://patentidriver.mit.gov.it/bonus-patente",
+    linkPortale: "https://patentiautotrasporto.mit.gov.it/bonuspatente/#/beneficiario/homePage",
     tempistica: "Voucher prenotabile",
     procedura: [
       "Registrati sul portale del Ministero delle Infrastrutture.",
@@ -424,8 +422,7 @@ export const MOCK_BONUSES: Bonus[] = [
       "Patto di Attivazione Digitale",
       "Attestazione di frequenza corsi",
     ],
-    linkPortale:
-      "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.supporto-per-la-formazione-e-il-lavoro-sfl.html",
+    linkPortale: "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.supporto-per-la-formazione-e-il-lavoro-sfl-.html",
     tempistica: "Mensile (durata max 12 mesi)",
     procedura: [
       "Presenta la domanda tramite il sito INPS.",
@@ -468,7 +465,7 @@ export const MOCK_BONUSES: Bonus[] = [
     descrizione:
       "Contributo alle famiglie per iscrizione dei figli a scuole paritarie.",
     valoreEsimato: 1500,
-    status: "attivo",
+    status: "in arrivo",
     difficolta: "media",
     requisiti: [
       "Iscrizione a scuola paritaria (medie o primo biennio superiori)",
@@ -479,7 +476,7 @@ export const MOCK_BONUSES: Bonus[] = [
       "Codice fiscale del figlio",
       "Attestazione ISEE",
     ],
-    linkPortale: null,
+    linkPortale: "https://www.mim.gov.it/contributi",
     tempistica: "Contributo una tantum da 1.500 euro",
     procedura: [
       "Presenta domanda online tramite il portale del MIM.",
@@ -492,7 +489,7 @@ export const MOCK_BONUSES: Bonus[] = [
   {
     id: "b20",
     titolo:
-      "Contributo per sostenere le spese relative a sessioni di psicoterapia - Bonus psicologo",
+      "Bonus psicologo",
     descrizione:
       "Sostegno economico per percorsi psicoterapeutici rivolto a persone che hanno avuto ripercussioni psicologiche, anche a causa della pandemia.",
     valoreEsimato: null,
@@ -631,7 +628,7 @@ export const MOCK_BONUSES: Bonus[] = [
     descrizione:
       "Sostegno economico mensile alle famiglie per ogni figlio a carico fino ai 21 anni (senza limiti per disabili).",
     valoreEsimato: 2400,
-    status: "attivo",
+    status: "scaduto",
     difficolta: "bassa",
     requisiti: [
       "Figli a carico",
@@ -643,8 +640,7 @@ export const MOCK_BONUSES: Bonus[] = [
       "IBAN per accredito",
       "Codici fiscali figli",
     ],
-    linkPortale:
-      "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.assegno-unico-e-universale-per-i-figli-a-carico.html",
+    linkPortale: "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.assegno-unico-e-universale-per-i-figli-a-carico-55984.assegno-unico-e-universale-per-i-figli-a-carico.html",
     tempistica: "Mensile",
     procedura: [
       "Compila la DSU per ottenere l'ISEE aggiornato.",
@@ -723,6 +719,7 @@ export const MOCK_BONUSES: Bonus[] = [
     scadenza: "2024-12-31",
     difficolta: "bassa",
     requisiti: [
+      "Dipende dal comune di residenza",
       "Reddito complessivo 2023 sotto 20.000€",
       "Richiesta tramite portale Ministero",
     ],
@@ -730,6 +727,7 @@ export const MOCK_BONUSES: Bonus[] = [
     linkPortale: "https://bonustrasporti.lavoro.gov.it/",
     tempistica: "Immediata (voucher)",
     procedura: [
+      "Controlla il comune di residenza per verificare l'adesione al Bonus Trasporti.",
       "Accedi al portale ufficiale tramite SPID o CIE.",
       "Inserisci i dati del beneficiario e l'importo richiesto.",
       "Scegli il gestore del servizio di trasporto.",
@@ -780,7 +778,7 @@ export const MOCK_BONUSES: Bonus[] = [
       "Documentazione apertura partita IVA",
       "Attestazione stato di disoccupazione",
     ],
-    linkPortale: "https://www.inps.it/",
+    linkPortale: "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.incentivo-decreto-coesione-domanda.html",
     tempistica: "Erogazione mensile di 500 euro per 36 mesi",
     procedura: [
       "Accedi alla piattaforma telematica INPS con SPID, CIE o CNS.",

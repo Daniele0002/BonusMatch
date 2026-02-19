@@ -1,6 +1,7 @@
 import React, { useMemo, useEffect, useState } from "react";
 import { Bonus, MatchResult } from "../types";
 import BonusCard from "./BonusCard";
+import ShareButtons from "./ShareButtons";
 import { useAuth } from "../context/AuthContext";
 
 // ═══════════════════════════════════════════════════════════════════════════════
@@ -178,6 +179,14 @@ const BonusDetailView: React.FC<BonusDetailViewProps> = ({ bonus, allBonuses, al
                   Alta Probabilità di Ottenimento
                 </div>
               )}
+              {/* Social Share */}
+              <ShareButtons
+                title={bonus.titolo}
+                description={bonus.descrizione}
+                url={`https://bonusmatch.it/bonus/${bonus.titolo.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9\s-]/g, '').replace(/\s+/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '')}/`}
+                compact
+                className="mt-2"
+              />
             </div>
           </div>
 

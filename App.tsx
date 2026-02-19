@@ -134,6 +134,7 @@ const App: React.FC = () => {
 
   const { user, updateUser, isLoading, logout } = useAuth();
   const initialLoadDone = useRef(false);
+  const scrollPositionRef = useRef(0);
   const currentView = history[historyIndex];
 
   // Helper memoizzato per verificare se la view ha profile e results
@@ -338,9 +339,15 @@ const App: React.FC = () => {
 
   /** Torna alla vista precedente nella history */
   const goBack = useCallback(() => {
+    const wasDetailView = currentView.type === "detail";
     setHistoryIndex((prev) => Math.max(0, prev - 1));
-    window.scrollTo(0, 0);
-  }, []);
+    if (wasDetailView) {
+      // Ripristina posizione scroll quando si torna dalla vista dettaglio
+      setTimeout(() => window.scrollTo(0, scrollPositionRef.current), 0);
+    } else {
+      window.scrollTo(0, 0);
+    }
+  }, [currentView.type]);
 
   // ─────────────────────────────────────────────────────────────────────────────
   // BUSINESS LOGIC HANDLERS - Gestione profilo, bonus, autenticazione
@@ -409,6 +416,7 @@ const App: React.FC = () => {
   /** Seleziona un bonus per vedere i dettagli */
   const handleSelectBonus = useCallback((id: string) => {
     if (!viewData) return;
+    scrollPositionRef.current = window.scrollY; // Salva posizione scroll
     const prevView = currentView.type === "search" ? "search" : "dashboard";
     navigateTo({ type: "detail", bonusId: id, profile: viewData.profile, results: viewData.results, prevView });
   }, [currentView.type, viewData, navigateTo]);

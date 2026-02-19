@@ -1,0 +1,1 @@
+self.__SSG_MANIFEST=new Set(["\u002Fbonus\u002F[slug]","\u002Fcategoria\u002F[categoria]"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()
