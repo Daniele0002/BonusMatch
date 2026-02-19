@@ -1,0 +1,16 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/categoria/layout,_N_T_/categoria/[categoria]/layout,_N_T_/categoria/[categoria]/page,_N_T_/categoria/sostegno-al-reddito/"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/categoria/$d$categoria/__PAGE__",
+    "/categoria/$d$categoria",
+    "/categoria",
+    "/_index",
+    "/_head"
+  ]
+}
