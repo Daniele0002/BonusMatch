@@ -1,3 +1,0 @@
-:HL["/_next/static/chunks/4ca8fd88c661ca97.css","style"]
-:HL["https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Special+Gothic+Expanded+One&display=swap","style"]
-0:{"buildId":"aM8jbdWMhRrgsDKArs3GY","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"bonus","paramType":null,"paramKey":"bonus","hasRuntimePrefetch":false,"slots":{"children":{"name":"slug","paramType":"d","paramKey":"bonus-sociale-gas","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}

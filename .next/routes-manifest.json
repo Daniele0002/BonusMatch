@@ -34,24 +34,7 @@
     "afterFiles": [],
     "fallback": []
   },
-  "dynamicRoutes": [
-    {
-      "page": "/bonus/[slug]",
-      "regex": "^/bonus/([^/]+?)(?:/)?$",
-      "routeKeys": {
-        "nxtPslug": "nxtPslug"
-      },
-      "namedRegex": "^/bonus/(?<nxtPslug>[^/]+?)(?:/)?$"
-    },
-    {
-      "page": "/categoria/[categoria]",
-      "regex": "^/categoria/([^/]+?)(?:/)?$",
-      "routeKeys": {
-        "nxtPcategoria": "nxtPcategoria"
-      },
-      "namedRegex": "^/categoria/(?<nxtPcategoria>[^/]+?)(?:/)?$"
-    }
-  ],
+  "dynamicRoutes": [],
   "staticRoutes": [
     {
       "page": "/",
@@ -70,18 +53,6 @@
       "regex": "^/_not\\-found(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/_not\\-found(?:/)?$"
-    },
-    {
-      "page": "/robots.txt",
-      "regex": "^/robots\\.txt(?:/)?$",
-      "routeKeys": {},
-      "namedRegex": "^/robots\\.txt(?:/)?$"
-    },
-    {
-      "page": "/sitemap.xml",
-      "regex": "^/sitemap\\.xml(?:/)?$",
-      "routeKeys": {},
-      "namedRegex": "^/sitemap\\.xml(?:/)?$"
     }
   ],
   "dataRoutes": [],
