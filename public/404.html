@@ -1,96 +1,120 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="it">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>404 - Pagina non trovata | Bonus Match</title>
-  <link rel="icon" href="/logo sfondo.png" type="image/png">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      min-height: 100vh;
-      background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 50%, #f1f5f9 100%);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 1rem;
-    }
-    .container {
-      text-align: center;
-      max-width: 500px;
-    }
-    .error-code {
-      font-size: clamp(100px, 20vw, 180px);
-      font-weight: 800;
-      background: linear-gradient(135deg, #3b82f6, #6366f1, #8b5cf6);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      line-height: 1;
-      margin-bottom: 1rem;
-    }
-    h1 {
-      color: #1e293b;
-      font-size: 1.75rem;
-      font-weight: 700;
-      margin-bottom: 1rem;
-    }
-    p {
-      color: #64748b;
-      font-size: 1.125rem;
-      margin-bottom: 2rem;
-      line-height: 1.6;
-    }
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      padding: 1rem 2rem;
-      background: linear-gradient(135deg, #3b82f6, #6366f1);
-      color: white;
-      text-decoration: none;
-      font-weight: 600;
-      border-radius: 1rem;
-      box-shadow: 0 10px 30px -10px rgba(99, 102, 241, 0.4);
-      transition: all 0.3s ease;
-    }
-    .btn:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 15px 40px -10px rgba(99, 102, 241, 0.5);
-    }
-    .btn svg {
-      width: 20px;
-      height: 20px;
-    }
-    @media (prefers-color-scheme: dark) {
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404 - Pagina non trovata | BonusMatch</title>
+    <link rel="icon" href="/logo sfondo.png" type="image/png" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
       body {
-        background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #0f172a 100%);
+        font-family:
+          "Inter",
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Roboto,
+          sans-serif;
+        min-height: 100vh;
+        background: linear-gradient(
+          135deg,
+          #f8fafc 0%,
+          #e0e7ff 50%,
+          #f1f5f9 100%
+        );
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+      }
+      .container {
+        text-align: center;
+        max-width: 500px;
+      }
+      .error-code {
+        font-size: clamp(100px, 20vw, 180px);
+        font-weight: 800;
+        background: linear-gradient(135deg, #3b82f6, #6366f1, #8b5cf6);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        line-height: 1;
+        margin-bottom: 1rem;
       }
       h1 {
-        color: #f1f5f9;
+        color: #1e293b;
+        font-size: 1.75rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
       }
       p {
-        color: #94a3b8;
+        color: #64748b;
+        font-size: 1.125rem;
+        margin-bottom: 2rem;
+        line-height: 1.6;
       }
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <div class="error-code">404</div>
-    <h1>Oops! Pagina non trovata</h1>
-    <p>La pagina che stai cercando non esiste o è stata spostata. Torna alla home per scoprire i bonus a cui hai diritto!</p>
-    <a href="/" class="btn">
-      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
-      </svg>
-      Torna alla Home
-    </a>
-  </div>
-</body>
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 1rem 2rem;
+        background: linear-gradient(135deg, #3b82f6, #6366f1);
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+        border-radius: 1rem;
+        box-shadow: 0 10px 30px -10px rgba(99, 102, 241, 0.4);
+        transition: all 0.3s ease;
+      }
+      .btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 15px 40px -10px rgba(99, 102, 241, 0.5);
+      }
+      .btn svg {
+        width: 20px;
+        height: 20px;
+      }
+      @media (prefers-color-scheme: dark) {
+        body {
+          background: linear-gradient(
+            135deg,
+            #0f172a 0%,
+            #1e1b4b 50%,
+            #0f172a 100%
+          );
+        }
+        h1 {
+          color: #f1f5f9;
+        }
+        p {
+          color: #94a3b8;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="error-code">404</div>
+      <h1>Oops! Pagina non trovata</h1>
+      <p>
+        La pagina che stai cercando non esiste o è stata spostata. Torna alla
+        home per scoprire i bonus a cui hai diritto!
+      </p>
+      <a href="/" class="btn">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+          />
+        </svg>
+        Torna alla Home
+      </a>
+    </div>
+  </body>
 </html>
