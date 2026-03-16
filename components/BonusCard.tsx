@@ -62,7 +62,7 @@ const ActionButton: React.FC<{
     className={`flex-1 py-2 rounded-xl font-bold text-xs transition-colors flex items-center justify-center gap-2 ${
       active
         ? `${activeColor} text-white shadow-lg`
-        : "bg-slate-50 dark:bg-slate-800 text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-700"
+        : "bg-slate-50 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700"
     }`}
   >
     <Icon d={icon} className={`h-4 w-4 ${active ? "fill-current" : ""}`} />
@@ -93,26 +93,48 @@ const BonusCard: React.FC<BonusCardProps> = React.memo(({ bonus, onClick, matchR
       onClick={onClick}
       className="bg-white dark:bg-slate-900 rounded-2xl p-5 border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-xl hover:border-blue-400 dark:hover:border-blue-700 cursor-pointer transition-all flex flex-col h-full group transform hover:-translate-y-1"
     >
-      {/* Header: Status e Categoria */}
+      {/* Header: Status, Categoria e Urgenza */}
       <div className="w-full flex justify-between items-start mb-4">
-        <span className={`text-[9px] uppercase font-black tracking-widest px-2.5 py-1 rounded-full ${STATUS_COLORS[bonus.status]}`}>
-          {bonus.status}
-        </span>
-        <span className="text-[9px] uppercase font-black tracking-widest px-2.5 py-1 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400">
+        <div className="flex items-center gap-1.5">
+          <span className={`text-[9px] uppercase font-black tracking-widest px-2.5 py-1 rounded-full ${STATUS_COLORS[bonus.status]}`}>
+            {bonus.status}
+          </span>
+          {/* Badge urgenza scadenza */}
+          {(() => {
+            if (!bonus.scadenza) return null;
+            const now = new Date(); now.setHours(0,0,0,0);
+            const target = new Date(bonus.scadenza); target.setHours(0,0,0,0);
+            const daysLeft = Math.ceil((target.getTime() - now.getTime()) / (1000*60*60*24));
+            if (daysLeft <= 0 || daysLeft > 60) return null;
+            const colorClass = daysLeft <= 7 
+              ? "bg-red-500 text-white animate-pulse" 
+              : daysLeft <= 30 
+                ? "bg-orange-500 text-white" 
+                : "bg-yellow-400 text-yellow-900";
+            return (
+              <span className={`text-[8px] uppercase font-black tracking-wider px-2 py-0.5 rounded-full ${colorClass}`}>
+                {daysLeft}gg
+              </span>
+            );
+          })()}
+        </div>
+        <span className="text-[9px] uppercase font-black tracking-widest px-2.5 py-1 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300">
           {bonus.categoria}
         </span>
       </div>
 
       {/* Valore */}
       <div className="mb-1">
-        <span className="text-2xl font-black text-slate-800 dark:text-slate-100">{bonus.valoreEsimato}€</span>
+        <span className="text-2xl font-black bg-gradient-to-r from-slate-800 to-slate-600 dark:from-white dark:to-slate-300 bg-clip-text text-transparent">
+          {bonus.valoreEsimato ? `${bonus.valoreEsimato.toLocaleString("it-IT")}€` : "Variabile"}
+        </span>
       </div>
 
       {/* Titolo e Descrizione */}
       <h4 className="text-base font-bold text-slate-900 dark:text-slate-100 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors mb-2 leading-tight text-left">
         {bonus.titolo}
       </h4>
-      <p className="text-slate-500 dark:text-slate-400 text-xs mb-4 line-clamp-2 text-left">
+      <p className="text-slate-600 dark:text-slate-300 text-xs mb-4 line-clamp-2 text-left">
         {bonus.descrizione}
       </p>
 
@@ -176,7 +198,7 @@ const BonusCard: React.FC<BonusCardProps> = React.memo(({ bonus, onClick, matchR
       )}
 
       {/* Footer: Difficoltà e Scadenza */}
-      <div className="mt-auto w-full pt-3 border-t border-slate-100 dark:border-slate-800 flex flex-col gap-1.5 text-[10px] font-bold uppercase tracking-widest text-slate-400">
+      <div className="mt-auto w-full pt-3 border-t border-slate-100 dark:border-slate-800 flex flex-col gap-1.5 text-[10px] font-bold uppercase tracking-widest text-slate-500 dark:text-slate-400">
         <div className="flex items-center gap-1.5">
           <Icon d={Icons.check} className="h-3.5 w-3.5" />
           <span className={DIFFICULTY_COLORS[bonus.difficolta]}>{bonus.difficolta}</span>

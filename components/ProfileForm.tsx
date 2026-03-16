@@ -19,7 +19,7 @@ interface ProfileFormProps {
 /** Stili comuni per input e label */
 const STYLES = {
   input: "w-full px-4 py-2.5 rounded-xl border border-slate-100 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-800/50 text-slate-900 dark:text-slate-100 focus:ring-2 focus:ring-blue-500/10 focus:border-blue-500 outline-none transition-all font-medium text-left text-sm",
-  label: "block text-[9px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-[0.15em] mb-1.5 text-left ml-1",
+  label: "block text-[9px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-[0.15em] mb-1.5 text-left ml-1",
 } as const;
 
 /** Varianti animazione riutilizzabili */
@@ -351,7 +351,7 @@ const ProfileForm: React.FC<ProfileFormProps> = ({ onSubmit, initialData, button
 
       {/* Privacy notice */}
       <div className="flex flex-col items-center justify-center gap-2 pt-3 border-t border-slate-50 dark:border-slate-800">
-        <div className="flex items-center gap-1.5 text-[9px] text-slate-400 dark:text-slate-500 font-bold uppercase tracking-[0.1em]">
+        <div className="flex items-center gap-1.5 text-[9px] text-slate-500 dark:text-slate-400 font-bold uppercase tracking-[0.1em]">
           <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
           </svg>

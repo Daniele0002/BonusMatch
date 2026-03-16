@@ -24,7 +24,7 @@ export default function SimpleFooter() {
                 Bonus Match
               </span>
             </div>
-            <p className="text-slate-600 dark:text-slate-400 text-sm max-w-md">
+            <p className="text-slate-700 dark:text-slate-300 text-sm max-w-md">
               Scopri tutti i bonus e le agevolazioni a cui hai diritto. 
               Analisi personalizzata basata sul tuo profilo familiare e ISEE.
             </p>
@@ -40,7 +40,7 @@ export default function SimpleFooter() {
                 <li key={cat}>
                   <Link
                     href={getCategoryUrl(cat)}
-                    className="text-sm text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                    className="text-sm text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
                   >
                     {cat}
                   </Link>
@@ -56,17 +56,17 @@ export default function SimpleFooter() {
             </h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/" className="text-sm text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                <Link href="/" className="text-sm text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
                   Analizza Profilo
                 </Link>
               </li>
               <li>
-                <a href="https://www.inps.it" target="_blank" rel="noopener noreferrer" className="text-sm text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                <a href="https://www.inps.it" target="_blank" rel="noopener noreferrer" className="text-sm text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
                   Sito INPS
                 </a>
               </li>
               <li>
-                <a href="https://www.agenziaentrate.gov.it" target="_blank" rel="noopener noreferrer" className="text-sm text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                <a href="https://www.agenziaentrate.gov.it" target="_blank" rel="noopener noreferrer" className="text-sm text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
                   Agenzia Entrate
                 </a>
               </li>
@@ -76,7 +76,7 @@ export default function SimpleFooter() {
 
         {/* Copyright */}
         <div className="pt-8 border-t border-slate-200 dark:border-slate-800">
-          <p className="text-center text-sm text-slate-500 dark:text-slate-500">
+          <p className="text-center text-sm text-slate-600 dark:text-slate-400">
             © {new Date().getFullYear()} Bonus Match. Tutti i diritti riservati.
           </p>
         </div>

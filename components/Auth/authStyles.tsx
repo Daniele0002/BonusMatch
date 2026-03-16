@@ -14,7 +14,7 @@ export const AUTH_STYLES = {
   input: "w-full px-4 py-2.5 bg-slate-50 dark:bg-slate-800 border border-transparent focus:border-blue-500 rounded-xl outline-none text-slate-900 dark:text-white text-sm font-medium transition-all",
   
   // Label
-  label: "text-[9px] font-bold text-slate-400 uppercase tracking-[0.15em] ml-1",
+  label: "text-[9px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-[0.15em] ml-1",
   
   // Pulsante primario
   submitBtn: "w-full py-3 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-bold text-sm uppercase tracking-widest rounded-xl shadow-lg shadow-blue-500/20 active:scale-[0.98] transition-all disabled:opacity-50 disabled:cursor-not-allowed",
@@ -69,7 +69,7 @@ export const FormHeader: React.FC<{
   <div className="flex justify-between items-center mb-5">
     <div>
       <h2 className="text-xl font-bold text-slate-800 dark:text-white tracking-tight">{title}</h2>
-      {subtitle && <p className="text-[9px] font-bold text-slate-400 uppercase tracking-widest mt-0.5">{subtitle}</p>}
+      {subtitle && <p className="text-[9px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-widest mt-0.5">{subtitle}</p>}
     </div>
     <button onClick={onClose} className={AUTH_STYLES.closeBtn}>
       <Icon d={AUTH_ICONS.close} />
@@ -127,7 +127,7 @@ export const FormFooterLink: React.FC<{
   onClick: () => void;
 }> = ({ text, linkText, onClick }) => (
   <div className="text-center mt-5">
-    <p className="text-slate-500 dark:text-slate-400 text-xs font-medium">
+    <p className="text-slate-600 dark:text-slate-300 text-xs font-medium">
       {text}{" "}
       <button type="button" onClick={onClick} className={AUTH_STYLES.textLink}>
         {linkText}

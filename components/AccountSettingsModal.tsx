@@ -214,7 +214,7 @@ const AccountSettingsModal: React.FC<AccountSettingsModalProps> = ({ isOpen, onC
         <div className="p-8 border-b border-slate-100 dark:border-slate-800 flex justify-between items-center bg-slate-50/50 dark:bg-slate-800/50">
           <div>
             <h2 className="text-2xl font-black text-slate-800 dark:text-white tracking-tight">Impostazioni Account</h2>
-            <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mt-1">Gestisci il tuo account</p>
+            <p className="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-widest mt-1">Gestisci il tuo account</p>
           </div>
           <button 
             onClick={onClose}
@@ -233,7 +233,7 @@ const AccountSettingsModal: React.FC<AccountSettingsModalProps> = ({ isOpen, onC
             className={`flex-1 py-4 text-sm font-bold uppercase tracking-widest transition-all ${
               activeTab === 'profile' 
                 ? 'text-blue-600 border-b-2 border-blue-600' 
-                : 'text-slate-400 hover:text-slate-600'
+                : 'text-slate-500 dark:text-slate-400 hover:text-slate-600'
             }`}
           >
             👤 Profilo
@@ -244,7 +244,7 @@ const AccountSettingsModal: React.FC<AccountSettingsModalProps> = ({ isOpen, onC
               className={`flex-1 py-4 text-sm font-bold uppercase tracking-widest transition-all ${
                 activeTab === 'subscription' 
                   ? 'text-blue-600 border-b-2 border-blue-600' 
-                  : 'text-slate-400 hover:text-slate-600'
+                  : 'text-slate-500 dark:text-slate-400 hover:text-slate-600'
               }`}
             >
               💳 Abbonamento
@@ -266,7 +266,7 @@ const AccountSettingsModal: React.FC<AccountSettingsModalProps> = ({ isOpen, onC
 
           <div className="grid grid-cols-2 gap-4">
             <div className="space-y-2">
-              <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-2">Nome</label>
+              <label className="text-[10px] font-black text-slate-500 dark:text-slate-400 uppercase tracking-widest ml-2">Nome</label>
               <input
                 type="text"
                 value={firstName}
@@ -276,7 +276,7 @@ const AccountSettingsModal: React.FC<AccountSettingsModalProps> = ({ isOpen, onC
               />
             </div>
             <div className="space-y-2">
-              <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-2">Cognome</label>
+              <label className="text-[10px] font-black text-slate-500 dark:text-slate-400 uppercase tracking-widest ml-2">Cognome</label>
               <input
                 type="text"
                 value={lastName}
@@ -301,8 +301,8 @@ const AccountSettingsModal: React.FC<AccountSettingsModalProps> = ({ isOpen, onC
 
           <div className="pt-6 border-t border-slate-100 dark:border-slate-800 space-y-4">
             <div className="flex items-center justify-between">
-                <h3 className="text-xs font-black text-slate-400 uppercase tracking-widest">Cambia Password</h3>
-                <span className="text-[10px] text-slate-400 font-medium italic">Lascia vuoto per non modificare</span>
+                <h3 className="text-xs font-black text-slate-500 dark:text-slate-400 uppercase tracking-widest">Cambia Password</h3>
+                <span className="text-[10px] text-slate-500 dark:text-slate-400 font-medium italic">Lascia vuoto per non modificare</span>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -334,7 +334,7 @@ const AccountSettingsModal: React.FC<AccountSettingsModalProps> = ({ isOpen, onC
             <button
               type="button"
               onClick={onClose}
-              className="px-6 py-3.5 rounded-2xl font-black text-xs uppercase tracking-widest text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 transition-colors"
+              className="px-6 py-3.5 rounded-2xl font-black text-xs uppercase tracking-widest text-slate-500 dark:text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 transition-colors"
             >
               Annulla
             </button>
@@ -457,7 +457,7 @@ const AccountSettingsModal: React.FC<AccountSettingsModalProps> = ({ isOpen, onC
                         }`}>
                           €{subscription.priceAmount}
                         </p>
-                        <p className="text-xs font-bold text-slate-400">
+                        <p className="text-xs font-bold text-slate-500 dark:text-slate-400">
                           /{subscription.interval === 'year' ? 'anno' : 'mese'}
                         </p>
                       </div>
@@ -495,7 +495,7 @@ const AccountSettingsModal: React.FC<AccountSettingsModalProps> = ({ isOpen, onC
                   )}
                 </div>
 
-                <p className="text-xs text-center text-slate-400">
+                <p className="text-xs text-center text-slate-500 dark:text-slate-400">
                   {subscription.cancelAtPeriodEnd 
                     ? 'Puoi riattivare il rinnovo in qualsiasi momento prima della scadenza.'
                     : 'L\'abbonamento rimarrà attivo fino alla fine del periodo corrente.'}
@@ -508,8 +508,8 @@ const AccountSettingsModal: React.FC<AccountSettingsModalProps> = ({ isOpen, onC
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
                   </svg>
                 </div>
-                <p className="text-slate-500 font-bold">Nessun abbonamento attivo trovato</p>
-                <p className="text-sm text-slate-400 mt-2">
+                <p className="text-slate-600 dark:text-slate-300 font-bold">Nessun abbonamento attivo trovato</p>
+                <p className="text-sm text-slate-500 dark:text-slate-400 mt-2">
                   Se hai appena effettuato il pagamento, riprova tra qualche minuto.
                 </p>
               </div>

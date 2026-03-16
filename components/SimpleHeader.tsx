@@ -44,16 +44,16 @@ export default function SimpleHeader() {
           {/* Links + Theme Toggle */}
           <div className="flex items-center gap-4">
             <nav className="hidden md:flex items-center gap-6">
-              <Link href="/" className="text-sm text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+              <Link href="/" className="text-sm text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
                 Analizza Profilo
               </Link>
-              <Link href="/categoria/famiglia/" className="text-sm text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+              <Link href="/categoria/famiglia/" className="text-sm text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
                 Famiglia
               </Link>
-              <Link href="/categoria/casa/" className="text-sm text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+              <Link href="/categoria/casa/" className="text-sm text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
                 Casa
               </Link>
-              <Link href="/categoria/lavoro/" className="text-sm text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+              <Link href="/categoria/lavoro/" className="text-sm text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
                 Lavoro
               </Link>
             </nav>
@@ -61,7 +61,7 @@ export default function SimpleHeader() {
             {/* Theme Toggle */}
             <button
               onClick={toggleTheme}
-              className="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors"
+              className="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors"
               aria-label={theme === 'light' ? 'Attiva tema scuro' : 'Attiva tema chiaro'}
             >
               {theme === 'light' ? (

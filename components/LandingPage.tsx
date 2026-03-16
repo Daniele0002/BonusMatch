@@ -137,7 +137,7 @@ const LandingPage: React.FC<LandingPageProps> = ({ onSubmit, onShowPremium }) =>
               <AnimatedText text="Semplificati." keyPrefix="part2" className="text-blue-600 inline-block" />
             </motion.h1>
 
-            <p className="text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed">
+            <p className="text-xl text-slate-700 dark:text-slate-300 max-w-2xl mx-auto mb-10 leading-relaxed">
               Scopri in pochi secondi tutti i bonus statali e regionali a cui hai diritto. 
               L'intelligenza artificiale al servizio della burocrazia italiana.
             </p>
@@ -165,7 +165,7 @@ const LandingPage: React.FC<LandingPageProps> = ({ onSubmit, onShowPremium }) =>
             transition={{ delay: 1.5 }}
             className="mt-16"
           >
-            <button onClick={scrollToForm} className="animate-bounce text-slate-400 dark:text-slate-500 hover:text-blue-500 transition-colors">
+            <button onClick={scrollToForm} className="animate-bounce text-slate-500 dark:text-slate-400 hover:text-blue-500 transition-colors">
               <Icon path={Icons.arrowDown} className="h-8 w-8 mx-auto" />
             </button>
           </motion.div>
@@ -188,7 +188,7 @@ const LandingPage: React.FC<LandingPageProps> = ({ onSubmit, onShowPremium }) =>
             <motion.h2 variants={fadeInUp} className="text-4xl md:text-5xl font-black text-slate-900 dark:text-white mt-4 tracking-tight">
               La burocrazia non è mai stata così semplice
             </motion.h2>
-            <motion.p variants={fadeInUp} className="text-lg text-slate-600 dark:text-slate-400 mt-4 max-w-2xl mx-auto">
+            <motion.p variants={fadeInUp} className="text-lg text-slate-700 dark:text-slate-300 mt-4 max-w-2xl mx-auto">
               In Italia esistono centinaia di bonus e agevolazioni, ma trovarli richiede ore di ricerca. 
               BonusMatch fa il lavoro pesante per te.
             </motion.p>
@@ -211,7 +211,7 @@ const LandingPage: React.FC<LandingPageProps> = ({ onSubmit, onShowPremium }) =>
                   <Icon path={feature.icon} />
                 </div>
                 <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-2">{feature.title}</h3>
-                <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">{feature.description}</p>
+                <p className="text-slate-700 dark:text-slate-300 text-sm leading-relaxed">{feature.description}</p>
               </motion.div>
             ))}
           </motion.div>
@@ -248,7 +248,7 @@ const LandingPage: React.FC<LandingPageProps> = ({ onSubmit, onShowPremium }) =>
                 <div className="text-7xl font-black text-slate-100 dark:text-slate-800 absolute -top-4 -left-2">{step.num}</div>
                 <div className="relative pt-8 pl-4">
                   <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2">{step.title}</h3>
-                  <p className="text-slate-600 dark:text-slate-400 text-sm">{step.description}</p>
+                  <p className="text-slate-700 dark:text-slate-300 text-sm">{step.description}</p>
                 </div>
                 {i < STEPS.length - 1 && (
                   <div className="hidden lg:block absolute top-1/2 -right-4 w-8 h-0.5 bg-slate-200 dark:bg-slate-700" />
@@ -272,7 +272,7 @@ const LandingPage: React.FC<LandingPageProps> = ({ onSubmit, onShowPremium }) =>
             <h2 className="text-4xl md:text-5xl font-black text-slate-900 dark:text-white tracking-tight mb-4">
               Scopri i tuoi <span className="text-blue-600">Bonus</span>
             </h2>
-            <p className="text-lg text-slate-600 dark:text-slate-400">
+            <p className="text-lg text-slate-700 dark:text-slate-300">
               Compila il form per ricevere la tua analisi personalizzata gratuita
             </p>
           </motion.div>
@@ -306,7 +306,7 @@ const LandingPage: React.FC<LandingPageProps> = ({ onSubmit, onShowPremium }) =>
               <h2 className="text-4xl md:text-5xl font-black tracking-tight mb-6">
                 Sblocca tutto il potenziale di <span className="text-yellow-400">BonusMatch</span>
               </h2>
-              <p className="text-slate-400 text-lg mb-8 leading-relaxed">
+              <p className="text-slate-300 text-lg mb-8 leading-relaxed">
                 Con Premium hai accesso a funzionalità esclusive per massimizzare i tuoi benefici e gestire i bonus di tutta la famiglia.
               </p>
               
@@ -396,7 +396,7 @@ const LandingPage: React.FC<LandingPageProps> = ({ onSubmit, onShowPremium }) =>
                     </svg>
                   </span>
                 </summary>
-                <div className="px-6 pb-6 text-slate-600 dark:text-slate-400">
+                <div className="px-6 pb-6 text-slate-700 dark:text-slate-300">
                   {item.a}
                 </div>
               </motion.details>
@@ -417,7 +417,7 @@ const LandingPage: React.FC<LandingPageProps> = ({ onSubmit, onShowPremium }) =>
             <motion.h2 variants={fadeInUp} className="text-4xl md:text-5xl font-black text-slate-900 dark:text-white tracking-tight mb-6">
               Pronto a scoprire i tuoi bonus?
             </motion.h2>
-            <motion.p variants={fadeInUp} className="text-lg text-slate-600 dark:text-slate-400 mb-10">
+            <motion.p variants={fadeInUp} className="text-lg text-slate-700 dark:text-slate-300 mb-10">
               Unisciti a migliaia di italiani che hanno già scoperto i bonus a cui hanno diritto.
             </motion.p>
 
@@ -432,7 +432,7 @@ const LandingPage: React.FC<LandingPageProps> = ({ onSubmit, onShowPremium }) =>
 
             {/* Social Links */}
             <motion.div variants={fadeInUp}>
-              <p className="text-sm font-bold text-slate-500 uppercase tracking-widest mb-4">Seguici</p>
+              <p className="text-sm font-bold text-slate-600 dark:text-slate-300 uppercase tracking-widest mb-4">Seguici</p>
               <div className="flex justify-center gap-4">
                 <a href="https://instagram.com/bonusmatch.it" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-slate-100 dark:bg-slate-800 rounded-xl flex items-center justify-center text-slate-500 hover:text-pink-500 hover:bg-pink-50 dark:hover:bg-pink-900/20 transition-all">
                   <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>

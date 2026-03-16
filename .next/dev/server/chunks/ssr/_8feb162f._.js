@@ -63,8 +63,8 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$context$2f$AuthContext$2e$ts
 ;
 const metadata = {
     title: {
-        default: 'Bonus Match - Trova i Bonus a cui hai Diritto',
-        template: '%s | Bonus Match'
+        default: 'BonusMatch - Trova i Bonus a cui hai Diritto',
+        template: '%s | BonusMatch'
     },
     description: 'Scopri tutti i bonus statali, regionali e comunali a cui hai diritto. Analisi personalizzata basata sul tuo profilo familiare e ISEE.',
     keywords: [
@@ -79,11 +79,11 @@ const metadata = {
     ],
     authors: [
         {
-            name: 'Bonus Match'
+            name: 'BonusMatch'
         }
     ],
-    creator: 'Bonus Match',
-    publisher: 'Bonus Match',
+    creator: 'BonusMatch',
+    publisher: 'BonusMatch',
     metadataBase: new URL('https://bonusmatch.it'),
     alternates: {
         canonical: '/'
@@ -92,21 +92,21 @@ const metadata = {
         type: 'website',
         locale: 'it_IT',
         url: 'https://bonusmatch.it',
-        siteName: 'Bonus Match',
-        title: 'Bonus Match - Trova i Bonus a cui hai Diritto',
+        siteName: 'BonusMatch',
+        title: 'BonusMatch - Trova i Bonus a cui hai Diritto',
         description: 'Scopri tutti i bonus statali, regionali e comunali a cui hai diritto.',
         images: [
             {
                 url: '/og-image.png',
                 width: 1200,
                 height: 630,
-                alt: 'Bonus Match'
+                alt: 'BonusMatch'
             }
         ]
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'Bonus Match - Trova i Bonus a cui hai Diritto',
+        title: 'BonusMatch - Trova i Bonus a cui hai Diritto',
         description: 'Scopri tutti i bonus statali, regionali e comunali a cui hai diritto.',
         images: [
             '/og-image.png'
@@ -176,10 +176,21 @@ function RootLayout({ children }) {
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("link", {
                         rel: "icon",
                         type: "image/png",
-                        href: "/favicon.png"
+                        sizes: "48x48",
+                        href: "/favicon-48x48.png"
                     }, void 0, false, {
                         fileName: "[project]/app/layout.tsx",
                         lineNumber: 77,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("link", {
+                        rel: "icon",
+                        type: "image/png",
+                        sizes: "32x32",
+                        href: "/favicon-32x32.png"
+                    }, void 0, false, {
+                        fileName: "[project]/app/layout.tsx",
+                        lineNumber: 78,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("link", {
@@ -189,7 +200,7 @@ function RootLayout({ children }) {
                         href: "/favicon.png"
                     }, void 0, false, {
                         fileName: "[project]/app/layout.tsx",
-                        lineNumber: 78,
+                        lineNumber: 79,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("link", {
@@ -198,7 +209,7 @@ function RootLayout({ children }) {
                         href: "/favicon.png"
                     }, void 0, false, {
                         fileName: "[project]/app/layout.tsx",
-                        lineNumber: 79,
+                        lineNumber: 80,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("link", {
@@ -206,7 +217,7 @@ function RootLayout({ children }) {
                         href: "/manifest.json"
                     }, void 0, false, {
                         fileName: "[project]/app/layout.tsx",
-                        lineNumber: 80,
+                        lineNumber: 81,
                         columnNumber: 9
                     }, this)
                 ]
@@ -221,12 +232,12 @@ function RootLayout({ children }) {
                     children: children
                 }, void 0, false, {
                     fileName: "[project]/app/layout.tsx",
-                    lineNumber: 83,
+                    lineNumber: 84,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/layout.tsx",
-                lineNumber: 82,
+                lineNumber: 83,
                 columnNumber: 7
             }, this)
         ]

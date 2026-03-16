@@ -1299,7 +1299,7 @@ const AccountSettingsModal = ({ isOpen, onClose })=>{
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "text-xs font-bold text-slate-400 uppercase tracking-widest mt-1",
+                                    className: "text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-widest mt-1",
                                     children: "Gestisci il tuo account"
                                 }, void 0, false, {
                                     fileName: "[project]/components/AccountSettingsModal.tsx",
@@ -1352,7 +1352,7 @@ const AccountSettingsModal = ({ isOpen, onClose })=>{
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                             onClick: ()=>setActiveTab('profile'),
-                            className: `flex-1 py-4 text-sm font-bold uppercase tracking-widest transition-all ${activeTab === 'profile' ? 'text-blue-600 border-b-2 border-blue-600' : 'text-slate-400 hover:text-slate-600'}`,
+                            className: `flex-1 py-4 text-sm font-bold uppercase tracking-widest transition-all ${activeTab === 'profile' ? 'text-blue-600 border-b-2 border-blue-600' : 'text-slate-500 dark:text-slate-400 hover:text-slate-600'}`,
                             children: "👤 Profilo"
                         }, void 0, false, {
                             fileName: "[project]/components/AccountSettingsModal.tsx",
@@ -1361,7 +1361,7 @@ const AccountSettingsModal = ({ isOpen, onClose })=>{
                         }, ("TURBOPACK compile-time value", void 0)),
                         user?.isPremium && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                             onClick: ()=>setActiveTab('subscription'),
-                            className: `flex-1 py-4 text-sm font-bold uppercase tracking-widest transition-all ${activeTab === 'subscription' ? 'text-blue-600 border-b-2 border-blue-600' : 'text-slate-400 hover:text-slate-600'}`,
+                            className: `flex-1 py-4 text-sm font-bold uppercase tracking-widest transition-all ${activeTab === 'subscription' ? 'text-blue-600 border-b-2 border-blue-600' : 'text-slate-500 dark:text-slate-400 hover:text-slate-600'}`,
                             children: "💳 Abbonamento"
                         }, void 0, false, {
                             fileName: "[project]/components/AccountSettingsModal.tsx",
@@ -1397,7 +1397,7 @@ const AccountSettingsModal = ({ isOpen, onClose })=>{
                                     className: "space-y-2",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                            className: "text-[10px] font-black text-slate-400 uppercase tracking-widest ml-2",
+                                            className: "text-[10px] font-black text-slate-500 dark:text-slate-400 uppercase tracking-widest ml-2",
                                             children: "Nome"
                                         }, void 0, false, {
                                             fileName: "[project]/components/AccountSettingsModal.tsx",
@@ -1425,7 +1425,7 @@ const AccountSettingsModal = ({ isOpen, onClose })=>{
                                     className: "space-y-2",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                            className: "text-[10px] font-black text-slate-400 uppercase tracking-widest ml-2",
+                                            className: "text-[10px] font-black text-slate-500 dark:text-slate-400 uppercase tracking-widest ml-2",
                                             children: "Cognome"
                                         }, void 0, false, {
                                             fileName: "[project]/components/AccountSettingsModal.tsx",
@@ -1491,7 +1491,7 @@ const AccountSettingsModal = ({ isOpen, onClose })=>{
                                     className: "flex items-center justify-between",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                            className: "text-xs font-black text-slate-400 uppercase tracking-widest",
+                                            className: "text-xs font-black text-slate-500 dark:text-slate-400 uppercase tracking-widest",
                                             children: "Cambia Password"
                                         }, void 0, false, {
                                             fileName: "[project]/components/AccountSettingsModal.tsx",
@@ -1499,7 +1499,7 @@ const AccountSettingsModal = ({ isOpen, onClose })=>{
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "text-[10px] text-slate-400 font-medium italic",
+                                            className: "text-[10px] text-slate-500 dark:text-slate-400 font-medium italic",
                                             children: "Lascia vuoto per non modificare"
                                         }, void 0, false, {
                                             fileName: "[project]/components/AccountSettingsModal.tsx",
@@ -1558,7 +1558,7 @@ const AccountSettingsModal = ({ isOpen, onClose })=>{
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                     type: "button",
                                     onClick: onClose,
-                                    className: "px-6 py-3.5 rounded-2xl font-black text-xs uppercase tracking-widest text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 transition-colors",
+                                    className: "px-6 py-3.5 rounded-2xl font-black text-xs uppercase tracking-widest text-slate-500 dark:text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 transition-colors",
                                     children: "Annulla"
                                 }, void 0, false, {
                                     fileName: "[project]/components/AccountSettingsModal.tsx",
@@ -1867,7 +1867,7 @@ const AccountSettingsModal = ({ isOpen, onClose })=>{
                                                             columnNumber: 25
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                            className: "text-xs font-bold text-slate-400",
+                                                            className: "text-xs font-bold text-slate-500 dark:text-slate-400",
                                                             children: [
                                                                 "/",
                                                                 subscription.interval === 'year' ? 'anno' : 'mese'
@@ -1948,7 +1948,7 @@ const AccountSettingsModal = ({ isOpen, onClose })=>{
                                     columnNumber: 17
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "text-xs text-center text-slate-400",
+                                    className: "text-xs text-center text-slate-500 dark:text-slate-400",
                                     children: subscription.cancelAtPeriodEnd ? 'Puoi riattivare il rinnovo in qualsiasi momento prima della scadenza.' : 'L\'abbonamento rimarrà attivo fino alla fine del periodo corrente.'
                                 }, void 0, false, {
                                     fileName: "[project]/components/AccountSettingsModal.tsx",
@@ -1992,7 +1992,7 @@ const AccountSettingsModal = ({ isOpen, onClose })=>{
                                     columnNumber: 17
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "text-slate-500 font-bold",
+                                    className: "text-slate-600 dark:text-slate-300 font-bold",
                                     children: "Nessun abbonamento attivo trovato"
                                 }, void 0, false, {
                                     fileName: "[project]/components/AccountSettingsModal.tsx",
@@ -2000,7 +2000,7 @@ const AccountSettingsModal = ({ isOpen, onClose })=>{
                                     columnNumber: 17
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "text-sm text-slate-400 mt-2",
+                                    className: "text-sm text-slate-500 dark:text-slate-400 mt-2",
                                     children: "Se hai appena effettuato il pagamento, riprova tra qualche minuto."
                                 }, void 0, false, {
                                     fileName: "[project]/components/AccountSettingsModal.tsx",
@@ -2285,7 +2285,7 @@ const Header = ({ theme, onToggleTheme, activeTab, onTabChange, onLogoClick, onL
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "text-[9px] font-black text-[#263D4D] dark:text-slate-400 uppercase tracking-[0.2em] leading-none mt-1 hidden xs:block",
+                                            className: "text-[9px] font-black text-[#263D4D] dark:text-slate-300 uppercase tracking-[0.2em] leading-none mt-1 hidden xs:block",
                                             children: "Smart Finder"
                                         }, void 0, false, {
                                             fileName: "[project]/components/Header.tsx",
@@ -2307,7 +2307,7 @@ const Header = ({ theme, onToggleTheme, activeTab, onTabChange, onLogoClick, onL
                                 className: "hidden lg:flex absolute left-1/2 -translate-x-1/2 items-center gap-1 bg-slate-100 dark:bg-slate-800 p-1.5 rounded-2xl border border-slate-200 dark:border-slate-700",
                                 children: TABS.map((tab)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                         onClick: ()=>onTabChange(tab.id),
-                                        className: `px-4 py-2.5 rounded-xl text-[10px] font-black uppercase tracking-widest transition-all flex items-center gap-1.5 ${activeTab === tab.id ? "bg-white dark:bg-slate-700 text-[#FF8235] dark:text-white shadow-sm ring-1 ring-slate-200 dark:ring-slate-600" : "text-slate-500 dark:text-slate-400 hover:text-[#FF8235] dark:hover:text-white"}`,
+                                        className: `px-4 py-2.5 rounded-xl text-[10px] font-black uppercase tracking-widest transition-all flex items-center gap-1.5 ${activeTab === tab.id ? "bg-white dark:bg-slate-700 text-[#FF8235] dark:text-white shadow-sm ring-1 ring-slate-200 dark:ring-slate-600" : "text-slate-600 dark:text-slate-300 hover:text-[#FF8235] dark:hover:text-white"}`,
                                         children: [
                                             tab.label,
                                             tab.premium && !user?.isPremium && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2422,7 +2422,7 @@ const Header = ({ theme, onToggleTheme, activeTab, onTabChange, onLogoClick, onL
                                                                 columnNumber: 23
                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                className: "text-[10px] text-slate-500 dark:text-slate-400 truncate",
+                                                                className: "text-[10px] text-slate-600 dark:text-slate-300 truncate",
                                                                 children: user.email
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/Header.tsx",
@@ -2568,7 +2568,7 @@ const Header = ({ theme, onToggleTheme, activeTab, onTabChange, onLogoClick, onL
                         className: "lg:hidden border-t border-slate-100 dark:border-slate-800 flex justify-around p-2 bg-white dark:bg-slate-900",
                         children: TABS.map((tab)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                 onClick: ()=>onTabChange(tab.id),
-                                className: `flex flex-col items-center flex-1 py-2 rounded-xl transition-all relative ${activeTab === tab.id ? "text-[#FF8235]" : "text-slate-400 dark:text-slate-500"}`,
+                                className: `flex flex-col items-center flex-1 py-2 rounded-xl transition-all relative ${activeTab === tab.id ? "text-[#FF8235]" : "text-slate-500 dark:text-slate-400"}`,
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: `p-1 rounded-lg ${activeTab === tab.id ? "bg-orange-50 dark:bg-orange-900/20" : ""}`,
@@ -2671,7 +2671,7 @@ const Footer = ({ onNavigate })=>{
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "h-6 w-6 rounded-lg flex items-center justify-center",
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                                                src: "/logo sfondo.png",
+                                                src: "/assets/favicon.png",
                                                 alt: "BonusMatch Logo"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/Footer.tsx",
@@ -2701,7 +2701,7 @@ const Footer = ({ onNavigate })=>{
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "text-slate-500 text-sm font-medium leading-relaxed max-w-sm",
+                                    className: "text-slate-600 dark:text-slate-300 text-sm font-medium leading-relaxed max-w-sm",
                                     children: "Semplifichiamo l'accesso ai bonus italiani grazie all'intelligenza artificiale. La burocrazia non è mai stata così semplice."
                                 }, void 0, false, {
                                     fileName: "[project]/components/Footer.tsx",
@@ -2729,7 +2729,7 @@ const Footer = ({ onNavigate })=>{
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                                className: "text-slate-500 hover:text-blue-600 dark:hover:text-blue-400 text-sm font-medium transition-colors",
+                                                className: "text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 text-sm font-medium transition-colors",
                                                 children: "Centro Assistenza"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/Footer.tsx",
@@ -2743,7 +2743,7 @@ const Footer = ({ onNavigate })=>{
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                                className: "text-slate-500 hover:text-blue-600 dark:hover:text-blue-400 text-sm font-medium transition-colors",
+                                                className: "text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 text-sm font-medium transition-colors",
                                                 children: "FAQ"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/Footer.tsx",
@@ -2757,7 +2757,7 @@ const Footer = ({ onNavigate })=>{
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                                className: "text-slate-500 hover:text-blue-600 dark:hover:text-blue-400 text-sm font-medium transition-colors",
+                                                className: "text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 text-sm font-medium transition-colors",
                                                 children: "bonusmatch@libero.it"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/Footer.tsx",
@@ -2791,7 +2791,7 @@ const Footer = ({ onNavigate })=>{
                     className: "pt-5 border-t border-slate-100 dark:border-slate-800 flex flex-col md:flex-row justify-between items-center gap-3",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "text-slate-400 dark:text-slate-600 text-[9px] font-bold uppercase tracking-[0.2em]",
+                            className: "text-slate-500 dark:text-slate-400 text-[9px] font-bold uppercase tracking-[0.2em]",
                             children: "Bonus Match © 2026 • Made with ❤️ in Italy"
                         }, void 0, false, {
                             fileName: "[project]/components/Footer.tsx",
@@ -2809,7 +2809,7 @@ const Footer = ({ onNavigate })=>{
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    className: "text-[9px] font-bold text-slate-400 uppercase tracking-wider",
+                                    className: "text-[9px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider",
                                     children: "System Operational"
                                 }, void 0, false, {
                                     fileName: "[project]/components/Footer.tsx",
@@ -3098,7 +3098,7 @@ var _s = __turbopack_context__.k.signature();
 ;
 /** Stili comuni per input e label */ const STYLES = {
     input: "w-full px-4 py-2.5 rounded-xl border border-slate-100 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-800/50 text-slate-900 dark:text-slate-100 focus:ring-2 focus:ring-blue-500/10 focus:border-blue-500 outline-none transition-all font-medium text-left text-sm",
-    label: "block text-[9px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-[0.15em] mb-1.5 text-left ml-1"
+    label: "block text-[9px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-[0.15em] mb-1.5 text-left ml-1"
 };
 /** Varianti animazione riutilizzabili */ const ANIM = {
     item: {
@@ -4259,7 +4259,7 @@ const ProfileForm = ({ onSubmit, initialData, buttonLabel = "Trova i miei Bonus 
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "flex flex-col items-center justify-center gap-2 pt-3 border-t border-slate-50 dark:border-slate-800",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "flex items-center gap-1.5 text-[9px] text-slate-400 dark:text-slate-500 font-bold uppercase tracking-[0.1em]",
+                    className: "flex items-center gap-1.5 text-[9px] text-slate-500 dark:text-slate-400 font-bold uppercase tracking-[0.1em]",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
                             xmlns: "http://www.w3.org/2000/svg",
@@ -4388,7 +4388,7 @@ _c = Icon;
 // ═══════════════════════════════════════════════════════════════════════
 const ActionButton = ({ active, onClick, icon, label, activeLabel, activeColor })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
         onClick: onClick,
-        className: `flex-1 py-2 rounded-xl font-bold text-xs transition-colors flex items-center justify-center gap-2 ${active ? `${activeColor} text-white shadow-lg` : "bg-slate-50 dark:bg-slate-800 text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-700"}`,
+        className: `flex-1 py-2 rounded-xl font-bold text-xs transition-colors flex items-center justify-center gap-2 ${active ? `${activeColor} text-white shadow-lg` : "bg-slate-50 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700"}`,
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Icon, {
                 d: icon,
@@ -4435,20 +4435,50 @@ const BonusCard = /*#__PURE__*/ _s(__TURBOPACK__imported__module__$5b$project$5d
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "w-full flex justify-between items-start mb-4",
                 children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                        className: `text-[9px] uppercase font-black tracking-widest px-2.5 py-1 rounded-full ${STATUS_COLORS[bonus.status]}`,
-                        children: bonus.status
-                    }, void 0, false, {
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "flex items-center gap-1.5",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                className: `text-[9px] uppercase font-black tracking-widest px-2.5 py-1 rounded-full ${STATUS_COLORS[bonus.status]}`,
+                                children: bonus.status
+                            }, void 0, false, {
+                                fileName: "[project]/components/BonusCard.tsx",
+                                lineNumber: 99,
+                                columnNumber: 11
+                            }, ("TURBOPACK compile-time value", void 0)),
+                            (()=>{
+                                if (!bonus.scadenza) return null;
+                                const now = new Date();
+                                now.setHours(0, 0, 0, 0);
+                                const target = new Date(bonus.scadenza);
+                                target.setHours(0, 0, 0, 0);
+                                const daysLeft = Math.ceil((target.getTime() - now.getTime()) / (1000 * 60 * 60 * 24));
+                                if (daysLeft <= 0 || daysLeft > 60) return null;
+                                const colorClass = daysLeft <= 7 ? "bg-red-500 text-white animate-pulse" : daysLeft <= 30 ? "bg-orange-500 text-white" : "bg-yellow-400 text-yellow-900";
+                                return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                    className: `text-[8px] uppercase font-black tracking-wider px-2 py-0.5 rounded-full ${colorClass}`,
+                                    children: [
+                                        daysLeft,
+                                        "gg"
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/components/BonusCard.tsx",
+                                    lineNumber: 115,
+                                    columnNumber: 15
+                                }, ("TURBOPACK compile-time value", void 0));
+                            })()
+                        ]
+                    }, void 0, true, {
                         fileName: "[project]/components/BonusCard.tsx",
                         lineNumber: 98,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                        className: "text-[9px] uppercase font-black tracking-widest px-2.5 py-1 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400",
+                        className: "text-[9px] uppercase font-black tracking-widest px-2.5 py-1 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300",
                         children: bonus.categoria
                     }, void 0, false, {
                         fileName: "[project]/components/BonusCard.tsx",
-                        lineNumber: 101,
+                        lineNumber: 121,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0))
                 ]
@@ -4460,19 +4490,16 @@ const BonusCard = /*#__PURE__*/ _s(__TURBOPACK__imported__module__$5b$project$5d
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "mb-1",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                    className: "text-2xl font-black text-slate-800 dark:text-slate-100",
-                    children: [
-                        bonus.valoreEsimato,
-                        "€"
-                    ]
-                }, void 0, true, {
+                    className: "text-2xl font-black bg-gradient-to-r from-slate-800 to-slate-600 dark:from-white dark:to-slate-300 bg-clip-text text-transparent",
+                    children: bonus.valoreEsimato ? `${bonus.valoreEsimato.toLocaleString("it-IT")}€` : "Variabile"
+                }, void 0, false, {
                     fileName: "[project]/components/BonusCard.tsx",
-                    lineNumber: 108,
+                    lineNumber: 128,
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0))
             }, void 0, false, {
                 fileName: "[project]/components/BonusCard.tsx",
-                lineNumber: 107,
+                lineNumber: 127,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
@@ -4480,15 +4507,15 @@ const BonusCard = /*#__PURE__*/ _s(__TURBOPACK__imported__module__$5b$project$5d
                 children: bonus.titolo
             }, void 0, false, {
                 fileName: "[project]/components/BonusCard.tsx",
-                lineNumber: 112,
+                lineNumber: 134,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                className: "text-slate-500 dark:text-slate-400 text-xs mb-4 line-clamp-2 text-left",
+                className: "text-slate-600 dark:text-slate-300 text-xs mb-4 line-clamp-2 text-left",
                 children: bonus.descrizione
             }, void 0, false, {
                 fileName: "[project]/components/BonusCard.tsx",
-                lineNumber: 115,
+                lineNumber: 137,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0)),
             (()=>{
@@ -4520,12 +4547,12 @@ const BonusCard = /*#__PURE__*/ _s(__TURBOPACK__imported__module__$5b$project$5d
                                         clipRule: "evenodd"
                                     }, void 0, false, {
                                         fileName: "[project]/components/BonusCard.tsx",
-                                        lineNumber: 131,
+                                        lineNumber: 153,
                                         columnNumber: 19
                                     }, ("TURBOPACK compile-time value", void 0))
                                 }, void 0, false, {
                                     fileName: "[project]/components/BonusCard.tsx",
-                                    lineNumber: 130,
+                                    lineNumber: 152,
                                     columnNumber: 17
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -4533,18 +4560,18 @@ const BonusCard = /*#__PURE__*/ _s(__TURBOPACK__imported__module__$5b$project$5d
                                     children: matchReason
                                 }, void 0, false, {
                                     fileName: "[project]/components/BonusCard.tsx",
-                                    lineNumber: 133,
+                                    lineNumber: 155,
                                     columnNumber: 17
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/BonusCard.tsx",
-                            lineNumber: 129,
+                            lineNumber: 151,
                             columnNumber: 15
                         }, ("TURBOPACK compile-time value", void 0))
                     }, void 0, false, {
                         fileName: "[project]/components/BonusCard.tsx",
-                        lineNumber: 128,
+                        lineNumber: 150,
                         columnNumber: 13
                     }, ("TURBOPACK compile-time value", void 0));
                 }
@@ -4566,12 +4593,12 @@ const BonusCard = /*#__PURE__*/ _s(__TURBOPACK__imported__module__$5b$project$5d
                                         clipRule: "evenodd"
                                     }, void 0, false, {
                                         fileName: "[project]/components/BonusCard.tsx",
-                                        lineNumber: 145,
+                                        lineNumber: 167,
                                         columnNumber: 19
                                     }, ("TURBOPACK compile-time value", void 0))
                                 }, void 0, false, {
                                     fileName: "[project]/components/BonusCard.tsx",
-                                    lineNumber: 144,
+                                    lineNumber: 166,
                                     columnNumber: 17
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -4579,18 +4606,18 @@ const BonusCard = /*#__PURE__*/ _s(__TURBOPACK__imported__module__$5b$project$5d
                                     children: "Da verificare"
                                 }, void 0, false, {
                                     fileName: "[project]/components/BonusCard.tsx",
-                                    lineNumber: 147,
+                                    lineNumber: 169,
                                     columnNumber: 17
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/BonusCard.tsx",
-                            lineNumber: 143,
+                            lineNumber: 165,
                             columnNumber: 15
                         }, ("TURBOPACK compile-time value", void 0))
                     }, void 0, false, {
                         fileName: "[project]/components/BonusCard.tsx",
-                        lineNumber: 142,
+                        lineNumber: 164,
                         columnNumber: 13
                     }, ("TURBOPACK compile-time value", void 0));
                 }
@@ -4612,12 +4639,12 @@ const BonusCard = /*#__PURE__*/ _s(__TURBOPACK__imported__module__$5b$project$5d
                                         clipRule: "evenodd"
                                     }, void 0, false, {
                                         fileName: "[project]/components/BonusCard.tsx",
-                                        lineNumber: 159,
+                                        lineNumber: 181,
                                         columnNumber: 19
                                     }, ("TURBOPACK compile-time value", void 0))
                                 }, void 0, false, {
                                     fileName: "[project]/components/BonusCard.tsx",
-                                    lineNumber: 158,
+                                    lineNumber: 180,
                                     columnNumber: 17
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -4628,18 +4655,18 @@ const BonusCard = /*#__PURE__*/ _s(__TURBOPACK__imported__module__$5b$project$5d
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/BonusCard.tsx",
-                                    lineNumber: 161,
+                                    lineNumber: 183,
                                     columnNumber: 17
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/BonusCard.tsx",
-                            lineNumber: 157,
+                            lineNumber: 179,
                             columnNumber: 15
                         }, ("TURBOPACK compile-time value", void 0))
                     }, void 0, false, {
                         fileName: "[project]/components/BonusCard.tsx",
-                        lineNumber: 156,
+                        lineNumber: 178,
                         columnNumber: 13
                     }, ("TURBOPACK compile-time value", void 0));
                 }
@@ -4657,7 +4684,7 @@ const BonusCard = /*#__PURE__*/ _s(__TURBOPACK__imported__module__$5b$project$5d
                         activeColor: "bg-blue-600 shadow-blue-500/30"
                     }, void 0, false, {
                         fileName: "[project]/components/BonusCard.tsx",
-                        lineNumber: 173,
+                        lineNumber: 195,
                         columnNumber: 11
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(ActionButton, {
@@ -4669,17 +4696,17 @@ const BonusCard = /*#__PURE__*/ _s(__TURBOPACK__imported__module__$5b$project$5d
                         activeColor: "bg-indigo-600 shadow-indigo-500/30"
                     }, void 0, false, {
                         fileName: "[project]/components/BonusCard.tsx",
-                        lineNumber: 174,
+                        lineNumber: 196,
                         columnNumber: 11
                     }, ("TURBOPACK compile-time value", void 0))
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/BonusCard.tsx",
-                lineNumber: 172,
+                lineNumber: 194,
                 columnNumber: 9
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "mt-auto w-full pt-3 border-t border-slate-100 dark:border-slate-800 flex flex-col gap-1.5 text-[10px] font-bold uppercase tracking-widest text-slate-400",
+                className: "mt-auto w-full pt-3 border-t border-slate-100 dark:border-slate-800 flex flex-col gap-1.5 text-[10px] font-bold uppercase tracking-widest text-slate-500 dark:text-slate-400",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "flex items-center gap-1.5",
@@ -4689,7 +4716,7 @@ const BonusCard = /*#__PURE__*/ _s(__TURBOPACK__imported__module__$5b$project$5d
                                 className: "h-3.5 w-3.5"
                             }, void 0, false, {
                                 fileName: "[project]/components/BonusCard.tsx",
-                                lineNumber: 181,
+                                lineNumber: 203,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -4697,13 +4724,13 @@ const BonusCard = /*#__PURE__*/ _s(__TURBOPACK__imported__module__$5b$project$5d
                                 children: bonus.difficolta
                             }, void 0, false, {
                                 fileName: "[project]/components/BonusCard.tsx",
-                                lineNumber: 182,
+                                lineNumber: 204,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/BonusCard.tsx",
-                        lineNumber: 180,
+                        lineNumber: 202,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     bonus.scadenza && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4714,13 +4741,13 @@ const BonusCard = /*#__PURE__*/ _s(__TURBOPACK__imported__module__$5b$project$5d
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/BonusCard.tsx",
-                        lineNumber: 185,
+                        lineNumber: 207,
                         columnNumber: 11
                     }, ("TURBOPACK compile-time value", void 0))
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/BonusCard.tsx",
-                lineNumber: 179,
+                lineNumber: 201,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0))
         ]
@@ -4766,17 +4793,55 @@ var _s = __turbopack_context__.k.signature();
 ;
 ;
 ;
-// Categorie disponibili
+// Categorie disponibili con icone
 const CATEGORIES = [
-    "Studio",
-    "Casa",
-    "Energia",
-    "Famiglia",
-    "Lavoro",
-    "Giovani",
-    "Salute",
-    "Mobilità"
+    {
+        name: "Studio",
+        icon: "🎓"
+    },
+    {
+        name: "Casa",
+        icon: "🏠"
+    },
+    {
+        name: "Energia",
+        icon: "⚡"
+    },
+    {
+        name: "Famiglia",
+        icon: "👨‍👩‍👧‍👦"
+    },
+    {
+        name: "Lavoro",
+        icon: "💼"
+    },
+    {
+        name: "Giovani",
+        icon: "🧑‍💻"
+    },
+    {
+        name: "Salute",
+        icon: "🏥"
+    },
+    {
+        name: "Mobilità",
+        icon: "🚌"
+    }
 ];
+// ═══════════════════════════════════════════════════════════════════════════════
+// UTILITY
+// ═══════════════════════════════════════════════════════════════════════════════
+/** Calcola giorni rimanenti fino a una data */ const daysUntil = (dateStr)=>{
+    const now = new Date();
+    now.setHours(0, 0, 0, 0);
+    const target = new Date(dateStr);
+    target.setHours(0, 0, 0, 0);
+    return Math.ceil((target.getTime() - now.getTime()) / (1000 * 60 * 60 * 24));
+};
+/** Formato compatto per valori grandi */ const formatValue = (val)=>{
+    if (val >= 10000) return `${(val / 1000).toFixed(1).replace(".0", "")}k`;
+    return val.toLocaleString("it-IT");
+};
 // ═══════════════════════════════════════════════════════════════════════════════
 // COMPONENTE DASHBOARD
 // ═══════════════════════════════════════════════════════════════════════════════
@@ -4786,9 +4851,9 @@ const Dashboard = ({ profile, bonuses, results, isPremium, onSelectBonus, onGoTo
     const [categoryFilter, setCategoryFilter] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("Tutte");
     const availableRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
     // ─────────────────────────────────────────────────────────────────────────────
-    // CALCOLI MEMOIZZATI - Consolidati in un unico useMemo per efficienza
+    // CALCOLI MEMOIZZATI
     // ─────────────────────────────────────────────────────────────────────────────
-    /** Motivi generici = dati mancanti, non verificabili -> consideriamo potenzialmente idonei */ const genericReasons = [
+    const genericReasons = [
         "specificato",
         "non fornito",
         "nessun",
@@ -4797,21 +4862,21 @@ const Dashboard = ({ profile, bonuses, results, isPremium, onSelectBonus, onGoTo
         "non presente"
     ];
     const isGenericReason = (reason)=>genericReasons.some((g)=>reason.toLowerCase().includes(g));
-    /** Bonus effettivamente eleggibili o con motivo generico (potenzialmente idonei) */ const eligibleMatches = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useMemo"])({
+    const eligibleMatches = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useMemo"])({
         "Dashboard.useMemo[eligibleMatches]": ()=>results.filter({
                 "Dashboard.useMemo[eligibleMatches]": (r)=>r.eligible || r.reason && isGenericReason(r.reason)
             }["Dashboard.useMemo[eligibleMatches]"])
     }["Dashboard.useMemo[eligibleMatches]"], [
         results
     ]);
-    /** Set per lookup O(1) su bonus eleggibili o potenzialmente idonei */ const eligibleSet = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useMemo"])({
+    const eligibleSet = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useMemo"])({
         "Dashboard.useMemo[eligibleSet]": ()=>new Set(eligibleMatches.map({
                 "Dashboard.useMemo[eligibleSet]": (m)=>m.bonusId
             }["Dashboard.useMemo[eligibleSet]"]))
     }["Dashboard.useMemo[eligibleSet]"], [
         eligibleMatches
     ]);
-    /** Dati aggregati bonus - "Disponibili" mostra solo eleggibili, altri filtri mostrano tutto */ const bonusGroups = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useMemo"])({
+    const bonusGroups = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useMemo"])({
         "Dashboard.useMemo[bonusGroups]": ()=>({
                 active: bonuses.filter({
                     "Dashboard.useMemo[bonusGroups]": (b)=>b.status === "attivo" && eligibleSet.has(b.id)
@@ -4827,7 +4892,7 @@ const Dashboard = ({ profile, bonuses, results, isPremium, onSelectBonus, onGoTo
         bonuses,
         eligibleSet
     ]);
-    /** Valore totale dei bonus eleggibili */ const totalValue = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useMemo"])({
+    const totalValue = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useMemo"])({
         "Dashboard.useMemo[totalValue]": ()=>eligibleMatches.reduce({
                 "Dashboard.useMemo[totalValue]": (acc, m)=>acc + (bonuses.find({
                         "Dashboard.useMemo[totalValue]": (b)=>b.id === m.bonusId
@@ -4837,7 +4902,7 @@ const Dashboard = ({ profile, bonuses, results, isPremium, onSelectBonus, onGoTo
         eligibleMatches,
         bonuses
     ]);
-    /** Percentuale completamento profilo */ const completionPercentage = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useMemo"])({
+    const completionPercentage = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useMemo"])({
         "Dashboard.useMemo[completionPercentage]": ()=>{
             const fields = [
                 profile.eta,
@@ -4855,6 +4920,53 @@ const Dashboard = ({ profile, bonuses, results, isPremium, onSelectBonus, onGoTo
         }
     }["Dashboard.useMemo[completionPercentage]"], [
         profile
+    ]);
+    /** Bonus con scadenza imminente (entro 60 giorni) - solo tra eleggibili */ const urgentBonuses = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useMemo"])({
+        "Dashboard.useMemo[urgentBonuses]": ()=>{
+            return bonuses.filter({
+                "Dashboard.useMemo[urgentBonuses]": (b)=>b.scadenza && eligibleSet.has(b.id) && b.status === "attivo"
+            }["Dashboard.useMemo[urgentBonuses]"]).map({
+                "Dashboard.useMemo[urgentBonuses]": (b)=>({
+                        ...b,
+                        daysLeft: daysUntil(b.scadenza)
+                    })
+            }["Dashboard.useMemo[urgentBonuses]"]).filter({
+                "Dashboard.useMemo[urgentBonuses]": (b)=>b.daysLeft > 0 && b.daysLeft <= 60
+            }["Dashboard.useMemo[urgentBonuses]"]).sort({
+                "Dashboard.useMemo[urgentBonuses]": (a, b)=>a.daysLeft - b.daysLeft
+            }["Dashboard.useMemo[urgentBonuses]"]).slice(0, 3);
+        }
+    }["Dashboard.useMemo[urgentBonuses]"], [
+        bonuses,
+        eligibleSet
+    ]);
+    /** Top 3 bonus per valore (solo eleggibili con valore) */ const topBonuses = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useMemo"])({
+        "Dashboard.useMemo[topBonuses]": ()=>{
+            return bonuses.filter({
+                "Dashboard.useMemo[topBonuses]": (b)=>eligibleSet.has(b.id) && b.valoreEsimato && b.valoreEsimato > 0 && b.status === "attivo"
+            }["Dashboard.useMemo[topBonuses]"]).sort({
+                "Dashboard.useMemo[topBonuses]": (a, b)=>(b.valoreEsimato || 0) - (a.valoreEsimato || 0)
+            }["Dashboard.useMemo[topBonuses]"]).slice(0, 3);
+        }
+    }["Dashboard.useMemo[topBonuses]"], [
+        bonuses,
+        eligibleSet
+    ]);
+    /** Conteggio per categoria (solo eleggibili attivi) */ const categoryCounts = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useMemo"])({
+        "Dashboard.useMemo[categoryCounts]": ()=>{
+            const counts = {};
+            bonuses.filter({
+                "Dashboard.useMemo[categoryCounts]": (b)=>eligibleSet.has(b.id) && b.status === "attivo"
+            }["Dashboard.useMemo[categoryCounts]"]).forEach({
+                "Dashboard.useMemo[categoryCounts]": (b)=>{
+                    counts[b.categoria] = (counts[b.categoria] || 0) + 1;
+                }
+            }["Dashboard.useMemo[categoryCounts]"]);
+            return counts;
+        }
+    }["Dashboard.useMemo[categoryCounts]"], [
+        bonuses,
+        eligibleSet
     ]);
     /** Scroll ai bonus e attiva filtro disponibili */ const handleScrollToBonuses = (e)=>{
         e.preventDefault();
@@ -4886,10 +4998,9 @@ const Dashboard = ({ profile, bonuses, results, isPremium, onSelectBonus, onGoTo
             count: bonuses.length
         }
     ];
-    /** Bonus da mostrare in base al filtro attivo */ const filteredBonuses = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useMemo"])({
+    /** Bonus da mostrare in base al filtro attivo, con ordinamento intelligente */ const filteredBonuses = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useMemo"])({
         "Dashboard.useMemo[filteredBonuses]": ()=>{
             let result = bonuses;
-            // Filtro status (solo Premium)
             if (isPremium) {
                 const filterMap = {
                     all: bonuses,
@@ -4899,240 +5010,918 @@ const Dashboard = ({ profile, bonuses, results, isPremium, onSelectBonus, onGoTo
                 };
                 result = filterMap[filter];
             }
-            // Filtro categoria
             if (categoryFilter !== "Tutte") {
                 result = result.filter({
                     "Dashboard.useMemo[filteredBonuses]": (b)=>b.categoria === categoryFilter
                 }["Dashboard.useMemo[filteredBonuses]"]);
             }
-            return result;
+            // Ordinamento: eleggibili prima, poi per valore decrescente
+            return [
+                ...result
+            ].sort({
+                "Dashboard.useMemo[filteredBonuses]": (a, b)=>{
+                    const aEligible = eligibleSet.has(a.id) ? 1 : 0;
+                    const bEligible = eligibleSet.has(b.id) ? 1 : 0;
+                    if (aEligible !== bEligible) return bEligible - aEligible;
+                    return (b.valoreEsimato || 0) - (a.valoreEsimato || 0);
+                }
+            }["Dashboard.useMemo[filteredBonuses]"]);
         }
     }["Dashboard.useMemo[filteredBonuses]"], [
         isPremium,
         filter,
         bonuses,
         bonusGroups,
-        categoryFilter
+        categoryFilter,
+        eligibleSet
     ]);
     const isProfileIncomplete = completionPercentage < 100;
+    // Animazioni
+    const kpiVariants = {
+        hidden: {
+            opacity: 0,
+            y: 30,
+            scale: 0.95
+        },
+        visible: (i)=>({
+                opacity: 1,
+                y: 0,
+                scale: 1,
+                transition: {
+                    delay: i * 0.1,
+                    type: "spring",
+                    stiffness: 200,
+                    damping: 20
+                }
+            })
+    };
+    const staggerContainer = {
+        hidden: {
+            opacity: 0
+        },
+        visible: {
+            opacity: 1,
+            transition: {
+                staggerChildren: 0.08
+            }
+        }
+    };
+    const staggerItem = {
+        hidden: {
+            opacity: 0,
+            y: 20
+        },
+        visible: {
+            opacity: 1,
+            y: 0,
+            transition: {
+                type: "spring",
+                stiffness: 200,
+                damping: 20
+            }
+        }
+    };
     // ─────────────────────────────────────────────────────────────────────────────
     // RENDER
     // ─────────────────────────────────────────────────────────────────────────────
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "space-y-6 pb-12",
+        className: "space-y-8 pb-12",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: `grid grid-cols-1 ${isProfileIncomplete ? "lg:grid-cols-3" : "lg:grid-cols-2"} gap-6`,
+                className: `grid grid-cols-2 ${isProfileIncomplete ? "lg:grid-cols-4" : "lg:grid-cols-3"} gap-4`,
                 children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "lg:col-span-2 bg-gradient-to-br from-blue-600 to-indigo-700 dark:from-blue-700 dark:to-indigo-900 rounded-2xl p-6 text-white shadow-xl relative overflow-hidden flex flex-col items-center text-center justify-center min-h-[220px]",
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                        custom: 0,
+                        variants: kpiVariants,
+                        initial: "hidden",
+                        animate: "visible",
+                        className: "col-span-2 lg:col-span-1 bg-gradient-to-br from-emerald-500 via-teal-600 to-cyan-700 dark:from-emerald-600 dark:via-teal-700 dark:to-cyan-900 rounded-2xl p-6 text-white shadow-xl shadow-emerald-500/25 dark:shadow-emerald-900/30 relative overflow-hidden cursor-pointer hover:shadow-2xl hover:shadow-emerald-500/40 transition-all hover:scale-[1.02]",
+                        onClick: handleScrollToBonuses,
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "absolute top-0 left-0 w-full h-full bg-white/5 pointer-events-none"
+                                className: "absolute -top-10 -right-10 w-40 h-40 bg-white/10 rounded-full blur-3xl"
                             }, void 0, false, {
                                 fileName: "[project]/components/Dashboard.tsx",
-                                lineNumber: 111,
+                                lineNumber: 191,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0)),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                className: "text-sm opacity-80 font-bold mb-1 uppercase tracking-widest",
-                                children: "Potenziale attivabile"
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "absolute -bottom-8 -left-8 w-28 h-28 bg-white/5 rounded-full blur-2xl"
                             }, void 0, false, {
                                 fileName: "[project]/components/Dashboard.tsx",
-                                lineNumber: 112,
+                                lineNumber: 192,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0)),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "text-4xl font-black mb-3 tracking-tighter",
-                                children: [
-                                    totalValue.toLocaleString("it-IT"),
-                                    "€"
-                                ]
-                            }, void 0, true, {
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "absolute top-4 right-4 w-16 h-16 bg-white/10 rounded-2xl blur-xl"
+                            }, void 0, false, {
                                 fileName: "[project]/components/Dashboard.tsx",
-                                lineNumber: 113,
+                                lineNumber: 193,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0)),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                onClick: handleScrollToBonuses,
-                                className: "bg-white/30 hover:bg-white/40 backdrop-blur-md px-4 py-2 rounded-full text-sm font-bold transition-all border border-white/40 shadow-lg",
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "relative z-10",
                                 children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "text-base font-black",
-                                        children: eligibleMatches.length
-                                    }, void 0, false, {
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "flex items-center gap-2 mb-4",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "w-9 h-9 rounded-xl bg-white/25 backdrop-blur-sm flex items-center justify-center text-lg shadow-inner",
+                                                children: "💰"
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/Dashboard.tsx",
+                                                lineNumber: 196,
+                                                columnNumber: 15
+                                            }, ("TURBOPACK compile-time value", void 0)),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                className: "text-[10px] uppercase tracking-[0.2em] font-black opacity-90",
+                                                children: "Potenziale attivabile"
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/Dashboard.tsx",
+                                                lineNumber: 197,
+                                                columnNumber: 15
+                                            }, ("TURBOPACK compile-time value", void 0))
+                                        ]
+                                    }, void 0, true, {
                                         fileName: "[project]/components/Dashboard.tsx",
-                                        lineNumber: 115,
+                                        lineNumber: 195,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0)),
-                                    " bonus trovati per te ↓"
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/components/Dashboard.tsx",
-                                lineNumber: 114,
-                                columnNumber: 11
-                            }, ("TURBOPACK compile-time value", void 0)),
-                            isProfileIncomplete && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "mt-4 flex items-center gap-2 bg-yellow-400/90 backdrop-blur-md px-3 py-2 rounded-xl shadow-md animate-pulse",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-                                        xmlns: "http://www.w3.org/2000/svg",
-                                        className: "h-4 w-4 text-yellow-900",
-                                        fill: "none",
-                                        viewBox: "0 0 24 24",
-                                        stroke: "currentColor",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                                            strokeLinecap: "round",
-                                            strokeLinejoin: "round",
-                                            strokeWidth: 2.5,
-                                            d: "M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"
-                                        }, void 0, false, {
-                                            fileName: "[project]/components/Dashboard.tsx",
-                                            lineNumber: 122,
-                                            columnNumber: 17
-                                        }, ("TURBOPACK compile-time value", void 0))
-                                    }, void 0, false, {
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        className: "text-5xl font-black tracking-tight leading-none mb-2 drop-shadow-sm",
+                                        children: [
+                                            formatValue(totalValue),
+                                            "€"
+                                        ]
+                                    }, void 0, true, {
                                         fileName: "[project]/components/Dashboard.tsx",
-                                        lineNumber: 121,
-                                        columnNumber: 15
+                                        lineNumber: 199,
+                                        columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0)),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "text-xs font-black text-yellow-900 uppercase tracking-wide",
-                                        children: "Completa il profilo per dati più accurati"
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        className: "text-sm opacity-90 font-semibold",
+                                        children: "Valore stimato dei bonus a cui hai diritto"
                                     }, void 0, false, {
                                         fileName: "[project]/components/Dashboard.tsx",
-                                        lineNumber: 124,
-                                        columnNumber: 15
+                                        lineNumber: 200,
+                                        columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/Dashboard.tsx",
-                                lineNumber: 120,
-                                columnNumber: 13
+                                lineNumber: 194,
+                                columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/Dashboard.tsx",
-                        lineNumber: 110,
+                        lineNumber: 186,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
-                    isProfileIncomplete && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "bg-white dark:bg-slate-900 rounded-2xl p-5 border border-slate-100 dark:border-slate-800 shadow-lg flex flex-col items-center text-center justify-center",
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                        custom: 1,
+                        variants: kpiVariants,
+                        initial: "hidden",
+                        animate: "visible",
+                        className: "bg-white dark:bg-slate-900 rounded-2xl p-5 border border-slate-200 dark:border-slate-700 shadow-lg hover:shadow-xl transition-all cursor-pointer hover:border-blue-300 dark:hover:border-blue-700",
+                        onClick: handleScrollToBonuses,
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "relative h-16 w-16 mb-3",
+                                className: "flex items-center gap-2 mb-3",
                                 children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-                                        className: "h-full w-full transform -rotate-90",
-                                        viewBox: "0 0 36 36",
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "w-9 h-9 rounded-xl bg-blue-100 dark:bg-blue-900/40 flex items-center justify-center text-lg",
+                                        children: "🎯"
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/Dashboard.tsx",
+                                        lineNumber: 211,
+                                        columnNumber: 13
+                                    }, ("TURBOPACK compile-time value", void 0)),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        className: "text-[10px] uppercase tracking-[0.2em] font-black text-slate-500 dark:text-slate-400",
+                                        children: "Bonus trovati"
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/Dashboard.tsx",
+                                        lineNumber: 212,
+                                        columnNumber: 13
+                                    }, ("TURBOPACK compile-time value", void 0))
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/components/Dashboard.tsx",
+                                lineNumber: 210,
+                                columnNumber: 11
+                            }, ("TURBOPACK compile-time value", void 0)),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: "text-4xl font-black text-slate-900 dark:text-white tracking-tight leading-none mb-2",
+                                children: eligibleMatches.length
+                            }, void 0, false, {
+                                fileName: "[project]/components/Dashboard.tsx",
+                                lineNumber: 214,
+                                columnNumber: 11
+                            }, ("TURBOPACK compile-time value", void 0)),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "flex items-center gap-2 mt-1 flex-wrap",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        className: "text-[10px] font-black px-2.5 py-1 rounded-full bg-emerald-100 dark:bg-emerald-900/40 text-emerald-800 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800",
                                         children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                                                className: "text-slate-100 dark:text-slate-800",
-                                                d: "M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831",
-                                                fill: "none",
-                                                stroke: "currentColor",
-                                                strokeWidth: "3"
+                                            "✓ ",
+                                            results.filter((r)=>r.eligible).length,
+                                            " idonei"
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/components/Dashboard.tsx",
+                                        lineNumber: 216,
+                                        columnNumber: 13
+                                    }, ("TURBOPACK compile-time value", void 0)),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        className: "text-[10px] font-black px-2.5 py-1 rounded-full bg-amber-100 dark:bg-amber-900/40 text-amber-800 dark:text-amber-300 border border-amber-200 dark:border-amber-800",
+                                        children: [
+                                            "? ",
+                                            eligibleMatches.length - results.filter((r)=>r.eligible).length,
+                                            " da verificare"
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/components/Dashboard.tsx",
+                                        lineNumber: 219,
+                                        columnNumber: 13
+                                    }, ("TURBOPACK compile-time value", void 0))
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/components/Dashboard.tsx",
+                                lineNumber: 215,
+                                columnNumber: 11
+                            }, ("TURBOPACK compile-time value", void 0))
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/components/Dashboard.tsx",
+                        lineNumber: 205,
+                        columnNumber: 9
+                    }, ("TURBOPACK compile-time value", void 0)),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                        custom: 2,
+                        variants: kpiVariants,
+                        initial: "hidden",
+                        animate: "visible",
+                        className: `rounded-2xl p-5 border shadow-lg hover:shadow-xl transition-all ${urgentBonuses.length > 0 ? "bg-gradient-to-br from-orange-50 to-red-50 dark:from-orange-950/30 dark:to-red-950/30 border-orange-300 dark:border-orange-700 shadow-orange-200/50 dark:shadow-orange-900/20" : "bg-white dark:bg-slate-900 border-slate-200 dark:border-slate-700"}`,
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "flex items-center gap-2 mb-3",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: `w-9 h-9 rounded-xl flex items-center justify-center text-lg ${urgentBonuses.length > 0 ? "bg-orange-200 dark:bg-orange-900/50" : "bg-slate-100 dark:bg-slate-800"}`,
+                                        children: "⏰"
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/Dashboard.tsx",
+                                        lineNumber: 235,
+                                        columnNumber: 13
+                                    }, ("TURBOPACK compile-time value", void 0)),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        className: "text-[10px] uppercase tracking-[0.2em] font-black text-slate-500 dark:text-slate-400",
+                                        children: "Scadenze"
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/Dashboard.tsx",
+                                        lineNumber: 240,
+                                        columnNumber: 13
+                                    }, ("TURBOPACK compile-time value", void 0))
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/components/Dashboard.tsx",
+                                lineNumber: 234,
+                                columnNumber: 11
+                            }, ("TURBOPACK compile-time value", void 0)),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: `text-4xl font-black tracking-tight leading-none mb-2 ${urgentBonuses.length > 0 ? "text-orange-700 dark:text-orange-300" : "text-slate-300 dark:text-slate-600"}`,
+                                children: urgentBonuses.length
+                            }, void 0, false, {
+                                fileName: "[project]/components/Dashboard.tsx",
+                                lineNumber: 242,
+                                columnNumber: 11
+                            }, ("TURBOPACK compile-time value", void 0)),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: `text-[10px] font-black mt-1 ${urgentBonuses.length > 0 ? "text-orange-600 dark:text-orange-400" : "text-slate-400 dark:text-slate-500"}`,
+                                children: urgentBonuses.length > 0 ? `⚠ Bonus in scadenza entro 60gg` : "Nessuna scadenza imminente"
+                            }, void 0, false, {
+                                fileName: "[project]/components/Dashboard.tsx",
+                                lineNumber: 247,
+                                columnNumber: 11
+                            }, ("TURBOPACK compile-time value", void 0))
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/components/Dashboard.tsx",
+                        lineNumber: 226,
+                        columnNumber: 9
+                    }, ("TURBOPACK compile-time value", void 0)),
+                    isProfileIncomplete && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                        custom: 3,
+                        variants: kpiVariants,
+                        initial: "hidden",
+                        animate: "visible",
+                        className: "bg-gradient-to-br from-violet-500 via-purple-600 to-fuchsia-700 dark:from-violet-600 dark:via-purple-700 dark:to-fuchsia-900 rounded-2xl p-5 shadow-xl shadow-purple-500/20 dark:shadow-purple-900/30 cursor-pointer hover:shadow-2xl hover:shadow-purple-500/30 transition-all hover:scale-[1.02] relative overflow-hidden",
+                        onClick: onGoToProfile,
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "absolute -top-8 -right-8 w-28 h-28 bg-white/10 rounded-full blur-2xl"
+                            }, void 0, false, {
+                                fileName: "[project]/components/Dashboard.tsx",
+                                lineNumber: 266,
+                                columnNumber: 13
+                            }, ("TURBOPACK compile-time value", void 0)),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "absolute -bottom-4 -left-4 w-20 h-20 bg-white/5 rounded-full blur-xl"
+                            }, void 0, false, {
+                                fileName: "[project]/components/Dashboard.tsx",
+                                lineNumber: 267,
+                                columnNumber: 13
+                            }, ("TURBOPACK compile-time value", void 0)),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "relative z-10",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "flex items-center gap-2 mb-3",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "w-9 h-9 rounded-xl bg-white/25 backdrop-blur-sm flex items-center justify-center text-lg shadow-inner",
+                                                children: "📊"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/Dashboard.tsx",
-                                                lineNumber: 135,
+                                                lineNumber: 270,
                                                 columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0)),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                                                className: "text-blue-600",
-                                                strokeDasharray: `${completionPercentage}, 100`,
-                                                d: "M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831",
-                                                fill: "none",
-                                                stroke: "currentColor",
-                                                strokeWidth: "3",
-                                                strokeLinecap: "round"
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                className: "text-[10px] uppercase tracking-[0.2em] font-black text-white/90",
+                                                children: "Profilo"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/Dashboard.tsx",
-                                                lineNumber: 136,
+                                                lineNumber: 271,
                                                 columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0))
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/Dashboard.tsx",
-                                        lineNumber: 134,
+                                        lineNumber: 269,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "absolute inset-0 flex items-center justify-center font-black text-base text-slate-800 dark:text-white",
+                                        className: "flex items-center gap-4",
                                         children: [
-                                            completionPercentage,
-                                            "%"
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "relative h-14 w-14 shrink-0",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                                        className: "h-full w-full transform -rotate-90",
+                                                        viewBox: "0 0 36 36",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                                className: "text-white/20",
+                                                                d: "M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831",
+                                                                fill: "none",
+                                                                stroke: "currentColor",
+                                                                strokeWidth: "3.5"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/components/Dashboard.tsx",
+                                                                lineNumber: 276,
+                                                                columnNumber: 21
+                                                            }, ("TURBOPACK compile-time value", void 0)),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                                className: "text-white",
+                                                                strokeDasharray: `${completionPercentage}, 100`,
+                                                                d: "M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831",
+                                                                fill: "none",
+                                                                stroke: "currentColor",
+                                                                strokeWidth: "3.5",
+                                                                strokeLinecap: "round"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/components/Dashboard.tsx",
+                                                                lineNumber: 277,
+                                                                columnNumber: 21
+                                                            }, ("TURBOPACK compile-time value", void 0))
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/components/Dashboard.tsx",
+                                                        lineNumber: 275,
+                                                        columnNumber: 19
+                                                    }, ("TURBOPACK compile-time value", void 0)),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "absolute inset-0 flex items-center justify-center font-black text-sm text-white drop-shadow-sm",
+                                                        children: [
+                                                            completionPercentage,
+                                                            "%"
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/components/Dashboard.tsx",
+                                                        lineNumber: 279,
+                                                        columnNumber: 19
+                                                    }, ("TURBOPACK compile-time value", void 0))
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/components/Dashboard.tsx",
+                                                lineNumber: 274,
+                                                columnNumber: 17
+                                            }, ("TURBOPACK compile-time value", void 0)),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "flex-1",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                        className: "text-sm font-black text-white leading-tight mb-1",
+                                                        children: "Profilo incompleto"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/components/Dashboard.tsx",
+                                                        lineNumber: 282,
+                                                        columnNumber: 19
+                                                    }, ("TURBOPACK compile-time value", void 0)),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                        className: "text-[10px] font-semibold text-white/80 leading-snug",
+                                                        children: "Aggiungi dati per sbloccare più bonus"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/components/Dashboard.tsx",
+                                                        lineNumber: 283,
+                                                        columnNumber: 19
+                                                    }, ("TURBOPACK compile-time value", void 0))
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/components/Dashboard.tsx",
+                                                lineNumber: 281,
+                                                columnNumber: 17
+                                            }, ("TURBOPACK compile-time value", void 0))
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/Dashboard.tsx",
-                                        lineNumber: 138,
+                                        lineNumber: 273,
+                                        columnNumber: 15
+                                    }, ("TURBOPACK compile-time value", void 0)),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                        className: "mt-3 w-full py-2 bg-white/25 hover:bg-white/35 backdrop-blur-sm text-white rounded-xl font-black text-[10px] uppercase tracking-[0.15em] transition-all border border-white/30 shadow-lg",
+                                        children: "Completa Profilo →"
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/Dashboard.tsx",
+                                        lineNumber: 286,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/Dashboard.tsx",
-                                lineNumber: 133,
-                                columnNumber: 13
-                            }, ("TURBOPACK compile-time value", void 0)),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                className: "text-base font-black mb-1 dark:text-white",
-                                children: "Profilo Incompleto"
-                            }, void 0, false, {
-                                fileName: "[project]/components/Dashboard.tsx",
-                                lineNumber: 140,
-                                columnNumber: 13
-                            }, ("TURBOPACK compile-time value", void 0)),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "text-[10px] text-slate-400 font-bold uppercase mb-3",
-                                children: "Aggiungi dati per più bonus"
-                            }, void 0, false, {
-                                fileName: "[project]/components/Dashboard.tsx",
-                                lineNumber: 141,
-                                columnNumber: 13
-                            }, ("TURBOPACK compile-time value", void 0)),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                onClick: onGoToProfile,
-                                className: "w-full py-2 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 rounded-xl font-bold text-[10px] uppercase tracking-widest hover:bg-blue-600 hover:text-white transition-all",
-                                children: "Completa Dati"
-                            }, void 0, false, {
-                                fileName: "[project]/components/Dashboard.tsx",
-                                lineNumber: 142,
+                                lineNumber: 268,
                                 columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/Dashboard.tsx",
-                        lineNumber: 131,
+                        lineNumber: 261,
                         columnNumber: 11
                     }, ("TURBOPACK compile-time value", void 0))
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/Dashboard.tsx",
-                lineNumber: 108,
+                lineNumber: 183,
+                columnNumber: 7
+            }, ("TURBOPACK compile-time value", void 0)),
+            urgentBonuses.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                initial: {
+                    opacity: 0,
+                    y: 20
+                },
+                animate: {
+                    opacity: 1,
+                    y: 0
+                },
+                transition: {
+                    delay: 0.3
+                },
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "flex items-center gap-2.5 mb-4",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "w-7 h-7 rounded-lg bg-red-500/15 dark:bg-red-400/15 flex items-center justify-center text-sm",
+                                children: "🔥"
+                            }, void 0, false, {
+                                fileName: "[project]/components/Dashboard.tsx",
+                                lineNumber: 300,
+                                columnNumber: 13
+                            }, ("TURBOPACK compile-time value", void 0)),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                className: "text-sm font-black uppercase tracking-[0.15em] text-slate-900 dark:text-white",
+                                children: "In Scadenza"
+                            }, void 0, false, {
+                                fileName: "[project]/components/Dashboard.tsx",
+                                lineNumber: 301,
+                                columnNumber: 13
+                            }, ("TURBOPACK compile-time value", void 0)),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "h-px flex-1 bg-gradient-to-r from-red-300 to-transparent dark:from-red-700"
+                            }, void 0, false, {
+                                fileName: "[project]/components/Dashboard.tsx",
+                                lineNumber: 302,
+                                columnNumber: 13
+                            }, ("TURBOPACK compile-time value", void 0))
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/components/Dashboard.tsx",
+                        lineNumber: 299,
+                        columnNumber: 11
+                    }, ("TURBOPACK compile-time value", void 0)),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "grid grid-cols-1 md:grid-cols-3 gap-3",
+                        children: urgentBonuses.map((bonus, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                                initial: {
+                                    opacity: 0,
+                                    x: -20
+                                },
+                                animate: {
+                                    opacity: 1,
+                                    x: 0
+                                },
+                                transition: {
+                                    delay: 0.4 + i * 0.1
+                                },
+                                onClick: ()=>onSelectBonus(bonus.id),
+                                className: `relative bg-white dark:bg-slate-900 rounded-2xl p-4 border cursor-pointer hover:-translate-y-1 transition-all hover:shadow-xl group ${bonus.daysLeft <= 7 ? "border-red-300 dark:border-red-800 shadow-md shadow-red-100 dark:shadow-red-900/20" : "border-orange-200 dark:border-orange-800 shadow-md shadow-orange-100 dark:shadow-orange-900/20"}`,
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: `absolute top-3 right-3 px-2.5 py-1 rounded-full text-[9px] font-black uppercase tracking-wider ${bonus.daysLeft <= 7 ? "bg-red-500 text-white animate-pulse" : bonus.daysLeft <= 30 ? "bg-orange-500 text-white" : "bg-yellow-400 text-yellow-900"}`,
+                                        children: bonus.daysLeft <= 7 ? `${bonus.daysLeft}gg!` : `${bonus.daysLeft}gg`
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/Dashboard.tsx",
+                                        lineNumber: 319,
+                                        columnNumber: 17
+                                    }, ("TURBOPACK compile-time value", void 0)),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "pr-16",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                className: "text-[9px] uppercase font-black tracking-widest text-slate-400 dark:text-slate-500",
+                                                children: bonus.categoria
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/Dashboard.tsx",
+                                                lineNumber: 330,
+                                                columnNumber: 19
+                                            }, ("TURBOPACK compile-time value", void 0)),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                                                className: "text-sm font-bold text-slate-900 dark:text-white mt-1 leading-tight group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors",
+                                                children: bonus.titolo
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/Dashboard.tsx",
+                                                lineNumber: 331,
+                                                columnNumber: 19
+                                            }, ("TURBOPACK compile-time value", void 0)),
+                                            bonus.valoreEsimato && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                className: "text-xl font-black text-slate-900 dark:text-white mt-1",
+                                                children: [
+                                                    bonus.valoreEsimato.toLocaleString("it-IT"),
+                                                    "€"
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/components/Dashboard.tsx",
+                                                lineNumber: 333,
+                                                columnNumber: 21
+                                            }, ("TURBOPACK compile-time value", void 0))
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/components/Dashboard.tsx",
+                                        lineNumber: 329,
+                                        columnNumber: 17
+                                    }, ("TURBOPACK compile-time value", void 0)),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "mt-3 w-full bg-slate-100 dark:bg-slate-800 rounded-full h-1.5",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: `h-full rounded-full transition-all ${bonus.daysLeft <= 7 ? "bg-red-500" : bonus.daysLeft <= 30 ? "bg-orange-400" : "bg-yellow-400"}`,
+                                            style: {
+                                                width: `${Math.max(5, 100 - bonus.daysLeft / 60 * 100)}%`
+                                            }
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/Dashboard.tsx",
+                                            lineNumber: 337,
+                                            columnNumber: 19
+                                        }, ("TURBOPACK compile-time value", void 0))
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/Dashboard.tsx",
+                                        lineNumber: 336,
+                                        columnNumber: 17
+                                    }, ("TURBOPACK compile-time value", void 0)),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        className: "text-[9px] font-bold text-slate-400 mt-1",
+                                        children: [
+                                            "Scade il ",
+                                            new Date(bonus.scadenza).toLocaleDateString("it-IT")
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/components/Dashboard.tsx",
+                                        lineNumber: 344,
+                                        columnNumber: 17
+                                    }, ("TURBOPACK compile-time value", void 0))
+                                ]
+                            }, bonus.id, true, {
+                                fileName: "[project]/components/Dashboard.tsx",
+                                lineNumber: 306,
+                                columnNumber: 15
+                            }, ("TURBOPACK compile-time value", void 0)))
+                    }, void 0, false, {
+                        fileName: "[project]/components/Dashboard.tsx",
+                        lineNumber: 304,
+                        columnNumber: 11
+                    }, ("TURBOPACK compile-time value", void 0))
+                ]
+            }, void 0, true, {
+                fileName: "[project]/components/Dashboard.tsx",
+                lineNumber: 298,
+                columnNumber: 9
+            }, ("TURBOPACK compile-time value", void 0)),
+            topBonuses.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                initial: {
+                    opacity: 0,
+                    y: 20
+                },
+                animate: {
+                    opacity: 1,
+                    y: 0
+                },
+                transition: {
+                    delay: 0.5
+                },
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "flex items-center gap-2.5 mb-4",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "w-7 h-7 rounded-lg bg-purple-500/15 dark:bg-purple-400/15 flex items-center justify-center text-sm",
+                                children: "🏆"
+                            }, void 0, false, {
+                                fileName: "[project]/components/Dashboard.tsx",
+                                lineNumber: 359,
+                                columnNumber: 13
+                            }, ("TURBOPACK compile-time value", void 0)),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                className: "text-sm font-black uppercase tracking-[0.15em] text-slate-900 dark:text-white",
+                                children: "Bonus di Maggior Valore"
+                            }, void 0, false, {
+                                fileName: "[project]/components/Dashboard.tsx",
+                                lineNumber: 360,
+                                columnNumber: 13
+                            }, ("TURBOPACK compile-time value", void 0)),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "h-px flex-1 bg-gradient-to-r from-purple-300 to-transparent dark:from-purple-700"
+                            }, void 0, false, {
+                                fileName: "[project]/components/Dashboard.tsx",
+                                lineNumber: 361,
+                                columnNumber: 13
+                            }, ("TURBOPACK compile-time value", void 0))
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/components/Dashboard.tsx",
+                        lineNumber: 358,
+                        columnNumber: 11
+                    }, ("TURBOPACK compile-time value", void 0)),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "grid grid-cols-1 md:grid-cols-3 gap-4",
+                        children: topBonuses.map((bonus, i)=>{
+                            const match = results.find((r)=>r.bonusId === bonus.id);
+                            return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                                initial: {
+                                    opacity: 0,
+                                    y: 20
+                                },
+                                animate: {
+                                    opacity: 1,
+                                    y: 0
+                                },
+                                transition: {
+                                    delay: 0.6 + i * 0.1
+                                },
+                                onClick: ()=>onSelectBonus(bonus.id),
+                                className: `relative bg-gradient-to-br rounded-2xl p-5 cursor-pointer hover:-translate-y-1 transition-all hover:shadow-2xl group overflow-hidden ${i === 0 ? "from-purple-500/15 via-indigo-500/10 to-blue-500/10 dark:from-purple-500/25 dark:via-indigo-500/15 dark:to-blue-500/15 border-2 border-purple-300 dark:border-purple-700 shadow-lg shadow-purple-200/50 dark:shadow-purple-900/30" : "from-slate-50 to-white dark:from-slate-800/60 dark:to-slate-900 border border-slate-200 dark:border-slate-700 shadow-md"}`,
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "absolute top-3 right-3 text-2xl opacity-80",
+                                        children: i === 0 ? "🥇" : i === 1 ? "🥈" : "🥉"
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/Dashboard.tsx",
+                                        lineNumber: 380,
+                                        columnNumber: 19
+                                    }, ("TURBOPACK compile-time value", void 0)),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "pr-10",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                className: `text-[9px] uppercase font-black tracking-widest px-2 py-0.5 rounded-full ${i === 0 ? "bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-400" : "bg-slate-200 dark:bg-slate-700 text-slate-600 dark:text-slate-300"}`,
+                                                children: bonus.categoria
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/Dashboard.tsx",
+                                                lineNumber: 384,
+                                                columnNumber: 21
+                                            }, ("TURBOPACK compile-time value", void 0)),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                                                className: "text-sm font-bold text-slate-900 dark:text-white mt-2 leading-tight group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors",
+                                                children: bonus.titolo
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/Dashboard.tsx",
+                                                lineNumber: 389,
+                                                columnNumber: 21
+                                            }, ("TURBOPACK compile-time value", void 0)),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                className: `text-2xl font-black mt-2 ${i === 0 ? "text-purple-700 dark:text-purple-300" : "text-slate-900 dark:text-white"}`,
+                                                children: [
+                                                    bonus.valoreEsimato?.toLocaleString("it-IT"),
+                                                    "€"
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/components/Dashboard.tsx",
+                                                lineNumber: 390,
+                                                columnNumber: 21
+                                            }, ("TURBOPACK compile-time value", void 0)),
+                                            match?.eligible && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "flex items-center gap-1 mt-2",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                                        xmlns: "http://www.w3.org/2000/svg",
+                                                        className: "h-3.5 w-3.5 text-emerald-500",
+                                                        viewBox: "0 0 20 20",
+                                                        fill: "currentColor",
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                            fillRule: "evenodd",
+                                                            d: "M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z",
+                                                            clipRule: "evenodd"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/components/Dashboard.tsx",
+                                                            lineNumber: 396,
+                                                            columnNumber: 27
+                                                        }, ("TURBOPACK compile-time value", void 0))
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/components/Dashboard.tsx",
+                                                        lineNumber: 395,
+                                                        columnNumber: 25
+                                                    }, ("TURBOPACK compile-time value", void 0)),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                        className: "text-[10px] font-bold text-emerald-600 dark:text-emerald-400",
+                                                        children: "Idoneo"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/components/Dashboard.tsx",
+                                                        lineNumber: 398,
+                                                        columnNumber: 25
+                                                    }, ("TURBOPACK compile-time value", void 0))
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/components/Dashboard.tsx",
+                                                lineNumber: 394,
+                                                columnNumber: 23
+                                            }, ("TURBOPACK compile-time value", void 0))
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/components/Dashboard.tsx",
+                                        lineNumber: 383,
+                                        columnNumber: 19
+                                    }, ("TURBOPACK compile-time value", void 0))
+                                ]
+                            }, bonus.id, true, {
+                                fileName: "[project]/components/Dashboard.tsx",
+                                lineNumber: 367,
+                                columnNumber: 17
+                            }, ("TURBOPACK compile-time value", void 0));
+                        })
+                    }, void 0, false, {
+                        fileName: "[project]/components/Dashboard.tsx",
+                        lineNumber: 363,
+                        columnNumber: 11
+                    }, ("TURBOPACK compile-time value", void 0))
+                ]
+            }, void 0, true, {
+                fileName: "[project]/components/Dashboard.tsx",
+                lineNumber: 357,
+                columnNumber: 9
+            }, ("TURBOPACK compile-time value", void 0)),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                initial: {
+                    opacity: 0,
+                    y: 20
+                },
+                animate: {
+                    opacity: 1,
+                    y: 0
+                },
+                transition: {
+                    delay: 0.7
+                },
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "flex items-center gap-2.5 mb-4",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "w-7 h-7 rounded-lg bg-blue-500/15 dark:bg-blue-400/15 flex items-center justify-center text-sm",
+                                children: "📂"
+                            }, void 0, false, {
+                                fileName: "[project]/components/Dashboard.tsx",
+                                lineNumber: 414,
+                                columnNumber: 11
+                            }, ("TURBOPACK compile-time value", void 0)),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                className: "text-sm font-black uppercase tracking-[0.15em] text-slate-900 dark:text-white",
+                                children: "Per Categoria"
+                            }, void 0, false, {
+                                fileName: "[project]/components/Dashboard.tsx",
+                                lineNumber: 415,
+                                columnNumber: 11
+                            }, ("TURBOPACK compile-time value", void 0)),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "h-px flex-1 bg-gradient-to-r from-blue-200 to-transparent dark:from-blue-800"
+                            }, void 0, false, {
+                                fileName: "[project]/components/Dashboard.tsx",
+                                lineNumber: 416,
+                                columnNumber: 11
+                            }, ("TURBOPACK compile-time value", void 0))
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/components/Dashboard.tsx",
+                        lineNumber: 413,
+                        columnNumber: 9
+                    }, ("TURBOPACK compile-time value", void 0)),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "flex flex-wrap gap-2",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                onClick: ()=>setCategoryFilter("Tutte"),
+                                className: `flex items-center gap-1.5 px-3 py-2 rounded-xl text-[10px] font-black uppercase tracking-widest transition-all ${categoryFilter === "Tutte" ? "bg-slate-900 text-white dark:bg-white dark:text-slate-900 shadow-md" : "bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-700"}`,
+                                children: [
+                                    "Tutte",
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        className: "opacity-60",
+                                        children: bonusGroups.active.length
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/Dashboard.tsx",
+                                        lineNumber: 428,
+                                        columnNumber: 13
+                                    }, ("TURBOPACK compile-time value", void 0))
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/components/Dashboard.tsx",
+                                lineNumber: 419,
+                                columnNumber: 11
+                            }, ("TURBOPACK compile-time value", void 0)),
+                            CATEGORIES.map((cat)=>{
+                                const count = categoryCounts[cat.name] || 0;
+                                if (count === 0) return null;
+                                return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                    onClick: ()=>setCategoryFilter(cat.name),
+                                    className: `flex items-center gap-1.5 px-3 py-2 rounded-xl text-[10px] font-black uppercase tracking-widest transition-all ${categoryFilter === cat.name ? "bg-blue-600 text-white shadow-md shadow-blue-500/30" : "bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-700"}`,
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: "text-sm",
+                                            children: cat.icon
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/Dashboard.tsx",
+                                            lineNumber: 443,
+                                            columnNumber: 17
+                                        }, ("TURBOPACK compile-time value", void 0)),
+                                        cat.name,
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: "opacity-60",
+                                            children: count
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/Dashboard.tsx",
+                                            lineNumber: 445,
+                                            columnNumber: 17
+                                        }, ("TURBOPACK compile-time value", void 0))
+                                    ]
+                                }, cat.name, true, {
+                                    fileName: "[project]/components/Dashboard.tsx",
+                                    lineNumber: 434,
+                                    columnNumber: 15
+                                }, ("TURBOPACK compile-time value", void 0));
+                            })
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/components/Dashboard.tsx",
+                        lineNumber: 418,
+                        columnNumber: 9
+                    }, ("TURBOPACK compile-time value", void 0))
+                ]
+            }, void 0, true, {
+                fileName: "[project]/components/Dashboard.tsx",
+                lineNumber: 412,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "pt-6 border-t border-slate-100 dark:border-slate-800",
+                className: "pt-4 border-t border-slate-100 dark:border-slate-800",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex flex-wrap gap-2 mb-4",
+                        className: "flex flex-wrap gap-2 mb-5",
                         children: isPremium ? tabs.map((tab)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                 onClick: ()=>setFilter(tab.id),
-                                className: `px-4 py-2 rounded-xl font-bold text-[10px] uppercase tracking-widest transition-all ${filter === tab.id ? "bg-slate-900 text-white dark:bg-white dark:text-slate-900 shadow-md" : "bg-slate-100 text-slate-400 dark:bg-slate-800 hover:bg-slate-200"}`,
+                                className: `px-4 py-2 rounded-xl font-bold text-[10px] uppercase tracking-widest transition-all ${filter === tab.id ? "bg-slate-900 text-white dark:bg-white dark:text-slate-900 shadow-md" : "bg-slate-100 text-slate-500 dark:bg-slate-800 dark:text-slate-400 hover:bg-slate-200"}`,
                                 children: [
                                     tab.label,
                                     " ",
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "ml-1.5 opacity-50",
+                                        className: "ml-1.5 opacity-70",
                                         children: tab.count
                                     }, void 0, false, {
                                         fileName: "[project]/components/Dashboard.tsx",
-                                        lineNumber: 156,
+                                        lineNumber: 461,
                                         columnNumber: 29
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, tab.id, true, {
                                 fileName: "[project]/components/Dashboard.tsx",
-                                lineNumber: 155,
+                                lineNumber: 460,
                                 columnNumber: 15
                             }, ("TURBOPACK compile-time value", void 0))) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
                             children: [
@@ -5145,13 +5934,13 @@ const Dashboard = ({ profile, bonuses, results, isPremium, onSelectBonus, onGoTo
                                             children: bonuses.length
                                         }, void 0, false, {
                                             fileName: "[project]/components/Dashboard.tsx",
-                                            lineNumber: 162,
+                                            lineNumber: 467,
                                             columnNumber: 31
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/Dashboard.tsx",
-                                    lineNumber: 161,
+                                    lineNumber: 466,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -5169,109 +5958,27 @@ const Dashboard = ({ profile, bonuses, results, isPremium, onSelectBonus, onGoTo
                                                 clipRule: "evenodd"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/Dashboard.tsx",
-                                                lineNumber: 166,
+                                                lineNumber: 471,
                                                 columnNumber: 19
                                             }, ("TURBOPACK compile-time value", void 0))
                                         }, void 0, false, {
                                             fileName: "[project]/components/Dashboard.tsx",
-                                            lineNumber: 165,
+                                            lineNumber: 470,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         "Sblocca Filtri Premium"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/Dashboard.tsx",
-                                    lineNumber: 164,
+                                    lineNumber: 469,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true)
                     }, void 0, false, {
                         fileName: "[project]/components/Dashboard.tsx",
-                        lineNumber: 152,
+                        lineNumber: 457,
                         columnNumber: 9
-                    }, ("TURBOPACK compile-time value", void 0)),
-                    isPremium ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex flex-wrap gap-1.5 mb-6",
-                        children: [
-                            "Tutte",
-                            ...CATEGORIES
-                        ].map((cat)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                onClick: ()=>setCategoryFilter(cat),
-                                className: `px-3 py-1.5 rounded-lg text-[10px] font-bold transition-all ${categoryFilter === cat ? "bg-blue-600 text-white shadow-sm shadow-blue-500/30" : "bg-slate-50 dark:bg-slate-800 text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-700"}`,
-                                children: cat
-                            }, cat, false, {
-                                fileName: "[project]/components/Dashboard.tsx",
-                                lineNumber: 178,
-                                columnNumber: 15
-                            }, ("TURBOPACK compile-time value", void 0)))
-                    }, void 0, false, {
-                        fileName: "[project]/components/Dashboard.tsx",
-                        lineNumber: 176,
-                        columnNumber: 11
-                    }, ("TURBOPACK compile-time value", void 0)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "relative mb-6",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex flex-wrap gap-1.5 opacity-40 blur-[1px] pointer-events-none",
-                                children: [
-                                    "Tutte",
-                                    ...CATEGORIES
-                                ].map((cat)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "px-3 py-1.5 rounded-lg text-[10px] font-bold bg-slate-50 dark:bg-slate-800 text-slate-500",
-                                        children: cat
-                                    }, cat, false, {
-                                        fileName: "[project]/components/Dashboard.tsx",
-                                        lineNumber: 195,
-                                        columnNumber: 17
-                                    }, ("TURBOPACK compile-time value", void 0)))
-                            }, void 0, false, {
-                                fileName: "[project]/components/Dashboard.tsx",
-                                lineNumber: 193,
-                                columnNumber: 13
-                            }, ("TURBOPACK compile-time value", void 0)),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "absolute inset-0 flex items-center justify-center",
-                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                    onClick: onUpgrade,
-                                    className: "flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-[10px] font-bold bg-gradient-to-r from-yellow-400 to-orange-500 text-white shadow-md hover:shadow-lg transition-all",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-                                            xmlns: "http://www.w3.org/2000/svg",
-                                            className: "h-3 w-3",
-                                            viewBox: "0 0 20 20",
-                                            fill: "currentColor",
-                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                                                fillRule: "evenodd",
-                                                d: "M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z",
-                                                clipRule: "evenodd"
-                                            }, void 0, false, {
-                                                fileName: "[project]/components/Dashboard.tsx",
-                                                lineNumber: 201,
-                                                columnNumber: 19
-                                            }, ("TURBOPACK compile-time value", void 0))
-                                        }, void 0, false, {
-                                            fileName: "[project]/components/Dashboard.tsx",
-                                            lineNumber: 200,
-                                            columnNumber: 17
-                                        }, ("TURBOPACK compile-time value", void 0)),
-                                        "Filtra per Categoria"
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/components/Dashboard.tsx",
-                                    lineNumber: 199,
-                                    columnNumber: 15
-                                }, ("TURBOPACK compile-time value", void 0))
-                            }, void 0, false, {
-                                fileName: "[project]/components/Dashboard.tsx",
-                                lineNumber: 198,
-                                columnNumber: 13
-                            }, ("TURBOPACK compile-time value", void 0))
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/components/Dashboard.tsx",
-                        lineNumber: 192,
-                        columnNumber: 11
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         ref: availableRef,
@@ -5279,61 +5986,59 @@ const Dashboard = ({ profile, bonuses, results, isPremium, onSelectBonus, onGoTo
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AnimatePresence"], {
                             mode: "wait",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                                initial: {
-                                    opacity: 0,
-                                    y: 20
-                                },
-                                animate: {
-                                    opacity: 1,
-                                    y: 0
-                                },
-                                exit: {
-                                    opacity: 0,
-                                    y: -20
-                                },
+                                variants: staggerContainer,
+                                initial: "hidden",
+                                animate: "visible",
                                 className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5",
                                 children: filteredBonuses.map((b)=>{
                                     const match = results.find((r)=>r.bonusId === b.id);
-                                    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$BonusCard$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                        bonus: b,
-                                        onClick: ()=>onSelectBonus(b.id),
-                                        matchReason: match?.reason,
-                                        isEligible: match?.eligible
+                                    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                                        variants: staggerItem,
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$BonusCard$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                            bonus: b,
+                                            onClick: ()=>onSelectBonus(b.id),
+                                            matchReason: match?.reason,
+                                            isEligible: match?.eligible
+                                        }, b.id, false, {
+                                            fileName: "[project]/components/Dashboard.tsx",
+                                            lineNumber: 493,
+                                            columnNumber: 21
+                                        }, ("TURBOPACK compile-time value", void 0))
                                     }, b.id, false, {
                                         fileName: "[project]/components/Dashboard.tsx",
-                                        lineNumber: 216,
+                                        lineNumber: 492,
                                         columnNumber: 19
                                     }, ("TURBOPACK compile-time value", void 0));
                                 })
-                            }, filter, false, {
+                            }, `${filter}-${categoryFilter}`, false, {
                                 fileName: "[project]/components/Dashboard.tsx",
-                                lineNumber: 212,
+                                lineNumber: 482,
                                 columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0))
                         }, void 0, false, {
                             fileName: "[project]/components/Dashboard.tsx",
-                            lineNumber: 211,
+                            lineNumber: 481,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0))
                     }, void 0, false, {
                         fileName: "[project]/components/Dashboard.tsx",
-                        lineNumber: 210,
+                        lineNumber: 480,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0))
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/Dashboard.tsx",
-                lineNumber: 150,
+                lineNumber: 455,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/components/Dashboard.tsx",
-        lineNumber: 106,
+        lineNumber: 178,
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 };
-_s(Dashboard, "49dyw/bUJiD2a9EZCFBgeMRc27Q=");
+_s(Dashboard, "clUwLfTSDxQgo8KElt68gzgND58=");
 _c = Dashboard;
 const __TURBOPACK__default__export__ = Dashboard;
 var _c;
@@ -5944,7 +6649,7 @@ const BonusDetailView = ({ bonus, allBonuses, allResults, matchInfo, onBack, onS
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                         onClick: onBack,
-                        className: "flex items-center gap-1.5 px-4 py-2 rounded-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-[10px] font-bold uppercase tracking-widest text-slate-500 hover:text-blue-600 hover:border-blue-200 transition-all group shadow-sm",
+                        className: "flex items-center gap-1.5 px-4 py-2 rounded-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-[10px] font-bold uppercase tracking-widest text-slate-600 hover:text-blue-600 hover:border-blue-200 transition-all group shadow-sm",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Icon, {
                                 d: Icons.back,
@@ -6125,7 +6830,7 @@ const BonusDetailView = ({ bonus, allBonuses, allResults, matchInfo, onBack, onS
                                                 className: "flex flex-col items-center animate-in zoom-in duration-700",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        className: "text-blue-100/80 text-[10px] font-bold uppercase tracking-[0.2em] mb-1",
+                                                        className: "text-blue-100 text-[10px] font-bold uppercase tracking-[0.2em] mb-1",
                                                         children: "Valore del Bonus"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/BonusDetailView.tsx",
@@ -6341,7 +7046,7 @@ const BonusDetailView = ({ bonus, allBonuses, allResults, matchInfo, onBack, onS
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
                                                         children: [
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                                                className: "text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em] mb-4 flex items-center gap-1.5",
+                                                                className: "text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-[0.2em] mb-4 flex items-center gap-1.5",
                                                                 children: [
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                         className: "h-0.5 w-8 bg-blue-500"
@@ -6393,7 +7098,7 @@ const BonusDetailView = ({ bonus, allBonuses, allResults, matchInfo, onBack, onS
                                                         label: "Sblocca Lista",
                                                         children: [
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                                                className: "text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em] mb-4 flex items-center gap-1.5",
+                                                                className: "text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-[0.2em] mb-4 flex items-center gap-1.5",
                                                                 children: [
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                         className: "h-0.5 w-8 bg-blue-500"
@@ -6465,7 +7170,7 @@ const BonusDetailView = ({ bonus, allBonuses, allResults, matchInfo, onBack, onS
                                                         className: "bg-slate-50 dark:bg-slate-800/40 p-6 rounded-2xl border border-slate-100 dark:border-slate-800/50 text-center flex flex-col items-center",
                                                         children: [
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                                                className: "text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em] mb-4",
+                                                                className: "text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-[0.2em] mb-4",
                                                                 children: "Tempistiche Previste"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/BonusDetailView.tsx",
@@ -6496,7 +7201,7 @@ const BonusDetailView = ({ bonus, allBonuses, allResults, matchInfo, onBack, onS
                                                                 columnNumber: 19
                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                className: "text-[10px] font-bold text-slate-400 mt-1 uppercase",
+                                                                className: "text-[10px] font-bold text-slate-500 dark:text-slate-400 mt-1 uppercase",
                                                                 children: "Tempo medio di risposta"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/BonusDetailView.tsx",
@@ -6516,7 +7221,7 @@ const BonusDetailView = ({ bonus, allBonuses, allResults, matchInfo, onBack, onS
                                                         className: "bg-blue-50/30 dark:bg-blue-900/10 p-6 rounded-2xl border border-blue-100 dark:border-blue-900/20",
                                                         children: [
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                                                className: "text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em] mb-4",
+                                                                className: "text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-[0.2em] mb-4",
                                                                 children: "Come Funziona"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/BonusDetailView.tsx",
@@ -6537,7 +7242,7 @@ const BonusDetailView = ({ bonus, allBonuses, allResults, matchInfo, onBack, onS
                                                                                 columnNumber: 25
                                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                                className: "text-xs font-medium text-slate-600 dark:text-slate-400 leading-snug",
+                                                                                className: "text-xs font-medium text-slate-700 dark:text-slate-300 leading-snug",
                                                                                 children: step
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/components/BonusDetailView.tsx",
@@ -6564,7 +7269,7 @@ const BonusDetailView = ({ bonus, allBonuses, allResults, matchInfo, onBack, onS
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
                                                         children: [
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                                                className: "text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em] mb-4",
+                                                                className: "text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-[0.2em] mb-4",
                                                                 children: "Azione Necessaria"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/BonusDetailView.tsx",
@@ -6640,7 +7345,7 @@ const BonusDetailView = ({ bonus, allBonuses, allResults, matchInfo, onBack, onS
                                         className: "pt-10 border-t border-slate-100 dark:border-slate-800",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                                className: "text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em] mb-5 text-center",
+                                                className: "text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-[0.2em] mb-5 text-center",
                                                 children: isPremium ? "Video Tutorial di Supporto" : "Video Tutorial (Premium)"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/BonusDetailView.tsx",
@@ -6881,8 +7586,8 @@ const CATEGORIES = [
 ];
 const STYLES = {
     input: "w-full px-2.5 py-1.5 rounded-lg bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-xs focus:ring-2 focus:ring-indigo-500/20 outline-none transition-all",
-    label: "text-[10px] font-bold text-slate-500 mb-0.5 block",
-    sectionTitle: "text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-2.5",
+    label: "text-[10px] font-bold text-slate-600 dark:text-slate-300 mb-0.5 block",
+    sectionTitle: "text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-widest mb-2.5",
     card: "bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm",
     premiumBlur: "opacity-50 blur-[1px] pointer-events-none select-none"
 };
@@ -7118,7 +7823,7 @@ const SearchView = ({ bonuses, results, onSelectBonus, isPremium, onUpgrade })=>
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Icon, {
                                     d: Icons.search,
-                                    className: "h-4 w-4 absolute left-3 top-1/2 -translate-y-1/2 text-slate-400"
+                                    className: "h-4 w-4 absolute left-3 top-1/2 -translate-y-1/2 text-slate-500"
                                 }, void 0, false, {
                                     fileName: "[project]/components/SearchView.tsx",
                                     lineNumber: 140,
@@ -7150,7 +7855,7 @@ const SearchView = ({ bonuses, results, onSelectBonus, isPremium, onUpgrade })=>
                                                 ...CATEGORIES
                                             ].map((cat)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                     onClick: ()=>setSelectedCategory(cat),
-                                                    className: `px-2 py-1 rounded-lg text-[10px] font-bold transition-all ${selectedCategory === cat ? "bg-blue-600 text-white shadow-sm shadow-blue-500/30" : "bg-slate-50 dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-700"}`,
+                                                    className: `px-2 py-1 rounded-lg text-[10px] font-bold transition-all ${selectedCategory === cat ? "bg-blue-600 text-white shadow-sm shadow-blue-500/30" : "bg-slate-50 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700"}`,
                                                     children: cat
                                                 }, cat, false, {
                                                     fileName: "[project]/components/SearchView.tsx",
@@ -7335,7 +8040,7 @@ const SearchView = ({ bonuses, results, onSelectBonus, isPremium, onUpgrade })=>
                                     children: [
                                         "Risultati ",
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "text-slate-400 ml-1.5 text-sm font-bold",
+                                            className: "text-slate-500 ml-1.5 text-sm font-bold",
                                             children: totalResults
                                         }, void 0, false, {
                                             fileName: "[project]/components/SearchView.tsx",
@@ -7353,7 +8058,7 @@ const SearchView = ({ bonuses, results, onSelectBonus, isPremium, onUpgrade })=>
                                     onClick: ()=>!isPremium && onUpgrade?.(),
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "flex items-center gap-1.5 text-xs font-bold text-slate-500 hover:text-slate-800 dark:hover:text-white transition-colors",
+                                            className: "flex items-center gap-1.5 text-xs font-bold text-slate-600 dark:text-slate-300 hover:text-slate-800 dark:hover:text-white transition-colors",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                     children: "Ordina per: Rilevanza"
@@ -7539,7 +8244,7 @@ const SearchView = ({ bonuses, results, onSelectBonus, isPremium, onUpgrade })=>
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "text-slate-400 font-bold text-sm",
+                                    className: "text-slate-500 dark:text-slate-400 font-bold text-sm",
                                     children: "Nessun bonus trovato con questi filtri."
                                 }, void 0, false, {
                                     fileName: "[project]/components/SearchView.tsx",
@@ -7626,7 +8331,7 @@ const AUTH_STYLES = {
     // Input field
     input: "w-full px-4 py-2.5 bg-slate-50 dark:bg-slate-800 border border-transparent focus:border-blue-500 rounded-xl outline-none text-slate-900 dark:text-white text-sm font-medium transition-all",
     // Label
-    label: "text-[9px] font-bold text-slate-400 uppercase tracking-[0.15em] ml-1",
+    label: "text-[9px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-[0.15em] ml-1",
     // Pulsante primario
     submitBtn: "w-full py-3 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-bold text-sm uppercase tracking-widest rounded-xl shadow-lg shadow-blue-500/20 active:scale-[0.98] transition-all disabled:opacity-50 disabled:cursor-not-allowed",
     // Box errore
@@ -7709,7 +8414,7 @@ const FormHeader = ({ title, subtitle, onClose })=>/*#__PURE__*/ (0, __TURBOPACK
                         columnNumber: 7
                     }, ("TURBOPACK compile-time value", void 0)),
                     subtitle && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        className: "text-[9px] font-bold text-slate-400 uppercase tracking-widest mt-0.5",
+                        className: "text-[9px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-widest mt-0.5",
                         children: subtitle
                     }, void 0, false, {
                         fileName: "[project]/components/Auth/authStyles.tsx",
@@ -7815,7 +8520,7 @@ _c4 = FormField;
 const FormFooterLink = ({ text, linkText, onClick })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "text-center mt-5",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-            className: "text-slate-500 dark:text-slate-400 text-xs font-medium",
+            className: "text-slate-600 dark:text-slate-300 text-xs font-medium",
             children: [
                 text,
                 " ",
@@ -11570,7 +12275,7 @@ const LandingPage = ({ onSubmit, onShowPremium })=>{
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed",
+                                        className: "text-xl text-slate-700 dark:text-slate-300 max-w-2xl mx-auto mb-10 leading-relaxed",
                                         children: "Scopri in pochi secondi tutti i bonus statali e regionali a cui hai diritto. L'intelligenza artificiale al servizio della burocrazia italiana."
                                     }, void 0, false, {
                                         fileName: "[project]/components/LandingPage.tsx",
@@ -11623,7 +12328,7 @@ const LandingPage = ({ onSubmit, onShowPremium })=>{
                                 className: "mt-16",
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                     onClick: scrollToForm,
-                                    className: "animate-bounce text-slate-400 dark:text-slate-500 hover:text-blue-500 transition-colors",
+                                    className: "animate-bounce text-slate-500 dark:text-slate-400 hover:text-blue-500 transition-colors",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Icon, {
                                         path: Icons.arrowDown,
                                         className: "h-8 w-8 mx-auto"
@@ -11689,7 +12394,7 @@ const LandingPage = ({ onSubmit, onShowPremium })=>{
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].p, {
                                     variants: fadeInUp,
-                                    className: "text-lg text-slate-600 dark:text-slate-400 mt-4 max-w-2xl mx-auto",
+                                    className: "text-lg text-slate-700 dark:text-slate-300 mt-4 max-w-2xl mx-auto",
                                     children: "In Italia esistono centinaia di bonus e agevolazioni, ma trovarli richiede ore di ricerca. BonusMatch fa il lavoro pesante per te."
                                 }, void 0, false, {
                                     fileName: "[project]/components/LandingPage.tsx",
@@ -11738,7 +12443,7 @@ const LandingPage = ({ onSubmit, onShowPremium })=>{
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: "text-slate-600 dark:text-slate-400 text-sm leading-relaxed",
+                                            className: "text-slate-700 dark:text-slate-300 text-sm leading-relaxed",
                                             children: feature.description
                                         }, void 0, false, {
                                             fileName: "[project]/components/LandingPage.tsx",
@@ -11837,7 +12542,7 @@ const LandingPage = ({ onSubmit, onShowPremium })=>{
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "text-slate-600 dark:text-slate-400 text-sm",
+                                                    className: "text-slate-700 dark:text-slate-300 text-sm",
                                                     children: step.description
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/LandingPage.tsx",
@@ -11913,7 +12618,7 @@ const LandingPage = ({ onSubmit, onShowPremium })=>{
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "text-lg text-slate-600 dark:text-slate-400",
+                                    className: "text-lg text-slate-700 dark:text-slate-300",
                                     children: "Compila il form per ricevere la tua analisi personalizzata gratuita"
                                 }, void 0, false, {
                                     fileName: "[project]/components/LandingPage.tsx",
@@ -12018,7 +12723,7 @@ const LandingPage = ({ onSubmit, onShowPremium })=>{
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "text-slate-400 text-lg mb-8 leading-relaxed",
+                                        className: "text-slate-300 text-lg mb-8 leading-relaxed",
                                         children: "Con Premium hai accesso a funzionalità esclusive per massimizzare i tuoi benefici e gestire i bonus di tutta la famiglia."
                                     }, void 0, false, {
                                         fileName: "[project]/components/LandingPage.tsx",
@@ -12306,7 +13011,7 @@ const LandingPage = ({ onSubmit, onShowPremium })=>{
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "px-6 pb-6 text-slate-600 dark:text-slate-400",
+                                            className: "px-6 pb-6 text-slate-700 dark:text-slate-300",
                                             children: item.a
                                         }, void 0, false, {
                                             fileName: "[project]/components/LandingPage.tsx",
@@ -12358,7 +13063,7 @@ const LandingPage = ({ onSubmit, onShowPremium })=>{
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].p, {
                                 variants: fadeInUp,
-                                className: "text-lg text-slate-600 dark:text-slate-400 mb-10",
+                                className: "text-lg text-slate-700 dark:text-slate-300 mb-10",
                                 children: "Unisciti a migliaia di italiani che hanno già scoperto i bonus a cui hanno diritto."
                             }, void 0, false, {
                                 fileName: "[project]/components/LandingPage.tsx",
@@ -12386,7 +13091,7 @@ const LandingPage = ({ onSubmit, onShowPremium })=>{
                                 variants: fadeInUp,
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "text-sm font-bold text-slate-500 uppercase tracking-widest mb-4",
+                                        className: "text-sm font-bold text-slate-600 dark:text-slate-300 uppercase tracking-widest mb-4",
                                         children: "Seguici"
                                     }, void 0, false, {
                                         fileName: "[project]/components/LandingPage.tsx",

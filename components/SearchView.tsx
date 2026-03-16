@@ -22,8 +22,8 @@ const CATEGORIES: BonusCategory[] = ["Studio", "Casa", "Energia", "Famiglia", "L
 
 const STYLES = {
   input: "w-full px-2.5 py-1.5 rounded-lg bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-xs focus:ring-2 focus:ring-indigo-500/20 outline-none transition-all",
-  label: "text-[10px] font-bold text-slate-500 mb-0.5 block",
-  sectionTitle: "text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-2.5",
+  label: "text-[10px] font-bold text-slate-600 dark:text-slate-300 mb-0.5 block",
+  sectionTitle: "text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-widest mb-2.5",
   card: "bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm",
   premiumBlur: "opacity-50 blur-[1px] pointer-events-none select-none",
 } as const;
@@ -137,7 +137,7 @@ const SearchView: React.FC<SearchViewProps> = ({ bonuses, results, onSelectBonus
               onChange={e => setSearchTerm(e.target.value)}
               className="w-full pl-10 pr-3 py-2.5 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 focus:ring-2 focus:ring-blue-500/20 outline-none transition-all shadow-sm text-sm font-medium"
             />
-            <Icon d={Icons.search} className="h-4 w-4 absolute left-3 top-1/2 -translate-y-1/2 text-slate-400" />
+            <Icon d={Icons.search} className="h-4 w-4 absolute left-3 top-1/2 -translate-y-1/2 text-slate-500" />
           </div>
 
           {/* Pannello filtri */}
@@ -153,7 +153,7 @@ const SearchView: React.FC<SearchViewProps> = ({ bonuses, results, onSelectBonus
                     className={`px-2 py-1 rounded-lg text-[10px] font-bold transition-all ${
                       selectedCategory === cat
                         ? "bg-blue-600 text-white shadow-sm shadow-blue-500/30"
-                        : "bg-slate-50 dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-700"
+                        : "bg-slate-50 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700"
                     }`}
                   >
                     {cat}
@@ -202,12 +202,12 @@ const SearchView: React.FC<SearchViewProps> = ({ bonuses, results, onSelectBonus
           {/* Header risultati */}
           <div className="flex items-center justify-between">
             <h2 className="text-lg font-bold text-slate-800 dark:text-white">
-              Risultati <span className="text-slate-400 ml-1.5 text-sm font-bold">{totalResults}</span>
+              Risultati <span className="text-slate-500 ml-1.5 text-sm font-bold">{totalResults}</span>
             </h2>
             
             {/* Dropdown ordinamento (mock) */}
             <div className="relative group cursor-pointer" onClick={() => !isPremium && onUpgrade?.()}>
-              <div className="flex items-center gap-1.5 text-xs font-bold text-slate-500 hover:text-slate-800 dark:hover:text-white transition-colors">
+              <div className="flex items-center gap-1.5 text-xs font-bold text-slate-600 dark:text-slate-300 hover:text-slate-800 dark:hover:text-white transition-colors">
                 <span>Ordina per: Rilevanza</span>
                 <Icon d={Icons.chevron} className="h-3 w-3" />
               </div>
@@ -268,7 +268,7 @@ const SearchView: React.FC<SearchViewProps> = ({ bonuses, results, onSelectBonus
               <div className="h-14 w-14 bg-slate-50 dark:bg-slate-800 rounded-full flex items-center justify-center mx-auto mb-3 text-slate-300">
                 <Icon d={Icons.search} className="h-6 w-6" />
               </div>
-              <p className="text-slate-400 font-bold text-sm">Nessun bonus trovato con questi filtri.</p>
+              <p className="text-slate-500 dark:text-slate-400 font-bold text-sm">Nessun bonus trovato con questi filtri.</p>
               <button onClick={resetFilters} className="text-blue-500 font-bold text-xs mt-1.5 hover:underline">Resetta filtri</button>
             </div>
           )}

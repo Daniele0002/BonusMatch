@@ -100,7 +100,7 @@ const BonusDetailView: React.FC<BonusDetailViewProps> = ({ bonus, allBonuses, al
 
       <div className="relative z-10 max-w-4xl mx-auto space-y-8 pb-12 cursor-default" onClick={e => e.stopPropagation()}>
         {/* Back Button */}
-        <button onClick={onBack} className="flex items-center gap-1.5 px-4 py-2 rounded-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-[10px] font-bold uppercase tracking-widest text-slate-500 hover:text-blue-600 hover:border-blue-200 transition-all group shadow-sm">
+        <button onClick={onBack} className="flex items-center gap-1.5 px-4 py-2 rounded-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-[10px] font-bold uppercase tracking-widest text-slate-600 hover:text-blue-600 hover:border-blue-200 transition-all group shadow-sm">
           <Icon d={Icons.back} className="h-4 w-4 transform group-hover:-translate-x-1 transition-transform" />
           Torna alla lista
         </button>
@@ -146,7 +146,7 @@ const BonusDetailView: React.FC<BonusDetailViewProps> = ({ bonus, allBonuses, al
               )}
               {bonus.valoreEsimato ? (
                 <div className="flex flex-col items-center animate-in zoom-in duration-700">
-                  <span className="text-blue-100/80 text-[10px] font-bold uppercase tracking-[0.2em] mb-1">Valore del Bonus</span>
+                  <span className="text-blue-100 text-[10px] font-bold uppercase tracking-[0.2em] mb-1">Valore del Bonus</span>
                   <span className="text-4xl md:text-5xl font-black tracking-tighter drop-shadow-xl">
                     {bonus.valoreEsimato.toLocaleString("it-IT", { style: "currency", currency: "EUR", maximumFractionDigits: 0 })}
                   </span>
@@ -212,7 +212,7 @@ const BonusDetailView: React.FC<BonusDetailViewProps> = ({ bonus, allBonuses, al
               <div className="space-y-8">
                 {/* Requisiti */}
                 <section>
-                  <h4 className="text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em] mb-4 flex items-center gap-1.5">
+                  <h4 className="text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-[0.2em] mb-4 flex items-center gap-1.5">
                     <div className="h-0.5 w-8 bg-blue-500" /> Requisiti di Accesso
                   </h4>
                   <ul className="space-y-2.5">
@@ -226,7 +226,7 @@ const BonusDetailView: React.FC<BonusDetailViewProps> = ({ bonus, allBonuses, al
 
                 {/* Documenti (Premium) */}
                 <PremiumLock isPremium={isPremium} onUpgrade={onUpgrade} label="Sblocca Lista">
-                  <h4 className="text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em] mb-4 flex items-center gap-1.5">
+                  <h4 className="text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-[0.2em] mb-4 flex items-center gap-1.5">
                     <div className="h-0.5 w-8 bg-blue-500" /> Documenti Necessari
                   </h4>
                   <div className="flex flex-wrap gap-2">
@@ -245,22 +245,22 @@ const BonusDetailView: React.FC<BonusDetailViewProps> = ({ bonus, allBonuses, al
               <div className="space-y-8">
                 {/* Tempistiche */}
                 <section className="bg-slate-50 dark:bg-slate-800/40 p-6 rounded-2xl border border-slate-100 dark:border-slate-800/50 text-center flex flex-col items-center">
-                  <h4 className="text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em] mb-4">Tempistiche Previste</h4>
+                  <h4 className="text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-[0.2em] mb-4">Tempistiche Previste</h4>
                   <div className="bg-amber-100 dark:bg-amber-900/30 p-3 rounded-xl text-amber-600 dark:text-amber-400 mb-3 transform rotate-12 inline-block">
                     <Icon d={Icons.clock} className="h-6 w-6" />
                   </div>
                   <span className="text-xl font-black text-slate-800 dark:text-slate-200 tracking-tight">{bonus.tempistica}</span>
-                  <p className="text-[10px] font-bold text-slate-400 mt-1 uppercase">Tempo medio di risposta</p>
+                  <p className="text-[10px] font-bold text-slate-500 dark:text-slate-400 mt-1 uppercase">Tempo medio di risposta</p>
                 </section>
 
                 {/* Come Funziona (Premium) */}
                 <PremiumLock isPremium={isPremium} onUpgrade={onUpgrade} label="Contenuto Premium" className="bg-blue-50/30 dark:bg-blue-900/10 p-6 rounded-2xl border border-blue-100 dark:border-blue-900/20">
-                  <h4 className="text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em] mb-4">Come Funziona</h4>
+                  <h4 className="text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-[0.2em] mb-4">Come Funziona</h4>
                   <div className="space-y-4">
                     {bonus.procedura.map((step, i) => (
                       <div key={i} className="flex gap-2.5">
                         <div className="flex-shrink-0 w-5 h-5 rounded-full bg-blue-600 text-white flex items-center justify-center text-[9px] font-bold">{i + 1}</div>
-                        <p className="text-xs font-medium text-slate-600 dark:text-slate-400 leading-snug">{step}</p>
+                        <p className="text-xs font-medium text-slate-700 dark:text-slate-300 leading-snug">{step}</p>
                       </div>
                     ))}
                   </div>
@@ -268,7 +268,7 @@ const BonusDetailView: React.FC<BonusDetailViewProps> = ({ bonus, allBonuses, al
 
                 {/* CTA */}
                 <section>
-                  <h4 className="text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em] mb-4">Azione Necessaria</h4>
+                  <h4 className="text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-[0.2em] mb-4">Azione Necessaria</h4>
                   {bonus.status === "attivo" ? (
                     <a href={bonus.linkPortale} target="_blank" rel="noopener noreferrer"
                       className="w-full flex items-center justify-center gap-2.5 bg-[#FF8235] hover:bg-[#ff924a] text-white px-6 py-3.5 rounded-xl font-bold text-base shadow-lg shadow-orange-500/20 hover:shadow-orange-500/50 transition-all transform hover:-translate-y-1 hover:scale-[1.02] active:scale-[0.98] group/apply">
@@ -287,7 +287,7 @@ const BonusDetailView: React.FC<BonusDetailViewProps> = ({ bonus, allBonuses, al
 
             {/* Video Tutorial (Premium) */}
             <section className="pt-10 border-t border-slate-100 dark:border-slate-800">
-              <h4 className="text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em] mb-5 text-center">
+              <h4 className="text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-[0.2em] mb-5 text-center">
                 {isPremium ? "Video Tutorial di Supporto" : "Video Tutorial (Premium)"}
               </h4>
               <div className={`aspect-video w-full max-w-2xl mx-auto bg-slate-100 dark:bg-slate-800 rounded-2xl overflow-hidden relative group border-2 border-white dark:border-slate-800 shadow-xl ${!isPremium ? "cursor-pointer" : ""}`} onClick={!isPremium ? onUpgrade : undefined}>

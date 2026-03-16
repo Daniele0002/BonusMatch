@@ -14,13 +14,13 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
           <div>
             <div className="flex items-center gap-1.5 mb-4">
               <div className="h-6 w-6 rounded-lg flex items-center justify-center">
-                <img src="/logo sfondo.png" alt="BonusMatch Logo" />
+                <img src="/assets/favicon.png" alt="BonusMatch Logo" />
               </div>
               <span className="text-base text-slate-900 dark:text-white uppercase" style={{ fontFamily: '"Special Gothic Expanded One", sans-serif' }}>
                 Bonus Match
               </span>
             </div>
-            <p className="text-slate-500 text-sm font-medium leading-relaxed max-w-sm">
+            <p className="text-slate-600 dark:text-slate-300 text-sm font-medium leading-relaxed max-w-sm">
               Semplifichiamo l'accesso ai bonus italiani grazie all'intelligenza
               artificiale. La burocrazia non è mai stata così semplice.
             </p>
@@ -32,19 +32,19 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             </h4>
             <ul className="space-y-2">
               <li>
-                <button className="text-slate-500 hover:text-blue-600 dark:hover:text-blue-400 text-sm font-medium transition-colors">
+                <button className="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 text-sm font-medium transition-colors">
                   Centro Assistenza
                 </button>
               </li>
               <li>
-                <button className="text-slate-500 hover:text-blue-600 dark:hover:text-blue-400 text-sm font-medium transition-colors">
+                <button className="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 text-sm font-medium transition-colors">
                   FAQ
                 </button>
               </li>
               <li>
                 <a
                  
-                  className="text-slate-500 hover:text-blue-600 dark:hover:text-blue-400 text-sm font-medium transition-colors"
+                  className="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 text-sm font-medium transition-colors"
                 >
                   bonusmatch@libero.it
                 </a>
@@ -54,12 +54,12 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
         </div>
 
         <div className="pt-5 border-t border-slate-100 dark:border-slate-800 flex flex-col md:flex-row justify-between items-center gap-3">
-          <p className="text-slate-400 dark:text-slate-600 text-[9px] font-bold uppercase tracking-[0.2em]">
+          <p className="text-slate-500 dark:text-slate-400 text-[9px] font-bold uppercase tracking-[0.2em]">
             Bonus Match &copy; 2026 • Made with ❤️ in Italy
           </p>
           <div className="flex gap-4 items-center">
             <span className="h-1.5 w-1.5 rounded-full bg-green-500"></span>
-            <span className="text-[9px] font-bold text-slate-400 uppercase tracking-wider">
+            <span className="text-[9px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">
               System Operational
             </span>
           </div>
