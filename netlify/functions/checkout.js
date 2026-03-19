@@ -5,7 +5,7 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 export const handler = async (event) => {
   // CORS headers
   const headers = {
-    'Access-Control-Allow-Origin': '*',
+    'Access-Control-Allow-Origin': process.env.FRONTEND_URL || 'https://bonusmatch.it',
     'Access-Control-Allow-Headers': 'Content-Type, Authorization',
     'Access-Control-Allow-Methods': 'POST, OPTIONS',
   };
@@ -64,8 +64,7 @@ export const handler = async (event) => {
       statusCode: 500,
       headers,
       body: JSON.stringify({ 
-        error: 'Errore nella creazione della sessione di pagamento',
-        message: error.message 
+        error: 'Errore nella creazione della sessione di pagamento'
       }),
     };
   }

@@ -10,7 +10,7 @@ const supabase = createClient(
 
 export const handler = async (event) => {
   const headers = {
-    'Access-Control-Allow-Origin': '*',
+    'Access-Control-Allow-Origin': process.env.FRONTEND_URL || 'https://bonusmatch.it',
     'Access-Control-Allow-Headers': 'Content-Type',
     'Access-Control-Allow-Methods': 'POST, OPTIONS',
     'Content-Type': 'application/json',
@@ -22,6 +22,27 @@ export const handler = async (event) => {
 
   if (event.httpMethod !== 'POST') {
     return { statusCode: 405, headers, body: JSON.stringify({ error: 'Method not allowed' }) };
+  }
+
+  // --- AUTENTICAZIONE: verifica JWT Supabase ---
+  const authHeader = event.headers.authorization || event.headers.Authorization;
+  if (!authHeader || !authHeader.startsWith('Bearer ')) {
+    return {
+      statusCode: 401,
+      headers,
+      body: JSON.stringify({ error: 'Token di autenticazione mancante' }),
+    };
+  }
+
+  const token = authHeader.replace('Bearer ', '');
+  const { data: { user: authUser }, error: authError } = await supabase.auth.getUser(token);
+
+  if (authError || !authUser) {
+    return {
+      statusCode: 401,
+      headers,
+      body: JSON.stringify({ error: 'Token non valido o scaduto' }),
+    };
   }
 
   try {
@@ -96,7 +117,7 @@ export const handler = async (event) => {
     return {
       statusCode: 500,
       headers,
-      body: JSON.stringify({ error: 'Errore verifica pagamento', message: error.message }),
+      body: JSON.stringify({ error: 'Errore nella verifica del pagamento' }),
     };
   }
 };

@@ -177,9 +177,16 @@ const App: React.FC = () => {
       // Se abbiamo una session_id E un utente, verifica lato server
       if (sessionId && user) {
         try {
+          // Ottieni token JWT per autenticazione
+          const { data: { session: authSession } } = await supabase.auth.getSession();
+          const token = authSession?.access_token;
+
           const response = await fetch('/.netlify/functions/verify-payment', {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
+            headers: {
+              'Content-Type': 'application/json',
+              ...(token ? { 'Authorization': `Bearer ${token}` } : {}),
+            },
             body: JSON.stringify({ sessionId }),
           });
           

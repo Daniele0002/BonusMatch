@@ -179,12 +179,35 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({
                 }
               } else {
                 // Sessione valida, aggiorna profilo in background
-                fetchUserProfile(session.user.id, session.user.email!).then((fullUser) => {
+                fetchUserProfile(session.user.id, session.user.email!).then(async (fullUser) => {
                   if (isMounted && fullUser) {
                     // Se torniamo da Stripe, mantieni isPremium = true
                     if (fromStripeSuccess) {
                       fullUser.isPremium = true;
                     }
+                    
+                    // Verifica server-side dello stato premium (anti-tampering)
+                    try {
+                      const { data: { session: authSession } } = await supabase.auth.getSession();
+                      if (authSession?.access_token) {
+                        const res = await fetch('/.netlify/functions/check-premium', {
+                          method: 'POST',
+                          headers: {
+                            'Content-Type': 'application/json',
+                            'Authorization': `Bearer ${authSession.access_token}`,
+                          },
+                        });
+                        if (res.ok) {
+                          const premiumData = await res.json();
+                          if (premiumData.verified) {
+                            fullUser.isPremium = premiumData.isPremium;
+                          }
+                        }
+                      }
+                    } catch {
+                      // Se la verifica fallisce, mantieni il valore dal profilo DB
+                    }
+
                     setUser(fullUser);
                     localStorage.setItem(`user_profile_${session.user.id}`, JSON.stringify(fullUser));
                   }

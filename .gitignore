@@ -24,5 +24,11 @@ dist-ssr
 *.sln
 *.sw?
 
+# Environment variables (NEVER commit secrets!)
+.env
+.env.*
+.env.local
+.env.production
+
 # Local Netlify folder
 .netlify

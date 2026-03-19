@@ -11,7 +11,7 @@ const supabase = createClient(
 
 export const handler = async (event) => {
   const headers = {
-    'Access-Control-Allow-Origin': '*',
+    'Access-Control-Allow-Origin': process.env.FRONTEND_URL || 'https://bonusmatch.it',
     'Content-Type': 'application/json',
   };
 

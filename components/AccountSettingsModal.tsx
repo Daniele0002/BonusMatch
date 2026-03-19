@@ -75,17 +75,30 @@ const AccountSettingsModal: React.FC<AccountSettingsModalProps> = ({ isOpen, onC
     }
   }, [isOpen, activeTab, user?.email]);
 
+  // Helper per ottenere il token JWT
+  const getAuthToken = async (): Promise<string | null> => {
+    try {
+      const { data: { session } } = await supabase.auth.getSession();
+      return session?.access_token || null;
+    } catch {
+      return null;
+    }
+  };
+
   const loadSubscription = async () => {
     setLoadingSubscription(true);
     try {
-      console.log('Loading subscription for email:', user?.email);
+      const token = await getAuthToken();
+      if (!token) {
+        console.error('Token di autenticazione non disponibile');
+        return;
+      }
       const response = await fetch('/.netlify/functions/manage-subscription', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${token}` },
         body: JSON.stringify({ action: 'get-subscription', email: user?.email }),
       });
       const data = await response.json();
-      console.log('Subscription response:', data);
       setSubscription(data.subscription);
     } catch (err) {
       console.error('Errore caricamento abbonamento:', err);
@@ -99,10 +112,12 @@ const AccountSettingsModal: React.FC<AccountSettingsModalProps> = ({ isOpen, onC
     
     setSubscriptionAction(true);
     try {
+      const token = await getAuthToken();
+      if (!token) return;
       const response = await fetch('/.netlify/functions/manage-subscription', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ action: 'cancel-subscription', subscriptionId: subscription.id }),
+        headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${token}` },
+        body: JSON.stringify({ action: 'cancel-subscription', subscriptionId: subscription.id, email: user?.email }),
       });
       const data = await response.json();
       if (data.success) {
@@ -123,10 +138,12 @@ const AccountSettingsModal: React.FC<AccountSettingsModalProps> = ({ isOpen, onC
     
     setSubscriptionAction(true);
     try {
+      const token = await getAuthToken();
+      if (!token) return;
       const response = await fetch('/.netlify/functions/manage-subscription', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ action: 'reactivate-subscription', subscriptionId: subscription.id }),
+        headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${token}` },
+        body: JSON.stringify({ action: 'reactivate-subscription', subscriptionId: subscription.id, email: user?.email }),
       });
       const data = await response.json();
       if (data.success) {

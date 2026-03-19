@@ -1,6 +1,13 @@
 import Stripe from 'stripe';
+import { createClient } from '@supabase/supabase-js';
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
+
+// Supabase client per verificare autenticazione
+const supabase = createClient(
+  process.env.VITE_SUPABASE_URL,
+  process.env.SUPABASE_SERVICE_ROLE_KEY
+);
 
 // Helper function per convertire timestamp in modo sicuro
 const safeTimestampToISO = (timestamp) => {
@@ -14,7 +21,7 @@ const safeTimestampToISO = (timestamp) => {
 
 export const handler = async (event) => {
   const headers = {
-    'Access-Control-Allow-Origin': '*',
+    'Access-Control-Allow-Origin': process.env.FRONTEND_URL || 'https://bonusmatch.it',
     'Access-Control-Allow-Headers': 'Content-Type, Authorization',
     'Access-Control-Allow-Methods': 'POST, GET, OPTIONS',
     'Content-Type': 'application/json',
@@ -25,7 +32,37 @@ export const handler = async (event) => {
     return { statusCode: 204, headers, body: '' };
   }
 
+  // --- AUTENTICAZIONE: verifica JWT Supabase ---
+  const authHeader = event.headers.authorization || event.headers.Authorization;
+  if (!authHeader || !authHeader.startsWith('Bearer ')) {
+    return {
+      statusCode: 401,
+      headers,
+      body: JSON.stringify({ error: 'Token di autenticazione mancante' }),
+    };
+  }
+
+  const token = authHeader.replace('Bearer ', '');
+  const { data: { user: authUser }, error: authError } = await supabase.auth.getUser(token);
+
+  if (authError || !authUser) {
+    return {
+      statusCode: 401,
+      headers,
+      body: JSON.stringify({ error: 'Token non valido o scaduto' }),
+    };
+  }
+
   const { action, email, subscriptionId } = JSON.parse(event.body || '{}');
+
+  // Verifica che l'utente possa accedere solo ai propri dati
+  if (email && email.toLowerCase() !== authUser.email.toLowerCase()) {
+    return {
+      statusCode: 403,
+      headers,
+      body: JSON.stringify({ error: 'Non autorizzato ad accedere ai dati di altri utenti' }),
+    };
+  }
 
   try {
     switch (action) {
@@ -154,7 +191,7 @@ export const handler = async (event) => {
     return {
       statusCode: 500,
       headers,
-      body: JSON.stringify({ error: error.message }),
+      body: JSON.stringify({ error: 'Errore nella gestione dell\'abbonamento' }),
     };
   }
 };
