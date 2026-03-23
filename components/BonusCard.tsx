@@ -88,10 +88,22 @@ const BonusCard: React.FC<BonusCardProps> = React.memo(({ bonus, onClick, matchR
   const handleSave = handlePremiumAction(() => toggleSaveBonus(bonus.id));
   const handleFollow = handlePremiumAction(() => setIsFollowed(!isFollowed));
 
+  // Determina il colore del bordo sinistro in base all'idoneità
+  const genericReasons = ["specificato", "non fornito", "nessun", "mancante", "non indicat", "non presente"];
+  const hasGenericReason = matchReason && genericReasons.some(g => matchReason.toLowerCase().includes(g));
+  
+  const borderAccent = isEligible === true 
+    ? "border-l-4 border-l-emerald-500 dark:border-l-emerald-400" 
+    : isEligible === false && !hasGenericReason
+      ? "border-l-4 border-l-red-400 dark:border-l-red-500" 
+      : isEligible === false && hasGenericReason
+        ? "border-l-4 border-l-amber-400 dark:border-l-amber-500"
+        : "";
+
   return (
     <div
       onClick={onClick}
-      className="bg-white dark:bg-slate-900 rounded-2xl p-5 border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-xl hover:border-blue-400 dark:hover:border-blue-700 cursor-pointer transition-all flex flex-col h-full group transform hover:-translate-y-1"
+      className={`bg-white dark:bg-slate-900 rounded-2xl p-5 border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-xl hover:border-blue-400 dark:hover:border-blue-700 cursor-pointer transition-all flex flex-col h-full group transform hover:-translate-y-1 ${borderAccent}`}
     >
       {/* Header: Status, Categoria e Urgenza */}
       <div className="w-full flex justify-between items-start mb-4">

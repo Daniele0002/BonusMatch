@@ -150,6 +150,10 @@ const Dashboard: React.FC<DashboardProps> = ({ profile, bonuses, results, isPrem
     });
   }, [isPremium, filter, bonuses, bonusGroups, categoryFilter, eligibleSet]);
 
+  /** Separazione bonus idonei e non idonei per rendering a sezioni */
+  const eligibleBonuses = useMemo(() => filteredBonuses.filter(b => eligibleSet.has(b.id)), [filteredBonuses, eligibleSet]);
+  const nonEligibleBonuses = useMemo(() => filteredBonuses.filter(b => !eligibleSet.has(b.id)), [filteredBonuses, eligibleSet]);
+
   const isProfileIncomplete = completionPercentage < 100;
 
   // Animazioni
@@ -476,32 +480,98 @@ const Dashboard: React.FC<DashboardProps> = ({ profile, bonuses, results, isPrem
           )}
         </div>
 
-        {/* Griglia Bonus */}
-        <div ref={availableRef} className="min-h-[400px]">
-          <AnimatePresence mode="wait">
-            <motion.div
-              key={`${filter}-${categoryFilter}`}
-              variants={staggerContainer}
-              initial="hidden"
-              animate="visible"
-              className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5"
-            >
-              {filteredBonuses.map((b) => {
-                const match = results.find((r) => r.bonusId === b.id);
-                return (
-                  <motion.div key={b.id} variants={staggerItem}>
-                    <BonusCard 
-                      key={b.id} 
-                      bonus={b} 
-                      onClick={() => onSelectBonus(b.id)} 
-                      matchReason={match?.reason}
-                      isEligible={match?.eligible}
-                    />
-                  </motion.div>
-                );
-              })}
-            </motion.div>
-          </AnimatePresence>
+        {/* Griglia Bonus — Separata in Idonei e Non Idonei */}
+        <div ref={availableRef} className="min-h-[400px] space-y-8">
+
+          {/* ── SEZIONE IDONEI ── */}
+          {eligibleBonuses.length > 0 && (
+            <div>
+              <div className="flex items-center gap-2.5 mb-4">
+                <div className="w-7 h-7 rounded-lg bg-emerald-500/15 dark:bg-emerald-400/15 flex items-center justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-emerald-600 dark:text-emerald-400" viewBox="0 0 20 20" fill="currentColor">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  </svg>
+                </div>
+                <h3 className="text-sm font-black uppercase tracking-[0.15em] text-slate-900 dark:text-white">Idonei per te</h3>
+                <span className="text-[10px] font-black px-2.5 py-1 rounded-full bg-emerald-100 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800">
+                  {eligibleBonuses.length}
+                </span>
+                <div className="h-px flex-1 bg-gradient-to-r from-emerald-300 to-transparent dark:from-emerald-700" />
+              </div>
+              <AnimatePresence mode="wait">
+                <motion.div
+                  key={`eligible-${filter}-${categoryFilter}`}
+                  variants={staggerContainer}
+                  initial="hidden"
+                  animate="visible"
+                  className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5"
+                >
+                  {eligibleBonuses.map((b) => {
+                    const match = results.find((r) => r.bonusId === b.id);
+                    return (
+                      <motion.div key={b.id} variants={staggerItem}>
+                        <BonusCard 
+                          bonus={b} 
+                          onClick={() => onSelectBonus(b.id)} 
+                          matchReason={match?.reason}
+                          isEligible={match?.eligible}
+                        />
+                      </motion.div>
+                    );
+                  })}
+                </motion.div>
+              </AnimatePresence>
+            </div>
+          )}
+
+          {/* ── SEZIONE NON IDONEI ── */}
+          {nonEligibleBonuses.length > 0 && (
+            <div>
+              <div className="flex items-center gap-2.5 mb-4">
+                <div className="w-7 h-7 rounded-lg bg-red-500/15 dark:bg-red-400/15 flex items-center justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-red-500 dark:text-red-400" viewBox="0 0 20 20" fill="currentColor">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" />
+                  </svg>
+                </div>
+                <h3 className="text-sm font-black uppercase tracking-[0.15em] text-slate-400 dark:text-slate-500">Non idonei</h3>
+                <span className="text-[10px] font-black px-2.5 py-1 rounded-full bg-red-100 dark:bg-red-900/30 text-red-600 dark:text-red-400 border border-red-200 dark:border-red-800">
+                  {nonEligibleBonuses.length}
+                </span>
+                <div className="h-px flex-1 bg-gradient-to-r from-red-200 to-transparent dark:from-red-800" />
+              </div>
+              <AnimatePresence mode="wait">
+                <motion.div
+                  key={`non-eligible-${filter}-${categoryFilter}`}
+                  variants={staggerContainer}
+                  initial="hidden"
+                  animate="visible"
+                  className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 opacity-75"
+                >
+                  {nonEligibleBonuses.map((b) => {
+                    const match = results.find((r) => r.bonusId === b.id);
+                    return (
+                      <motion.div key={b.id} variants={staggerItem}>
+                        <BonusCard 
+                          bonus={b} 
+                          onClick={() => onSelectBonus(b.id)} 
+                          matchReason={match?.reason}
+                          isEligible={match?.eligible}
+                        />
+                      </motion.div>
+                    );
+                  })}
+                </motion.div>
+              </AnimatePresence>
+            </div>
+          )}
+
+          {/* Messaggio vuoto */}
+          {eligibleBonuses.length === 0 && nonEligibleBonuses.length === 0 && (
+            <div className="flex flex-col items-center justify-center py-16 text-center">
+              <div className="w-16 h-16 rounded-2xl bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-3xl mb-4">🔍</div>
+              <p className="text-slate-400 dark:text-slate-500 font-bold text-sm">Nessun bonus trovato con i filtri selezionati</p>
+            </div>
+          )}
         </div>
       </div>
     </div>

@@ -208,7 +208,12 @@ REGOLE: Rispondi in max 2-3 frasi brevi, in italiano, tono amichevole ma sinteti
         }
       }
 
-      const prompt = `Analizza il profilo utente e determina l'eleggibilità per i seguenti bonus italiani. 
+      const prompt = `Analizza il profilo utente e determina l'eleggibilità per i seguenti bonus italiani.
+      
+      REGOLA FONDAMENTALE: Un bonus deve essere marcato come eligible=true A MENO CHE i dati del profilo non contraddicano ESPLICITAMENTE i requisiti.
+      Se non ci sono dati nel profilo che escludono l'utente da un bonus, il bonus DEVE essere marcato come eligible=true con reason "Requisiti compatibili".
+      Non fare supposizioni: valuta SOLO in base ai dati forniti nel profilo. Se un requisito non è verificabile dai dati del profilo, considera il bonus come eligible.
+      
       Profilo: ${JSON.stringify(profile)}
       Bonus disponibili: ${JSON.stringify(bonuses.map(b => ({ id: b.id, titolo: b.titolo, requisiti: b.requisiti })))}
       

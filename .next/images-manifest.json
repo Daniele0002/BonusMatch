@@ -46,6 +46,7 @@
       75
     ],
     "unoptimized": true,
+    "customCacheHandler": false,
     "sizes": [
       640,
       750,

@@ -62,7 +62,12 @@ export const analyzeProfileWithAI = async (profile: UserProfile, bonuses: Bonus[
     }
 
     const data = await response.json();
-    return data.results || calculateDeterministicMatches(profile, bonuses);
+    if (data.results) {
+      // Merge: il deterministico (form-based) ha la priorità sull'AI
+      const deterministicResults = calculateDeterministicMatches(profile, bonuses);
+      return mergeResults(data.results, deterministicResults);
+    }
+    return calculateDeterministicMatches(profile, bonuses);
   } catch {
     return calculateDeterministicMatches(profile, bonuses);
   }
@@ -138,8 +143,46 @@ export const calculateDeterministicMatches = (profile: UserProfile, bonuses: Bon
     if (["Mobili", "Condizionatori", "Verde", "Acqua"].some(k => bonus.titolo.includes(k)) && abitazione === "genitori") {
       eligible = false; reasons.push("Richiede unità immobiliare propria");
     }
+    // Bonus Affitto Under 31: richiede che l'abitazione sia in affitto
+    if (bonus.titolo.includes("Affitto Under 31") && abitazione !== "affitto") {
+      eligible = false; reasons.push("Richiede abitazione in affitto");
+    }
+    // Ristrutturazione, Sismabonus, Ecobonus: richiedono immobile proprio (non chi vive con genitori)
+    if (["ristrutturazione", "Sismabonus", "Ecobonus"].some(k => bonus.titolo.includes(k)) && abitazione === "genitori") {
+      eligible = false; reasons.push("Richiede unità immobiliare propria");
+    }
 
     return { bonusId: bonus.id, eligible, reason: eligible ? "Requisiti compatibili" : reasons[0] || "Requisiti non soddisfatti" };
+  });
+};
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// MERGE RISULTATI AI + DETERMINISTICO
+// ═══════════════════════════════════════════════════════════════════════════════
+
+/**
+ * Merge dei risultati AI con quelli deterministici (basati sui campi del form).
+ * Se il calcolo deterministico dice eligible (nessun campo del form esclude il bonus),
+ * il risultato finale è eligible indipendentemente da ciò che dice l'AI.
+ * Questo garantisce che bonus senza filtri specifici (es. Bonus ristrutturazione)
+ * siano sempre disponibili per chiunque.
+ */
+const mergeResults = (aiResults: MatchResult[], deterministicResults: MatchResult[]): MatchResult[] => {
+  const deterministicMap = new Map(deterministicResults.map(r => [r.bonusId, r]));
+  
+  return aiResults.map(aiResult => {
+    const detResult = deterministicMap.get(aiResult.bonusId);
+    // Se il deterministico dice eligible (nessun filtro form lo esclude),
+    // forza eligible anche se l'AI lo ha escluso
+    if (detResult?.eligible && !aiResult.eligible) {
+      return { ...aiResult, eligible: true, reason: "Requisiti compatibili" };
+    }
+    // Se il deterministico dice non eligible (un filtro form lo esclude),
+    // mantieni non eligible anche se l'AI dice diversamente
+    if (detResult && !detResult.eligible) {
+      return { ...detResult };
+    }
+    return aiResult;
   });
 };
 
